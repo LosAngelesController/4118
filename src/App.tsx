@@ -44,15 +44,23 @@ var geoJsonBoundary:any = {
   type: "FeatureCollection"
 }
 
+const formulaForZoom = () => {
+  if (window.innerWidth > 700) {
+    return 10
+  } else { 
+    return 9.1
+  }
+}
+
 export default class App extends React.PureComponent {
   mapContainer: any;
   state: any;
 constructor(props:any) {
 super(props);
 this.state = {
-lng: -118.25,
-lat: 34.0482,
-  zoom: 10
+lng: -118.41,
+lat: 34,
+  zoom: formulaForZoom()
 };
 this.mapContainer = React.createRef();
 }
@@ -130,9 +138,16 @@ render() {
 const { lng, lat, zoom } = this.state;
 return (
 <div>
-    <div className="sidebar">
+ {/*<div className="sidebar">
 Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
-</div>
+</div>*/}
+    
+    <div
+      className='titleBox'
+    >
+      41.18 Enforcement Locations
+    </div>
+    
 <div ref={this.mapContainer} className="map-container" />
 </div>
 );
