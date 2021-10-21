@@ -322,6 +322,41 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "Tampa Avenue and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.553662,
+              34.174012
+            ],
+            [
+              -118.55363,
+              34.173173
+            ],
+            [
+              -118.553324,
+              34.173156
+            ],
+            [
+              -118.553315,
+              34.174
+            ],
+            [
+              -118.553662,
+              34.174012
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "86b9d055792bd822fc35c75071fdcdd3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "address": "Canoga Avenue and the 101 Freeway",
         "category": "Underpass"
       },
@@ -443,6 +478,119 @@
         "type": "Polygon"
       },
       "id": "a3073a08b51e30aa1797379e4af92817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Corbin Avenue and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.562368,
+              34.173723
+            ],
+            [
+              -118.562363,
+              34.173128
+            ],
+            [
+              -118.562087,
+              34.173168
+            ],
+            [
+              -118.562083,
+              34.173793
+            ],
+            [
+              -118.562368,
+              34.173723
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "c4f90eda290a84921961f7ba84bd8397"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Shirley Avenue and the 101 Freeway",
+        "category": "Tunnel"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.557956,
+              34.173975
+            ],
+            [
+              -118.557974,
+              34.173312
+            ],
+            [
+              -118.557894,
+              34.17331
+            ],
+            [
+              -118.557851,
+              34.173973
+            ],
+            [
+              -118.557956,
+              34.173975
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "ce5638bee29a024a37b9c5a8e7f4ee31"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Wilbur Avenue and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.544896,
+              34.173773
+            ],
+            [
+              -118.54489,
+              34.173316
+            ],
+            [
+              -118.544875,
+              34.173122
+            ],
+            [
+              -118.54457,
+              34.173097
+            ],
+            [
+              -118.544549,
+              34.173453
+            ],
+            [
+              -118.544573,
+              34.17375
+            ],
+            [
+              -118.544896,
+              34.173773
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "d6d3d6bf0073c5b8665ba666b3f89d2c"
     },
     {
       "type": "Feature",
