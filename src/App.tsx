@@ -44,6 +44,38 @@ var geoJsonBoundary:any = {
   type: "FeatureCollection"
 }
 
+function isStringOneThousandFt(stringInput:string) {
+  return (stringInput.match(/Design/gi) || stringInput.match(/Navigation/gi))
+}
+
+function splitIntoYellowAndRed(geojsonobj: any) {
+  console.log('splitInto', geojsonobj)
+  var thousands:any = {
+    features: [],
+      type: "FeatureCollection"
+  }
+
+  var fivehundreds:any = {
+    features: [],
+    type: "FeatureCollection"
+  }
+
+  geojsonobj.features.forEach((eachFeature: any, eachFeatureIndex: any) => {
+    if( isStringOneThousandFt(locations.features[eachFeatureIndex].properties.category)) {
+      thousands['features'].push(eachFeature)
+    } else {
+      fivehundreds['features'].push(eachFeature)
+    }
+  })
+  
+  return {thousands, fivehundreds}
+}
+
+const { thousands, fivehundreds } = splitIntoYellowAndRed(locations)
+const {thousands : thousandsBuffer, fivehundreds : fivehundredsBuffer} = splitIntoYellowAndRed(geoJsonBoundary)
+
+
+
 const formulaForZoom = () => {
   if (window.innerWidth > 700) {
     return 10
@@ -95,10 +127,29 @@ map.on('load', () => {
     type: 'fill',
     source: {
       type: 'geojson',
-      data:  geoJsonBoundary
+      data:  fivehundredsBuffer
     },
     paint: {
       "fill-color": "#ff0000",
+      "fill-opacity": ["interpolate",
+      ["exponential", 1],
+         ['zoom'],
+         10, 0.7,
+         15, 0.6,
+       18, 0.4
+   ]
+    }
+  });
+  map.addLayer({
+    // buffer
+    id: 'locationsThousandsBuffer',
+    type: 'fill',
+    source: {
+      type: 'geojson',
+      data:  thousandsBuffer
+    },
+    paint: {
+      "fill-color": "#CA8A04",
       "fill-opacity": ["interpolate",
       ["exponential", 1],
          ['zoom'],
@@ -114,10 +165,33 @@ map.on('load', () => {
     type: 'fill',
     source: {
       type: 'geojson',
-      data: locations
+      data: fivehundreds
     },
     paint: {
       "fill-color": "#ffaaaa",
+      "fill-opacity": ["interpolate",
+     ["exponential", 1],
+        ['zoom'],
+        10, 0.9,
+        12, 0.6,
+        13, 0.6,
+        15, 0.5,
+        17, 0.4,
+      18, 0.3
+  ]
+    }
+  });
+
+  map.addLayer({
+    //illegal zone solid
+    id: 'locationsThousands',
+    type: 'fill',
+    source: {
+      type: 'geojson',
+      data: thousands
+    },
+    paint: {
+      "fill-color": "#FEF08A",
       "fill-opacity": ["interpolate",
      ["exponential", 1],
         ['zoom'],
