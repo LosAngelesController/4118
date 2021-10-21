@@ -1,0 +1,527 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Avenue San Luis and Del Valle Street (East of Crespi Street)",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.618348,
+              34.166548
+            ],
+            [
+              -118.618021,
+              34.165857
+            ],
+            [
+              -118.617967,
+              34.165874
+            ],
+            [
+              -118.61828,
+              34.16657
+            ],
+            [
+              -118.618348,
+              34.166548
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "24140dc766f2974f13b652bba06a804e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "De Soto Avenue and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.588352,
+              34.168271
+            ],
+            [
+              -118.588331,
+              34.167885
+            ],
+            [
+              -118.588024,
+              34.16784
+            ],
+            [
+              -118.588014,
+              34.168232
+            ],
+            [
+              -118.588352,
+              34.168271
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "2457c041ea1eed60af87f2cb76d9cafb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Designated Facility – Shelter",
+        "address": "7621 Canoga Avenue"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.598252,
+              34.20923
+            ],
+            [
+              -118.598239,
+              34.208789
+            ],
+            [
+              -118.597653,
+              34.208775
+            ],
+            [
+              -118.597654,
+              34.209227
+            ],
+            [
+              -118.598252,
+              34.20923
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "4da2111c7bd5bbb2dec2fea4c9b7e632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Fallbrook Avenue and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.623457,
+              34.164902
+            ],
+            [
+              -118.623179,
+              34.164971
+            ],
+            [
+              -118.623172,
+              34.164232
+            ],
+            [
+              -118.62344,
+              34.164153
+            ],
+            [
+              -118.623457,
+              34.164902
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "53ff6b364c3129d305c60a4680706081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Shoup Avenue and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.614356,
+              34.168693
+            ],
+            [
+              -118.61456,
+              34.168638
+            ],
+            [
+              -118.614333,
+              34.168172
+            ],
+            [
+              -118.613991,
+              34.167336
+            ],
+            [
+              -118.613786,
+              34.167356
+            ],
+            [
+              -118.614356,
+              34.168693
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "61a4493ced6bdc5e2a852ec77fc75fb8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "19036 Vanowen Street",
+        "category": "Designated Facility / Safe Parking"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.54786,
+              34.193753
+            ],
+            [
+              -118.547848,
+              34.192935
+            ],
+            [
+              -118.548299,
+              34.192933
+            ],
+            [
+              -118.548291,
+              34.193748
+            ],
+            [
+              -118.54786,
+              34.193753
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "6477e36241bd326c088656ce3952a016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Designated Facility – Shelter",
+        "address": "19040 Vanowen Street"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.54906,
+              34.193735
+            ],
+            [
+              -118.549049,
+              34.193061
+            ],
+            [
+              -118.548294,
+              34.193058
+            ],
+            [
+              -118.548294,
+              34.193736
+            ],
+            [
+              -118.54906,
+              34.193735
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "73a5839f5c42aa12a758a272ec64ec4f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Winnetka Avenue and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.570773,
+              34.172485
+            ],
+            [
+              -118.570762,
+              34.172082
+            ],
+            [
+              -118.571131,
+              34.171969
+            ],
+            [
+              -118.571116,
+              34.172369
+            ],
+            [
+              -118.570773,
+              34.172485
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "75b39f0f68a80c7caf4fc6a16bc17be9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "7134 North Jordan Avenue",
+        "category": "Designated Facility / Safe Parking"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.602776,
+              34.200484
+            ],
+            [
+              -118.602772,
+              34.200261
+            ],
+            [
+              -118.602251,
+              34.200252
+            ],
+            [
+              -118.602248,
+              34.200485
+            ],
+            [
+              -118.602776,
+              34.200484
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "80f65d09b55f64d77b5d33a2700db4a0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Canoga Avenue and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.597596,
+              34.169672
+            ],
+            [
+              -118.597582,
+              34.169287
+            ],
+            [
+              -118.597292,
+              34.169239
+            ],
+            [
+              -118.597277,
+              34.169623
+            ],
+            [
+              -118.597596,
+              34.169672
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "9c0f4ec5da0b86209bf36773dadb1c37"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Topanga Canyon Boulevard and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.606037,
+              34.171021
+            ],
+            [
+              -118.60606,
+              34.170575
+            ],
+            [
+              -118.605613,
+              34.170522
+            ],
+            [
+              -118.605608,
+              34.170948
+            ],
+            [
+              -118.606037,
+              34.171021
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "9ebaab0fc9bf800d928e0c0dcb6807f1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Ventura Boulevard and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.611616,
+              34.169092
+            ],
+            [
+              -118.611676,
+              34.168791
+            ],
+            [
+              -118.612071,
+              34.168839
+            ],
+            [
+              -118.612604,
+              34.168854
+            ],
+            [
+              -118.613213,
+              34.168832
+            ],
+            [
+              -118.613582,
+              34.168858
+            ],
+            [
+              -118.613239,
+              34.169157
+            ],
+            [
+              -118.612777,
+              34.169164
+            ],
+            [
+              -118.612172,
+              34.169132
+            ],
+            [
+              -118.611616,
+              34.169092
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "a3073a08b51e30aa1797379e4af92817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Oakdale Avenue and the 101 Freeway",
+        "category": "Tunnel"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.56606,
+              34.17291
+            ],
+            [
+              -118.566064,
+              34.172795
+            ],
+            [
+              -118.565982,
+              34.172801
+            ],
+            [
+              -118.566056,
+              34.173411
+            ],
+            [
+              -118.566127,
+              34.173403
+            ],
+            [
+              -118.56606,
+              34.17291
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e169e90adf16870dedf3b8b4fd860c85"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "18616 West Topham Street",
+        "category": "Designated Facility – Shelter"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.538068,
+              34.180669
+            ],
+            [
+              -118.538056,
+              34.180477
+            ],
+            [
+              -118.538471,
+              34.180501
+            ],
+            [
+              -118.539828,
+              34.180507
+            ],
+            [
+              -118.53982,
+              34.180665
+            ],
+            [
+              -118.538068,
+              34.180669
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "fb4600bc6b48563ebb3f76a2d6cacdfd"
+    }
+  ],
+  "type": "FeatureCollection"
+}
