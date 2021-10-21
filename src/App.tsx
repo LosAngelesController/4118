@@ -1,6 +1,16 @@
 import React from 'react';
-import mapboxgl from 'mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import 'mapbox-gl/dist/mapbox-gl.css';
+
 import * as turf from '@turf/turf'
+
+    // added the following 6 lines.
+    import mapboxgl from 'mapbox-gl';
+
+    // The following is required to stop "npm build" from transpiling mapbox code.
+    // notice the exclamation point in the import.
+    // @ts-ignore
+    // eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 //import locations from './features.geojson'
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29tcmFkZWt5bGVyIiwiYSI6ImNrdjBkOXNyeDdscnoycHE2cDk4aWJraTIifQ.77Gid9mgpEdLpFszO5n4oQ';
@@ -47,7 +57,7 @@ lat: 34.0482,
 this.mapContainer = React.createRef();
 }
 componentDidMount() {
-const { lng, lat, zoom } = this.state;
+  const { lng, lat, zoom } = this.state;
 const map = new mapboxgl.Map({
 container: this.mapContainer.current,
 style: 'mapbox://styles/comradekyler/ckv0iinpk1tlj15o2y6v1cur9',
