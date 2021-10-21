@@ -98,13 +98,32 @@ this.mapContainer = React.createRef();
 }
 componentDidMount() {
   const { lng, lat, zoom } = this.state;
-const map = new mapboxgl.Map({
-container: this.mapContainer.current,
-//style: 'mapbox://styles/comradekyler/ckv0iinpk1tlj15o2y6v1cur9',
-  style: 'mapbox://styles/comradekyler/ckv1ai7fb27w614s0d4tfbsac',
-center: [lng, lat],
-zoom: zoom
-});
+  const map = new mapboxgl.Map({
+    container: this.mapContainer.current,
+    //style: 'mapbox://styles/comradekyler/ckv0iinpk1tlj15o2y6v1cur9',
+    style: 'mapbox://styles/comradekyler/ckv1ai7fb27w614s0d4tfbsac',
+    center: [lng, lat],
+    zoom: zoom,
+    attributionControl: false
+  }).addControl(new mapboxgl.AttributionControl({
+    customAttribution: 'Paid for by Mejia for City Controller 2022, FPPC ID#: 1435234 1001 Wilshire Blvd. Suite 102, Los Angeles, CA, 90017. Additional information is available at ethics.lacity.org.'
+  }));
+
+
+  // Add geolocate control to the map.
+map.addControl(
+  new mapboxgl.GeolocateControl({
+  positionOptions: {
+  enableHighAccuracy: true
+  },
+  // When active the map will receive updates to the device's location as it changes.
+  trackUserLocation: true,
+  // Draw an arrow next to the location dot to indicate which direction the device is heading.
+  showUserHeading: true
+  })
+  );
+
+  console.log(map)
  
 
 // Add zoom and rotation controls to the map.
@@ -217,10 +236,20 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
 </div>*/}
     
     <div
-      className='titleBox'
+      className=' outsideTitle'
     >
-      41.18 Enforcement Locations
+      <div className='titleBox'>41.18 Enforcement Locations</div>
+      <div
+      className='font-sans mt-3 space-y-2 p-2 bg-truegray-900 bg-opacity-90 md:bg-opacity-60 rounded-xl text-xs'> <div className='md:max-w-xs'>Banned: sit, lie, sleep, or store, use, maintain, or place personal property within:</div>
+      <div
+      className='md:max-w-xs'
+      ><span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-2 py-1 mr-2'>1000ft</span>Facility providing shelter, safe sleeping, safe parking, or serving as a homeless services navigation center</div>
+       <div
+      className='md:max-w-xs'
+      ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (ex: school, road)</div></div>
+     
     </div>
+  
     
 <div ref={this.mapContainer} className="map-container" />
 </div>
