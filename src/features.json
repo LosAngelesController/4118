@@ -3,6 +3,120 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "Alexandria Tiny Homes Village, 6099 Laurel Canyon Boulevard",
+        "category": "Designated Facility – Shelter"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.396705,
+              34.183052
+            ],
+            [
+              -118.396689,
+              34.181863
+            ],
+            [
+              -118.398314,
+              34.183308
+            ],
+            [
+              -118.399444,
+              34.184514
+            ],
+            [
+              -118.399522,
+              34.184674
+            ],
+            [
+              -118.399606,
+              34.184851
+            ],
+            [
+              -118.39978,
+              34.185927
+            ],
+            [
+              -118.398374,
+              34.184436
+            ],
+            [
+              -118.397831,
+              34.183783
+            ],
+            [
+              -118.397144,
+              34.183086
+            ],
+            [
+              -118.396705,
+              34.183052
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "00d1afcbc9ca39f158b29ee97de58894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Van Nuys “A Bridge Home,” 7702 Van Nuys Boulevard",
+        "category": "Designated Facility – Shelter"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.445529,
+              34.210889
+            ],
+            [
+              -118.445586,
+              34.21069
+            ],
+            [
+              -118.446713,
+              34.210685
+            ],
+            [
+              -118.447011,
+              34.210942
+            ],
+            [
+              -118.448037,
+              34.210952
+            ],
+            [
+              -118.448081,
+              34.210224
+            ],
+            [
+              -118.44862,
+              34.210156
+            ],
+            [
+              -118.448651,
+              34.211597
+            ],
+            [
+              -118.448012,
+              34.211476
+            ],
+            [
+              -118.445529,
+              34.210889
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "03e04482f0f15db98d2cec8461b30db1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "address": "19600 Hamilton Avenue",
         "category": "Designated Facility – Shelter"
       },
@@ -399,6 +513,73 @@
         "type": "Polygon"
       },
       "id": "35ffabe1e1b47ca3523e6134d4a78eac"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Whitsett West Tiny Home Village, 12550 Saticoy Street South",
+        "category": "Designated Facility – Shelter"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.40692,
+              34.207957
+            ],
+            [
+              -118.406982,
+              34.207753
+            ],
+            [
+              -118.406833,
+              34.207388
+            ],
+            [
+              -118.406734,
+              34.207105
+            ],
+            [
+              -118.406602,
+              34.206526
+            ],
+            [
+              -118.406363,
+              34.205357
+            ],
+            [
+              -118.406297,
+              34.205128
+            ],
+            [
+              -118.406269,
+              34.205139
+            ],
+            [
+              -118.406293,
+              34.205503
+            ],
+            [
+              -118.40624,
+              34.205854
+            ],
+            [
+              -118.406219,
+              34.205995
+            ],
+            [
+              -118.406701,
+              34.208059
+            ],
+            [
+              -118.40692,
+              34.207957
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "36ad88a42bdff438e33c3a7788db96ce"
     },
     {
       "type": "Feature",
@@ -1170,6 +1351,69 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "Chandler Tiny Homes, 11471 Chandler Boulevard ",
+        "category": "Designated Facility – Shelter"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.381223,
+              34.168452
+            ],
+            [
+              -118.381215,
+              34.168173
+            ],
+            [
+              -118.38144,
+              34.168191
+            ],
+            [
+              -118.381597,
+              34.168222
+            ],
+            [
+              -118.381798,
+              34.168282
+            ],
+            [
+              -118.381967,
+              34.168332
+            ],
+            [
+              -118.382082,
+              34.168367
+            ],
+            [
+              -118.382377,
+              34.168417
+            ],
+            [
+              -118.382605,
+              34.168443
+            ],
+            [
+              -118.382688,
+              34.168447
+            ],
+            [
+              -118.382686,
+              34.168461
+            ],
+            [
+              -118.381223,
+              34.168452
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "81038443a87261232309e5768c962ced"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "address": "Tampa Avenue and the 101 Freeway",
         "category": "Underpass"
       },
@@ -1287,6 +1531,41 @@
         "type": "Polygon"
       },
       "id": "931705224d38550aa080a66449762fdc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Raymer “A Bridge Home,” 13160 Raymer Street",
+        "category": "Designated Facility – Shelter"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.420694,
+              34.205888
+            ],
+            [
+              -118.420694,
+              34.205317
+            ],
+            [
+              -118.421022,
+              34.20531
+            ],
+            [
+              -118.421026,
+              34.205958
+            ],
+            [
+              -118.420694,
+              34.205888
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "9483ed27fb00c03084dedf806edc45e4"
     },
     {
       "type": "Feature",
@@ -1886,6 +2165,49 @@
         "type": "Polygon"
       },
       "id": "c5b1d63cdc378d85356219312b33a42e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "11839 Sherman Way – Designated Facility",
+        "category": "Navigation Center"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.392067,
+              34.201799
+            ],
+            [
+              -118.392064,
+              34.201597
+            ],
+            [
+              -118.391806,
+              34.201347
+            ],
+            [
+              -118.391187,
+              34.201348
+            ],
+            [
+              -118.391179,
+              34.201373
+            ],
+            [
+              -118.391634,
+              34.201799
+            ],
+            [
+              -118.392067,
+              34.201799
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "c76b65785026f59effff1bc29b251dbf"
     },
     {
       "type": "Feature",

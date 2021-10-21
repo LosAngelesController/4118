@@ -27,7 +27,7 @@ var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex
 
   console.log(eachFeatureIndex)
   console.log(locations.features[eachFeatureIndex].properties.category)
-  if (locations.features[eachFeatureIndex].properties.category.match(/Design/gi)) {
+  if (locations.features[eachFeatureIndex].properties.category.match(/Design/gi) || locations.features[eachFeatureIndex].properties.category.match(/Navigation/gi)) {
     buffered = turf.buffer(polygon, 1000, { units: 'feet' });
     console.log('1000ft', locations.features[eachFeatureIndex].properties.address)
   } else {
