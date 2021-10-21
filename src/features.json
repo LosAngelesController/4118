@@ -73,6 +73,181 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "Etiwanda Avenue and the 101 Freeway",
+        "category": "Tunnel"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.531016,
+              34.171869
+            ],
+            [
+              -118.530928,
+              34.17101
+            ],
+            [
+              -118.530807,
+              34.171078
+            ],
+            [
+              -118.530873,
+              34.171875
+            ],
+            [
+              -118.531016,
+              34.171869
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "35ffabe1e1b47ca3523e6134d4a78eac"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Yolanda Avenue and the 101 Freeway",
+        "category": "Tunnel"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.54093,
+              34.17375
+            ],
+            [
+              -118.540913,
+              34.173098
+            ],
+            [
+              -118.540735,
+              34.173083
+            ],
+            [
+              -118.540762,
+              34.173736
+            ],
+            [
+              -118.54093,
+              34.17375
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "3c22ba5b16733717620dfd2a46a954ab"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Lindley Avenue and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.52744,
+              34.171496
+            ],
+            [
+              -118.527433,
+              34.170892
+            ],
+            [
+              -118.527121,
+              34.170898
+            ],
+            [
+              -118.52717,
+              34.1715
+            ],
+            [
+              -118.52744,
+              34.171496
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "3cf49a6fea43d7f4f8cf10ba0540717b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Burbank Boulevard and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.53221,
+              34.17225
+            ],
+            [
+              -118.532784,
+              34.171952
+            ],
+            [
+              -118.532625,
+              34.171751
+            ],
+            [
+              -118.531873,
+              34.172097
+            ],
+            [
+              -118.53221,
+              34.17225
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "43e8162d3efb19bed8cb7a27dbd74089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "8401 Winnetka Avenue",
+        "category": "Public Park"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.573259,
+              34.224545
+            ],
+            [
+              -118.573216,
+              34.221425
+            ],
+            [
+              -118.571188,
+              34.221411
+            ],
+            [
+              -118.571214,
+              34.224538
+            ],
+            [
+              -118.573259,
+              34.224545
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "4c3ff605bf1340225f412b75337eb9c6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "category": "Designated Facility – Shelter",
         "address": "7621 Canoga Avenue"
       },
@@ -213,6 +388,41 @@
         "type": "Polygon"
       },
       "id": "6477e36241bd326c088656ce3952a016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "7631 Topanga Canyon Boulevard",
+        "category": "Designated Facility – Shelter"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.606966,
+              34.209203
+            ],
+            [
+              -118.606961,
+              34.208408
+            ],
+            [
+              -118.60614,
+              34.20841
+            ],
+            [
+              -118.606139,
+              34.2092
+            ],
+            [
+              -118.606966,
+              34.209203
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "6e2578cb25c171703d6185468d285a77"
     },
     {
       "type": "Feature",
@@ -482,6 +692,76 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "Reseda Boulevard and the 101 Freeway",
+        "category": "Underpass"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.536194,
+              34.173802
+            ],
+            [
+              -118.536181,
+              34.172861
+            ],
+            [
+              -118.535842,
+              34.172848
+            ],
+            [
+              -118.535855,
+              34.173772
+            ],
+            [
+              -118.536194,
+              34.173802
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "a93247452907a44d10bcf3bda290d5d7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "7432 Reseda Boulevard",
+        "category": "Designated Facility – Shelter"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.535912,
+              34.205853
+            ],
+            [
+              -118.535914,
+              34.205505
+            ],
+            [
+              -118.534594,
+              34.205492
+            ],
+            [
+              -118.534592,
+              34.205857
+            ],
+            [
+              -118.535912,
+              34.205853
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "b73e4657cb64cfda1207fbc98d75470e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "address": "Corbin Avenue and the 101 Freeway",
         "category": "Underpass"
       },
@@ -552,6 +832,101 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "2316 E Imperial Highway",
+        "category": "Designated Facility – Shelter"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.233098,
+              33.928946
+            ],
+            [
+              -118.233199,
+              33.928943
+            ],
+            [
+              -118.23326,
+              33.928904
+            ],
+            [
+              -118.233286,
+              33.928846
+            ],
+            [
+              -118.233281,
+              33.928785
+            ],
+            [
+              -118.233248,
+              33.928722
+            ],
+            [
+              -118.233163,
+              33.928649
+            ],
+            [
+              -118.231151,
+              33.92872
+            ],
+            [
+              -118.23111,
+              33.9286
+            ],
+            [
+              -118.230618,
+              33.928672
+            ],
+            [
+              -118.230611,
+              33.928623
+            ],
+            [
+              -118.230334,
+              33.928667
+            ],
+            [
+              -118.230354,
+              33.92876
+            ],
+            [
+              -118.23037,
+              33.928799
+            ],
+            [
+              -118.230393,
+              33.928817
+            ],
+            [
+              -118.230429,
+              33.928838
+            ],
+            [
+              -118.230459,
+              33.928844
+            ],
+            [
+              -118.230759,
+              33.928856
+            ],
+            [
+              -118.231394,
+              33.928879
+            ],
+            [
+              -118.233098,
+              33.928946
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "cf1068e597b8e9c1689f668eb9239f3d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "address": "Wilbur Avenue and the 101 Freeway",
         "category": "Underpass"
       },
@@ -591,6 +966,41 @@
         "type": "Polygon"
       },
       "id": "d6d3d6bf0073c5b8665ba666b3f89d2c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "122 West 8th Street",
+        "category": "Designated Facility – Shelter"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.281285,
+              33.737316
+            ],
+            [
+              -118.281287,
+              33.737012
+            ],
+            [
+              -118.280556,
+              33.737009
+            ],
+            [
+              -118.28056,
+              33.737313
+            ],
+            [
+              -118.281285,
+              33.737316
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "d746042f59ca0b6d788d72a9c38453fc"
     },
     {
       "type": "Feature",
