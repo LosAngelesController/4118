@@ -65,6 +65,10 @@ center: [lng, lat],
 zoom: zoom
 });
  
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+  
 map.on('move', () => {
 this.setState({
 lng: map.getCenter().lng.toFixed(4),
@@ -85,7 +89,7 @@ map.on('load', () => {
     },
     paint: {
       "fill-color": "#ff0000",
-      "fill-opacity": 0.6
+      "fill-opacity": 0.8
     }
   });
   map.addLayer({
@@ -100,9 +104,6 @@ map.on('load', () => {
       "fill-opacity": 0.8
     }
   });
-  
-
-
 });
 }
   
