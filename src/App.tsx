@@ -60,7 +60,8 @@ componentDidMount() {
   const { lng, lat, zoom } = this.state;
 const map = new mapboxgl.Map({
 container: this.mapContainer.current,
-style: 'mapbox://styles/comradekyler/ckv0iinpk1tlj15o2y6v1cur9',
+//style: 'mapbox://styles/comradekyler/ckv0iinpk1tlj15o2y6v1cur9',
+  style: 'mapbox://styles/comradekyler/ckv1ai7fb27w614s0d4tfbsac',
 center: [lng, lat],
 zoom: zoom
 });
@@ -81,6 +82,7 @@ map.on('load', () => {
  
   
   map.addLayer({
+    // buffer
     id: 'locationsBuffer',
     type: 'fill',
     source: {
@@ -89,10 +91,17 @@ map.on('load', () => {
     },
     paint: {
       "fill-color": "#ff0000",
-      "fill-opacity": 0.8
+      "fill-opacity": ["interpolate",
+      ["exponential", 1],
+         ['zoom'],
+         10, 0.7,
+         15, 0.6,
+       18, 0.4
+   ]
     }
   });
   map.addLayer({
+    //illegal zone solid
     id: 'locations',
     type: 'fill',
     source: {
@@ -100,8 +109,17 @@ map.on('load', () => {
       data: locations
     },
     paint: {
-      "fill-color": "#41ffca",
-      "fill-opacity": 0.8
+      "fill-color": "#ffaaaa",
+      "fill-opacity": ["interpolate",
+     ["exponential", 1],
+        ['zoom'],
+        10, 0.9,
+        12, 0.6,
+        13, 0.6,
+        15, 0.5,
+        17, 0.4,
+      18, 0.3
+  ]
     }
   });
 });
@@ -112,7 +130,7 @@ render() {
 const { lng, lat, zoom } = this.state;
 return (
 <div>
-<div className="sidebar">
+    <div className="sidebar">
 Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
 </div>
 <div ref={this.mapContainer} className="map-container" />
