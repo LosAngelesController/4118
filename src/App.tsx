@@ -1,6 +1,6 @@
 import React from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
-
+ 
 import * as turf from '@turf/turf'
 
     // added the following 6 lines.
