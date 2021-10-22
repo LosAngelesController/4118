@@ -23,7 +23,7 @@ var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex
   var polygon = turf.polygon(eachFeature.geometry.coordinates);
   //console.log(polygon)
 
-  var buffered;
+  var buffered:any;
 
  // console.log(eachFeatureIndex)
  // console.log(locations.features[eachFeatureIndex].properties.category)
@@ -33,6 +33,8 @@ var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex
   } else {
   buffered = turf.buffer(polygon, 500, { units: 'feet' });
   }
+
+  buffered.properties = eachFeature.properties;
   return buffered;
 })
 
@@ -72,11 +74,12 @@ var locationsCentroids = centroids(locations)
 console.log('locationsCentroids', locationsCentroids)
 
 function showMapboxStuff() {
+  /*
   var mapboxlogo = document.querySelector('.mapboxgl-ctrl-bottom-left')
   console.log('mapboxlogo')
   if (mapboxlogo) {
     mapboxlogo.classList.remove('hidden')
-  }
+  }*/
 
   var mapboxtopright = document.querySelector(".mapboxgl-ctrl-top-right")
   console.log('topright',mapboxtopright)
@@ -206,6 +209,7 @@ const generateString = (length:any) =>  {
 export default class App extends React.PureComponent {
   mapContainer: any;
   state: any;
+  popupfunc: any;
   map: any;
 constructor(props:any) {
 super(props);
@@ -213,7 +217,9 @@ this.state = {
 lng: -118.41,
   lat: 34,
   initialWindowWidth: window.innerWidth,
-  zoom: formulaForZoom()
+  isPopupActive: false,
+  zoom: formulaForZoom(),
+  featureSelected: {}
 };
 this.mapContainer = React.createRef();
 }
@@ -338,6 +344,10 @@ map.addControl(
 
   console.log(map)
  
+  var mapboxlogo = document.querySelector('.mapboxgl-ctrl-bottom-left')
+  if (mapboxlogo) {
+    mapboxlogo.classList.add('hidden')
+  }
 
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
@@ -349,6 +359,51 @@ lat: map.getCenter().lat.toFixed(4),
 zoom: map.getZoom().toFixed(2)
 });
 });
+     
+     this.popupfunc = (e:any) => {
+       // Copy coordinates array.
+     //  console.log(e)
+       const coordinates = e.lngLat
+
+       var resultOfCalculation;
+       
+       var pt = turf.point([coordinates.lng,coordinates.lat]);
+//const description = e.features[0].properties.description;
+       
+       var featureMatchingClick:any;
+       
+       //foreach thing in featuresTotalBuffer
+       featuresTotalBuffer.features.forEach((eachFeature: any) => {
+        // console.log(eachFeature)
+         var poly = turf.polygon([eachFeature.geometry.coordinates[0]]);
+         
+         resultOfCalculation = turf.booleanPointInPolygon(pt, poly)
+         if (resultOfCalculation === true) {
+           featureMatchingClick = eachFeature;
+           return eachFeature;
+         }
+       })
+
+       console.log('success found feature clicked', featureMatchingClick)
+       
+       if (featureMatchingClick) {
+         this.setState((state: any, props: any) => {
+           return {
+             isPopupActive: true,
+             featureSelected: featureMatchingClick
+           }
+         })
+       }
+       //do the turf inside function
+       // if true, display the popup state
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+       this.setState({
+         isPopupActive: true
+       })
+     }
   
 map.on('load', () => {
  
@@ -372,6 +427,8 @@ map.on('load', () => {
    ]
     }
   });
+
+  map.on('click', 'locationsBuffer', event => this.popupfunc(event))
   map.addLayer({
     // buffer
     id: 'locationsThousandsBuffer',
@@ -391,6 +448,8 @@ map.on('load', () => {
    ]
     }
   });
+
+  map.on('click', 'locationsThousandsBuffer', event => this.popupfunc(event))
   map.addLayer({
     //illegal zone solid
     id: 'locations',
@@ -414,6 +473,8 @@ map.on('load', () => {
     }
   });
 
+  map.on('click', 'locations', event => this.popupfunc(event))
+
   map.addLayer({
     //illegal zone solid
     id: 'locationsThousands',
@@ -436,7 +497,12 @@ map.on('load', () => {
   ]
     }
   });
+
+
+  map.on('click', 'locationsThousands', event => this.popupfunc(event))
 });
+     
+     
 }
   
   
@@ -447,9 +513,11 @@ return (
  {/*<div className="sidebar">
 Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
 </div>*/}
+    
+  
          
     <div
-      className=' outsideTitle max-h-screen flex-col flex'
+      className=' outsideTitle max-h-screen flex-col flex z-50'
     >
       <div className='titleBox max-h-screen mt-2 ml-2 md:mt-3 md:ml-3'>41.18 Enforcement Locations</div>
  
@@ -468,7 +536,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
           <a className='underline text-mejito ml-4' href='https://mejiaforcontroller.com'>Mejia For Controller</a>
         </div>
       </div>
-     
+
       <div className={`max-h-screen transform overflow-y-auto transition-all z-50 sidebar-4118-list md:ml-3 absolute md:static ${(this.state.initialWindowWidth >= 768)  ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs text-xs font-sans bg-truegray-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl md:mb-10`}>
      
         <div className='pl-1 pt-2 text-base flex flex-row flex-nowrap'>
@@ -506,10 +574,44 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       ))
     }
       </div>
+
+      
     </div>
   
+   
+    <div ref={this.mapContainer} style={{
+      
+    }} className="map-container" />
+
+    {this.state.isPopupActive && (
+    <div className={`
+    text-xs absolute bottom-4 left-4 md:right-4 md:left-auto w-70 md:w-full  text-white z-10 popupbox z-auto  rounded-sm bg-opacity-75`}>
+         
+         <div className='' onClick={(event) => {
+          this.setState((state: any, props: any) => {
+            return {
+              isPopupActive:false
+            }
+          })
+        }}>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+</svg>
+        </div>
+        <div className='bg-truegray-900  border-2 px-2 py-2'>
+        <p className='font-bold'>{this.state.featureSelected.properties.address}</p>
+    {(this.state.featureSelected.properties.buffer === '1000' && (
+            <span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-1 py-1 mr-1 font-xs'>1000ft</span>
+          ))}
+            {(this.state.featureSelected.properties.buffer === '500' && (
+            <span className='font-mono h-1 w-1 bg-red-600 text-black rounded-full px-1 py-1 mr-1 font-xs'>500ft</span>
+          ))}
+    {this.state.featureSelected.properties.category}
+        </div>
+       
+    </div>
+    )}
     
-    <div ref={this.mapContainer} className="map-container" />
     <div className='absolute z-10 md:hidden rounded-full bottom-4 right-4 bg-mejito w-16 h-16 '
       onClick={(event: any) => {
         this.toggleList();
