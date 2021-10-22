@@ -530,7 +530,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
     <div
       className=' outsideTitle max-h-screen flex-col flex z-50'
     >
-      <div className='titleBox max-h-screen mt-2 ml-2 md:mt-3 md:ml-3 break-words'>41.18 Enforcement Locations</div>
+      <div className='titleBox max-h-screen mt-2 ml-2 md:mt-3 md:ml-3 break-words'>41.18 By-Resolution Areas</div>
  
       <div className='flex flex-col md:flex-row w-auto md:auto md:flex-nowrap '>
       {this.state.infoBoxShown && (
@@ -543,11 +543,11 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
         ><span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-2 py-1 mr-2'>1000ft</span>Facility providing shelter, safe sleeping, safe parking, or serving as a homeless services navigation center</div>
          <div
         className='md:max-w-xs' 
-          ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, etc.)</div>
+          ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, bridge, active railway, etc.)</div>
          <div className='md:max-w-xs'>Only covers by-resolution locations, not other locations. See ordinance for more.</div>
             <div className='flex-row'>
-            <a className='underline text-mejito' href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'>41.18 Ordinance</a>
-            <a className='underline text-mejito ml-4' href='https://mejiaforcontroller.com'>Mejia For Controller</a>
+            <a  target="_blank" rel='external' className='underline text-mejito' href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'>41.18 Ordinance</a>
+            <a  target="_blank" rel='author' className='underline text-mejito ml-4' href='https://mejiaforcontroller.com'>Mejia For Controller</a>
           </div>
         </div>
     )}
@@ -602,7 +602,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             }}
             className="h-6 w-6 flex-shrink md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-</svg><p className='flex-grow  scrollbar scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 '>List - 41.18 Enforcement Locations</p>
+</svg><p className='flex-grow  scrollbar scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 '>List - By-Resolution Areas</p>
         
         </div>
         {
