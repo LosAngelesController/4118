@@ -40,3 +40,17 @@
 .mapbox-logo{
   display: none !important;
 }
+
+.mejiascrollbar::-webkit-scrollbar-thumb {
+     
+  border-radius: 8px;
+  border: 4px solid #717171;
+  background-clip: content-box;
+  background-color: #717171;  
+}
+
+.mejiascrollbar {
+scroll-margin-top: 2px;
+scroll-margin-bottom: 2px;
+scroll-margin-right: 3px;
+}

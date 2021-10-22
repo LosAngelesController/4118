@@ -219,7 +219,8 @@ lng: -118.41,
   initialWindowWidth: window.innerWidth,
   isPopupActive: false,
   zoom: formulaForZoom(),
-  featureSelected: {}
+  featureSelected: {},
+  infoBoxShown: true
 };
 this.mapContainer = React.createRef();
 }
@@ -240,6 +241,16 @@ this.mapContainer = React.createRef();
       }
     }
     sidebardom()
+  }
+
+  toggleInfoBox = () => {
+    this.setState((state: any, props: any) => {
+      if (state.infoBoxShown) {
+        return {infoBoxShown: false}
+      } else {
+        return {infoBoxShown: true}
+      }
+    })
   }
 
   toggleList = () => {
@@ -519,25 +530,69 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
     <div
       className=' outsideTitle max-h-screen flex-col flex z-50'
     >
-      <div className='titleBox max-h-screen mt-2 ml-2 md:mt-3 md:ml-3'>41.18 Enforcement Locations</div>
+      <div className='titleBox max-h-screen mt-2 ml-2 md:mt-3 md:ml-3 break-words'>41.18 Enforcement Locations</div>
  
-      <div
-        className='font-sans mt-3 space-y-2 p-2  ml-2 md:ml-3 bg-truegray-900 bg-opacity-90 md:bg-opacity-70 rounded-xl text-xs' style={{
-        maxWidth: '85%'
-      }}> <div className='md:max-w-xs'>Banned: sit, lie, sleep, or store, use, maintain, or place personal property within:</div>
-      <div
-      className='md:max-w-xs'
-      ><span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-2 py-1 mr-2'>1000ft</span>Facility providing shelter, safe sleeping, safe parking, or serving as a homeless services navigation center</div>
-       <div
-      className='md:max-w-xs' 
-        ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, etc.)</div>
-        <div className='flex-row'>
-          <a className='underline text-mejito' href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'>41.18 Ordinance</a>
-          <a className='underline text-mejito ml-4' href='https://mejiaforcontroller.com'>Mejia For Controller</a>
+      <div className='flex flex-col md:flex-row w-auto md:auto md:flex-nowrap '>
+      {this.state.infoBoxShown && (
+          <div
+          className='flex-none font-sans mt-5 md:mt-3 space-y-2 p-2 banned-box-text ml-2 md:ml-3 bg-truegray-900 bg-opacity-90 md:bg-opacity-70 rounded-xl text-xs' style={{
+          
+        }}> <div className='md:max-w-xs'>Banned: sit, lie, sleep, or store, use, maintain, or place personal property within:</div>
+        <div
+        className='md:max-w-xs'
+        ><span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-2 py-1 mr-2'>1000ft</span>Facility providing shelter, safe sleeping, safe parking, or serving as a homeless services navigation center</div>
+         <div
+        className='md:max-w-xs' 
+          ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, etc.)</div>
+         <div className='md:max-w-xs'>Only covers by-resolution locations, not other locations. See ordinance for more.</div>
+            <div className='flex-row'>
+            <a className='underline text-mejito' href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'>41.18 Ordinance</a>
+            <a className='underline text-mejito ml-4' href='https://mejiaforcontroller.com'>Mejia For Controller</a>
+          </div>
         </div>
+    )}
+        <div className={`hidden md:block flex-none ${this.state.infoBoxShown ? 'absolute' : ''} w-6 h-6 bg-opacity-95 bg-mejito text-black rounded-full md:ml-3 md:my-3`}
+          
+          style={
+            {
+              right: -2
+            }
+          }
+          
+          onClick={(event) => { this.toggleInfoBox() }}>
+          {this.state.infoBoxShown && (
+             <svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 transform-all`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+           </svg>
+          )}
+          {
+            (this.state.infoBoxShown === false) && (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 transform-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+</svg>
+            )
+          }
+        </div>
+        
+        <div className={`block md:hidden ${this.state.infoBoxShown ? 'absolute' : ''} flex-none w-6 h-6 bg-mejito text-black bg-opacity-95 rounded-full ml-2 my-2`}
+          onClick={(event) => { this.toggleInfoBox() }}>
+          {this.state.infoBoxShown && (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+          </svg>
+          )}
+          {
+            (this.state.infoBoxShown === false) && (
+             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+</svg>
+            )
+          }
+         </div>
       </div>
-
-      <div className={`max-h-screen transform overflow-y-auto transition-all z-50 sidebar-4118-list md:ml-3 absolute md:static ${(this.state.initialWindowWidth >= 768)  ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs text-xs font-sans bg-truegray-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl md:mb-10`}>
+     
+      
+      <div className={`w-screen md:w-auto mejiascrollbar scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 max-h-screen transform overflow-y-auto transition-all z-50 sidebar-4118-list md:ml-3 absolute md:static ${(this.state.initialWindowWidth >= 768)  ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs text-xs font-sans bg-truegray-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl md:mb-10`}>
      
         <div className='pl-1 pt-2 text-base flex flex-row flex-nowrap'>
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -547,7 +602,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             }}
             className="h-6 w-6 flex-shrink md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-</svg><p className='flex-grow'>List - 41.18 Enforcement Locations</p>
+</svg><p className='flex-grow  scrollbar scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 '>List - 41.18 Enforcement Locations</p>
         
         </div>
         {
