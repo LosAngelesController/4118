@@ -71,6 +71,77 @@ function centroids(geojsonobj: any) {
 var locationsCentroids = centroids(locations)
 console.log('locationsCentroids', locationsCentroids)
 
+function showMapboxStuff() {
+  var mapboxlogo = document.querySelector('.mapboxgl-ctrl-bottom-left')
+  console.log('mapboxlogo')
+  if (mapboxlogo) {
+    mapboxlogo.classList.remove('hidden')
+  }
+
+  var mapboxtopright = document.querySelector(".mapboxgl-ctrl-top-right")
+  console.log('topright',mapboxtopright)
+  if (mapboxtopright) {
+    mapboxtopright.classList.remove('hidden')
+  }
+
+  var mapboxBottomRight = document.querySelector('.mapboxgl-ctrl-bottom-right')
+  if (mapboxBottomRight) {
+    mapboxBottomRight.classList.remove('hidden')
+  }
+}
+
+function hideMapboxStuff() {
+  var mapboxlogo = document.querySelector('.mapboxgl-ctrl-bottom-left')
+  if (mapboxlogo) {
+    mapboxlogo.classList.add('hidden')
+  }
+
+  var mapboxtopright = document.querySelector(".mapboxgl-ctrl-top-right")
+  if (mapboxtopright) {
+    mapboxtopright.classList.add('hidden')
+  }
+
+  var mapboxBottomRight = document.querySelector('.mapboxgl-ctrl-bottom-right')
+  if (mapboxBottomRight) {
+    mapboxBottomRight.classList.add('hidden')
+  }
+
+}
+
+function sidebardom() {
+  const sidebar = document.querySelector(".sidebar-4118-list");
+  /*if (sidebar) {
+    //if its hidden
+    if (sidebar.classList.contains('-translate-x-full')) {
+      sidebar.classList.remove('visible')
+      sidebar.classList.add('invisible')
+    } else {
+      sidebar.classList.add('visible')
+      sidebar.classList.remove('invisible')
+    }
+  }*/
+}
+
+function checkStateOfSidebarAndUpdateOtherComponents() {
+  const sidebar = document.querySelector(".sidebar-4118-list");
+  if (sidebar) {
+    if ((window.innerWidth < 768)) {
+      //screen smol
+
+      //if the screen is small and the drawer is tucked
+      if (!(sidebar.classList.contains("-translate-x-full"))) {
+        hideMapboxStuff()
+        
+      } else {
+        showMapboxStuff()
+      }
+    } else {
+     showMapboxStuff()
+      //
+    }
+  }
+}
+
 function splitIntoYellowAndRed(geojsonobj: any) {
   //console.log('splitInto', geojsonobj)
   var thousands:any = {
@@ -162,6 +233,7 @@ this.mapContainer = React.createRef();
         //
       }
     }
+    sidebardom()
   }
 
   toggleList = () => {
@@ -173,7 +245,7 @@ this.mapContainer = React.createRef();
         sidebar.classList.toggle("-translate-x-full");
         }
         } 
-    
+        sidebardom()
   }
   
   flyToPoint = (longcoord: any, latcoord: any, map: any, eachFeature: any, indexOfFeature: any, bufferFeat:any) => {
@@ -377,7 +449,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
 </div>*/}
          
     <div
-      className=' outsideTitle max-h-screen flex-col h-screen flex'
+      className=' outsideTitle max-h-screen flex-col flex'
     >
       <div className='titleBox max-h-screen mt-2 ml-2 md:mt-3 md:ml-3'>41.18 Enforcement Locations</div>
  
@@ -389,15 +461,16 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       className='md:max-w-xs'
       ><span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-2 py-1 mr-2'>1000ft</span>Facility providing shelter, safe sleeping, safe parking, or serving as a homeless services navigation center</div>
        <div
-      className='md:max-w-xs'
+      className='md:max-w-xs' 
       ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, etc.)</div></div>
      
-      <div className={`transition-all sidebar-4118-list z-50 md:ml-3 absolute md:static transform ${(this.state.initialWindowWidth >= 768)  ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs overflow-y-auto text-xs font-sans bg-truegray-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl md:mb-10`}>
+      <div className={`max-h-screen transform overflow-y-auto transition-all z-50 sidebar-4118-list md:ml-3 absolute md:static ${(this.state.initialWindowWidth >= 768)  ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs text-xs font-sans bg-truegray-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl md:mb-10`}>
      
         <div className='pl-1 pt-2 text-base flex flex-row flex-nowrap'>
           <svg xmlns="http://www.w3.org/2000/svg"
             onClick={(event) => {
               this.toggleList();
+              checkStateOfSidebarAndUpdateOtherComponents();
             }}
             className="h-6 w-6 flex-shrink md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -406,8 +479,9 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
         </div>
         {
       featuresTotal.features.map((eachFeature:any,eachFeatureIndex:any) => (
-        <div className='bg-truegray-800 my-2 px-2 py-1 rounded-sm ' key={eachFeatureIndex} onClick={(event) => {
+        <div className=' bg-truegray-800 my-2 px-2 py-1 rounded-sm ' key={eachFeatureIndex} onClick={(event) => {
           this.toggleList();
+          checkStateOfSidebarAndUpdateOtherComponents();
           this.flyToPoint(eachFeature.properties.centroid.geometry.coordinates[0], eachFeature.properties.centroid.geometry.coordinates[1], this.map, eachFeature, eachFeatureIndex,
             featuresTotalBuffer.features[eachFeatureIndex])
           }}>
@@ -434,6 +508,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
     <div className='absolute z-10 md:hidden rounded-full bottom-4 right-4 bg-mejito w-16 h-16 '
       onClick={(event: any) => {
         this.toggleList();
+        checkStateOfSidebarAndUpdateOtherComponents();
       }}>
       <svg width="24" height="24" fill="none" className="text-black absolute m-auto top-1/2 left-1/2 -mt-3 -ml-3 transition duration-300 transform scale-80">
       <path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"></path>  
