@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         truegray: colors.trueGray,
+        mejito: '#41ffca'
       }
     },
   },
