@@ -544,7 +544,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
          <div
         className='md:max-w-xs' 
           ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, bridge, active railway, etc.)</div>
-         <div className='md:max-w-xs'>Only covers by-resolution locations, not other locations. See ordinance for more.</div>
+         <div className='md:max-w-xs'>Only covers by-resolution locations voted on by City Council. See ordinance for more info.</div>
             <div className='flex-row'>
             <a  target="_blank" rel='external' className='underline text-mejito' href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'>41.18 Ordinance</a>
             <a  target="_blank" rel='author' className='underline text-mejito ml-4' href='https://mejiaforcontroller.com'>Mejia For Controller</a>
