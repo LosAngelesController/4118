@@ -12,6 +12,7 @@
     "@types/node": "^12.20.33",
     "@types/react": "^17.0.31",
     "@types/react-dom": "^17.0.10",
+    "edit-json-file": "^1.6.0",
     "mapbox-gl": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
