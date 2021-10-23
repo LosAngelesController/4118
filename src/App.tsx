@@ -702,6 +702,12 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
         <div className=' bg-truegray-800 my-2 px-2 py-1 rounded-sm ' key={eachFeatureIndex} onClick={(event) => {
           this.toggleList();
           checkStateOfSidebarAndUpdateOtherComponents();
+          this.setState((state: any, props: any) => {
+            return {
+              isPopupActive: true,
+              featureSelected: eachFeature
+            }
+          })
           this.flyToPoint(eachFeature.properties.centroid.geometry.coordinates[0], eachFeature.properties.centroid.geometry.coordinates[1], this.map, eachFeature, eachFeatureIndex,
             featuresTotalBuffer.features[eachFeatureIndex])
           }}>
