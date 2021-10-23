@@ -746,7 +746,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
 
     {this.state.isPopupActive && (
     <div className={`
-    text-xs absolute bottom-4 left-4 md:right-4 md:left-auto w-70 md:w-auto-sm md:bottom:6 text-white z-10 popupbox z-auto  rounded-sm bg-opacity-75`}>
+    text-xs absolute bottom-4 left-4 md:right-4 md:left-auto md:bottom-9 w-auto text-white z-10 popupbox z-auto  rounded-sm bg-opacity-75`}>
          
          <div className='' onClick={(event) => {
           this.setState((state: any, props: any) => {
@@ -759,7 +759,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
 </svg>
         </div>
-        <div className='bg-truegray-900 border-2 px-2 py-2  md:font-base'>
+        <div className='bg-truegray-900 border-2 px-2 py-2 md:font-base max-w-xxs md:w-max-sm md:w-auto'>
         <p className='font-bold'>{this.state.featureSelected.properties.address}</p>
           {(this.state.featureSelected.properties.buffer === '1000' && (
             <span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-1 py-1 mr-1 font-xs md:font-base'>1000ft</span>
