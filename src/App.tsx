@@ -46,7 +46,7 @@ var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex
 
 //console.log(locationsBuffered)
 
-const currentSetGlobal = 2
+const currentSetGlobal = 1
 
 
 var geoJsonBoundary:any = {
@@ -630,12 +630,12 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
          <div
         className='md:max-w-xs  mt-1' 
             ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, bridge, active railway, etc.)</div>
-           {/* <div
+           <div
                className='md:max-w-xs flex flex-row  mt-1' 
             >
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 24 30" enable-background="new 0 0 24 24" className='text-white w-5 flex-none' stroke='currentColor' fill='currentColor'><path d="M7,11H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S7.6,11,7,11z"/><path d="M13,13c0.6,0,1-0.4,1-1s-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1H13z"/><path d="M19,11h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S19.6,11,19,11z"/></svg>
              : Pending Vote by Council
-            </div> */}
+            </div> 
          <div className='md:max-w-xs mt-0'>Only covers by-resolution locations voted on by City Council. See ordinance for more info.</div>
             <div className='flex-row  mt-1'>
             <a  target="_blank" rel='external' className='underline text-mejito' href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'>41.18 Ordinance</a>
