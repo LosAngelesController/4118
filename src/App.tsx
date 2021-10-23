@@ -17,7 +17,13 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY29tcmFkZWt5bGVyIiwiYSI6ImNrdjBkOXNyeDdscnoyc
  
 const locations = require('./features.json')
 
+
 //console.log(locations)
+
+function isStringOneThousandFt(stringInput: string) {
+  console.log('stringinput', stringInput)
+  return (stringInput.match(/Design/gi) || stringInput.match(/Navigation/gi))
+}
 
 var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex:any) => {
   var polygon = turf.polygon(eachFeature.geometry.coordinates);
@@ -27,7 +33,7 @@ var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex
 
  // console.log(eachFeatureIndex)
  // console.log(locations.features[eachFeatureIndex].properties.category)
-  if (locations.features[eachFeatureIndex].properties.category.match(/Design/gi) || locations.features[eachFeatureIndex].properties.category.match(/Navigation/gi)) {
+  if (isStringOneThousandFt(eachFeature.properties.category)) {
     buffered = turf.buffer(polygon, 1000, { units: 'feet' });
   //  console.log('1000ft', locations.features[eachFeatureIndex].properties.address)
   } else {
@@ -40,15 +46,12 @@ var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex
 
 //console.log(locationsBuffered)
 
+const currentSetGlobal = 1
 
 
 var geoJsonBoundary:any = {
   features: locationsBuffered,
   type: "FeatureCollection"
-}
-
-function isStringOneThousandFt(stringInput:string) {
-  return (stringInput.match(/Design/gi) || stringInput.match(/Navigation/gi))
 }
 
 function centroids(geojsonobj: any) {
@@ -164,7 +167,7 @@ function splitIntoYellowAndRed(geojsonobj: any) {
 
   geojsonobj.features.forEach((eachFeature: any, eachFeatureIndex: any) => {
 
-    if (isStringOneThousandFt(locations.features[eachFeatureIndex].properties.category)) {
+    if (isStringOneThousandFt(eachFeature.properties.category)) {
    
       eachFeature.properties['buffer'] = '1000'
       
@@ -181,9 +184,18 @@ function splitIntoYellowAndRed(geojsonobj: any) {
   return {thousands, fivehundreds, featuresTotal}
 }
 
+var boundsUpcoming = geoJsonBoundary.features.filter((eachFeature: any) => parseInt(eachFeature.properties.set,10) > currentSetGlobal)
+
+var boundsUpcomingGeojson: any =  {
+  features: boundsUpcoming,
+  type: "FeatureCollection"
+}
+
 const { thousands, fivehundreds, featuresTotal } = splitIntoYellowAndRed(locations)
 const {thousands : thousandsBuffer, fivehundreds : fivehundredsBuffer, featuresTotal: featuresTotalBuffer} = splitIntoYellowAndRed(geoJsonBoundary)
+const {thousands : thousandsBufferUpcoming, fivehundreds : fivehundredsBufferUpcoming, featuresTotal: featuresTotalBufferUpcoming} = splitIntoYellowAndRed(boundsUpcomingGeojson)
 
+console.log('thousandsBufferUpcoming', thousandsBufferUpcoming)
 
 
 const formulaForZoom = () => {
@@ -206,6 +218,12 @@ const generateString = (length:any) =>  {
     return result;
 }
 
+const urlParams = new URLSearchParams(window.location.search);
+const latParam = urlParams.get('lat');
+const lngParam = urlParams.get('lng');
+const zoomParam = urlParams.get('zoom');
+const debugParam = urlParams.get('debug');
+
 export default class App extends React.PureComponent {
   mapContainer: any;
   state: any;
@@ -214,13 +232,15 @@ export default class App extends React.PureComponent {
 constructor(props:any) {
 super(props);
 this.state = {
-lng: -118.41,
-  lat: 34,
+lng: lngParam || -118.41,
+  lat:  latParam || 34,
   initialWindowWidth: window.innerWidth,
   isPopupActive: false,
-  zoom: formulaForZoom(),
+  zoom: zoomParam || formulaForZoom(),
   featureSelected: {},
-  infoBoxShown: true
+  infoBoxShown: true,
+  currentSet: currentSetGlobal,
+  debugState: !!(debugParam)
 };
 this.mapContainer = React.createRef();
 }
@@ -362,7 +382,7 @@ map.addControl(
 
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
-  
+     
 map.on('move', () => {
 this.setState({
 lng: map.getCenter().lng.toFixed(4),
@@ -510,8 +530,68 @@ map.on('load', () => {
   });
 
 
+
   map.on('click', 'locationsThousands', event => this.popupfunc(event))
+
+
+
+  //dashed upcoming lines
+
+
+  map.addLayer({
+    //illegal zone solid
+    id: 'locationsThousandsUpcomingDashed',
+    type: 'line',
+    source: {
+      type: 'geojson',
+      data: thousandsBufferUpcoming
+    },
+    paint: {
+      "line-color": "#FEF08A",
+      "line-width":  ["interpolate",
+      ["exponential", 1],
+        ['zoom'],
+         6, 2,
+        10, 4,
+         15, 5
+   ],
+      'line-dasharray': [5, 5, 5, 5],
+      'line-offset': 3,
+      'line-opacity': 0.5
+    }
+  });
+ 
+
+
+  map.addLayer({
+    //illegal zone solid
+    id: 'locationsFiveHundredsUpcomingDashed',
+    type: 'line',
+    source: {
+      type: 'geojson',
+      data: fivehundredsBufferUpcoming
+    },
+    paint: {
+      "line-color": "#ffaaaa",
+      "line-width": ["interpolate",
+      ["exponential", 1],
+        ['zoom'],
+         6, 2,
+        10, 5,
+         15, 9
+   ],
+      'line-dasharray': [5, 5, 5, 5],
+      'line-offset': 3,
+      'line-opacity': ["interpolate",
+      ["exponential", 1],
+        ['zoom'],
+        10, 0,
+         13, 0.9
+   ],
+    }
+  });
 });
+    
      
      
 }
@@ -531,21 +611,33 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       className=' outsideTitle max-h-screen flex-col flex z-50'
     >
       <div className='titleBox max-h-screen mt-2 ml-2 md:mt-3 md:ml-3 break-words'>41.18 By-Resolution Areas</div>
- 
+      {
+        this.state.debugState && (
+          <div className="sidebar-debug mx-4 mt-2 mb-1 bg-gray-900 text-white">
+          Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
+          </div>
+     )
+      }
       <div className='flex flex-col md:flex-row w-auto md:auto md:flex-nowrap '>
       {this.state.infoBoxShown && (
           <div
-          className='flex-none font-sans mt-5 md:mt-3 space-y-2 p-2 banned-box-text ml-2 md:ml-3 bg-truegray-900 bg-opacity-90 md:bg-opacity-70 rounded-xl text-xs' style={{
+          className='flex-none font-sans mt-5 md:mt-3 p-2 banned-box-text ml-2 md:ml-3 bg-truegray-900 bg-opacity-90 md:bg-opacity-70 rounded-xl text-xs' style={{
           
-        }}> <div className='md:max-w-xs'>Banned: sit, lie, sleep, or store, use, maintain, or place personal property within:</div>
+        }}> <div className='md:max-w-xs  mt-1'>Banned: sit, lie, sleep, or store, use, maintain, or place personal property within:</div>
         <div
-        className='md:max-w-xs'
+        className='md:max-w-xs mt-1'
         ><span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-2 py-1 mr-2'>1000ft</span>Facility providing shelter, safe sleeping, safe parking, or serving as a homeless services navigation center</div>
          <div
-        className='md:max-w-xs' 
-          ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, bridge, active railway, etc.)</div>
-         <div className='md:max-w-xs'>Only covers by-resolution locations voted on by City Council. See ordinance for more info.</div>
-            <div className='flex-row'>
+        className='md:max-w-xs  mt-1' 
+            ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, bridge, active railway, etc.)</div>
+           <div
+               className='md:max-w-xs flex flex-row  mt-1' 
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 24 30" enable-background="new 0 0 24 24" className='text-white w-5 flex-none' stroke='currentColor' fill='currentColor'><path d="M7,11H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S7.6,11,7,11z"/><path d="M13,13c0.6,0,1-0.4,1-1s-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1H13z"/><path d="M19,11h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S19.6,11,19,11z"/></svg>
+             : Pending Vote by Council
+            </div> 
+         <div className='md:max-w-xs mt-0'>Only covers by-resolution locations voted on by City Council. See ordinance for more info.</div>
+            <div className='flex-row  mt-1'>
             <a  target="_blank" rel='external' className='underline text-mejito' href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'>41.18 Ordinance</a>
             <a  target="_blank" rel='author' className='underline text-mejito ml-4' href='https://mejiaforcontroller.com'>Mejia For Controller</a>
           </div>
@@ -610,20 +702,34 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
         <div className=' bg-truegray-800 my-2 px-2 py-1 rounded-sm ' key={eachFeatureIndex} onClick={(event) => {
           this.toggleList();
           checkStateOfSidebarAndUpdateOtherComponents();
+          this.setState((state: any, props: any) => {
+            return {
+              isPopupActive: true,
+              featureSelected: eachFeature
+            }
+          })
           this.flyToPoint(eachFeature.properties.centroid.geometry.coordinates[0], eachFeature.properties.centroid.geometry.coordinates[1], this.map, eachFeature, eachFeatureIndex,
             featuresTotalBuffer.features[eachFeatureIndex])
           }}>
           <p className='font-bold'>{eachFeature.properties.address}</p>
+       
           <p>{(eachFeature.properties.buffer === '1000' && (
             <span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-1 py-1 mr-1 font-xs'>1000ft</span>
           ))}
             {(eachFeature.properties.buffer === '500' && (
             <span className='font-mono h-1 w-1 bg-red-600 text-black rounded-full px-1 py-1 mr-1 font-xs'>500ft</span>
-          ))}
+            ))}
             {eachFeature.properties.category}<br>
             </br>
+            <p>{parseInt(eachFeature.properties.set, 10) > this.state.currentSet && (
+              "Pending "
+            )}
+              {parseInt(eachFeature.properties.set, 10) <= this.state.currentSet && (
+              "Enacted "
+            )}
+              {eachFeature.properties.date}</p>
             {/*eachFeature.properties.centroid.geometry.coordinates[0]} {eachFeature.properties.centroid.geometry.coordinates[1]*/}
-            <p className='pt-1'>View on Map</p>
+            <p className='pt-1 underline'>View on Map</p>
           </p>
        </div>
       ))
@@ -640,7 +746,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
 
     {this.state.isPopupActive && (
     <div className={`
-    text-xs absolute bottom-4 left-4 md:right-4 md:left-auto w-70 md:w-auto  text-white z-10 popupbox z-auto  rounded-sm bg-opacity-75`}>
+    text-xs absolute bottom-4 left-4 md:right-4 md:left-auto md:bottom-9 w-auto text-white z-10 popupbox z-auto  rounded-sm bg-opacity-75`}>
          
          <div className='' onClick={(event) => {
           this.setState((state: any, props: any) => {
@@ -653,15 +759,22 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
 </svg>
         </div>
-        <div className='bg-truegray-900  border-2 px-2 py-2  md:font-base'>
+        <div className='bg-truegray-900 border-2 px-2 py-2 md:font-base max-w-xxs md:w-max-sm md:w-auto'>
         <p className='font-bold'>{this.state.featureSelected.properties.address}</p>
-    {(this.state.featureSelected.properties.buffer === '1000' && (
+          {(this.state.featureSelected.properties.buffer === '1000' && (
             <span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-1 py-1 mr-1 font-xs md:font-base'>1000ft</span>
           ))}
             {(this.state.featureSelected.properties.buffer === '500' && (
             <span className='font-mono h-1 w-1 bg-red-600 text-black rounded-full px-1 py-1 mr-1 font-xs  md:font-base'>500ft</span>
           ))}
-    {this.state.featureSelected.properties.category}
+          {this.state.featureSelected.properties.category}
+          <p>{parseInt(this.state.featureSelected.properties.set, 10) > this.state.currentSet && (
+              "Pending "
+            )}
+              {parseInt(this.state.featureSelected.properties.set, 10) <= this.state.currentSet && (
+              "Enacted "
+            )}
+              {this.state.featureSelected.properties.date}</p>
         </div>
        
     </div>

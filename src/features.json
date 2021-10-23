@@ -3,8 +3,1250 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "8015 Van Nuys Boulevard",
+        "set": 2,
+        "category": "School",
+        "date": "10/27/2021",
+        "place_name": "Panorama High School"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.453125,
+              34.217889
+            ],
+            [
+              -118.453119,
+              34.216131
+            ],
+            [
+              -118.448905,
+              34.21615
+            ],
+            [
+              -118.448907,
+              34.217914
+            ],
+            [
+              -118.453125,
+              34.217889
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "0420ad1c0b8f53bc6c75902533a27b05"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Bellaire Pocket Park",
+        "category": "Public Park",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.412757,
+              34.215646
+            ],
+            [
+              -118.412783,
+              34.215632
+            ],
+            [
+              -118.412796,
+              34.215604
+            ],
+            [
+              -118.412801,
+              34.215582
+            ],
+            [
+              -118.412759,
+              34.2155
+            ],
+            [
+              -118.412742,
+              34.215463
+            ],
+            [
+              -118.412475,
+              34.21554
+            ],
+            [
+              -118.412265,
+              34.215627
+            ],
+            [
+              -118.412718,
+              34.215648
+            ],
+            [
+              -118.412757,
+              34.215646
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "06db099b479297ef745cf3d98fe6830b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Raymer “A Bridge Home,” 13160 Raymer Street",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.420694,
+              34.205888
+            ],
+            [
+              -118.420694,
+              34.205317
+            ],
+            [
+              -118.421022,
+              34.20531
+            ],
+            [
+              -118.421026,
+              34.205958
+            ],
+            [
+              -118.420694,
+              34.205888
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "0cd5974a4e7865e46425126d104e9d7f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Shirley Avenue and the 101 Freeway",
+        "category": "Tunnel",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.557956,
+              34.173975
+            ],
+            [
+              -118.557974,
+              34.173312
+            ],
+            [
+              -118.557894,
+              34.17331
+            ],
+            [
+              -118.557851,
+              34.173973
+            ],
+            [
+              -118.557956,
+              34.173975
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "0f5679b8426a5594d2bc9a29e1ba9863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Tampa Avenue and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.553662,
+              34.174012
+            ],
+            [
+              -118.55363,
+              34.173173
+            ],
+            [
+              -118.553324,
+              34.173156
+            ],
+            [
+              -118.553315,
+              34.174
+            ],
+            [
+              -118.553662,
+              34.174012
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "0fdd061cadd6449d407bbf764cfcbecd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "7134 North Jordan Avenue",
+        "category": "Designated Facility / Safe Parking",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.602776,
+              34.200484
+            ],
+            [
+              -118.602772,
+              34.200261
+            ],
+            [
+              -118.602251,
+              34.200252
+            ],
+            [
+              -118.602248,
+              34.200485
+            ],
+            [
+              -118.602776,
+              34.200484
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "12736a9fdae9a934ebd8f7c89242a7aa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Topanga Canyon Boulevard and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.606037,
+              34.171021
+            ],
+            [
+              -118.60606,
+              34.170575
+            ],
+            [
+              -118.605613,
+              34.170522
+            ],
+            [
+              -118.605608,
+              34.170948
+            ],
+            [
+              -118.606037,
+              34.171021
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "130e5607dbbe4194067697f1842c0f76"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Ventura Boulevard and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.611616,
+              34.169092
+            ],
+            [
+              -118.611676,
+              34.168791
+            ],
+            [
+              -118.612071,
+              34.168839
+            ],
+            [
+              -118.612604,
+              34.168854
+            ],
+            [
+              -118.613213,
+              34.168832
+            ],
+            [
+              -118.613582,
+              34.168858
+            ],
+            [
+              -118.613239,
+              34.169157
+            ],
+            [
+              -118.612777,
+              34.169164
+            ],
+            [
+              -118.612172,
+              34.169132
+            ],
+            [
+              -118.611616,
+              34.169092
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "149200fbc84d6a042adc55714cb3d691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "2175 John S. Gibson Boulevard",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.288924,
+              33.757604
+            ],
+            [
+              -118.289282,
+              33.757796
+            ],
+            [
+              -118.288979,
+              33.758167
+            ],
+            [
+              -118.288793,
+              33.758078
+            ],
+            [
+              -118.288584,
+              33.75797
+            ],
+            [
+              -118.288905,
+              33.757586
+            ],
+            [
+              -118.288924,
+              33.757604
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "18532ab2174af0e0d562d26e65442090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Reseda Boulevard and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.536194,
+              34.173802
+            ],
+            [
+              -118.536181,
+              34.172861
+            ],
+            [
+              -118.535842,
+              34.172848
+            ],
+            [
+              -118.535855,
+              34.173772
+            ],
+            [
+              -118.536194,
+              34.173802
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "1d3fa7cd2f9408375e379ff48cefd152"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Winnetka Avenue and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.570773,
+              34.172485
+            ],
+            [
+              -118.570762,
+              34.172082
+            ],
+            [
+              -118.571131,
+              34.171969
+            ],
+            [
+              -118.571116,
+              34.172369
+            ],
+            [
+              -118.570773,
+              34.172485
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "1d5094b3922ed3ebd7d1959634612fe5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Tiara Street Park",
+        "category": "Public Park",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.38255,
+              34.178434
+            ],
+            [
+              -118.382589,
+              34.178405
+            ],
+            [
+              -118.382592,
+              34.178365
+            ],
+            [
+              -118.382478,
+              34.178167
+            ],
+            [
+              -118.382209,
+              34.177732
+            ],
+            [
+              -118.382168,
+              34.177697
+            ],
+            [
+              -118.381893,
+              34.177697
+            ],
+            [
+              -118.381904,
+              34.178046
+            ],
+            [
+              -118.381418,
+              34.178056
+            ],
+            [
+              -118.381417,
+              34.178229
+            ],
+            [
+              -118.381378,
+              34.178264
+            ],
+            [
+              -118.38117,
+              34.17826
+            ],
+            [
+              -118.381171,
+              34.178439
+            ],
+            [
+              -118.38255,
+              34.178434
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "215acb251c82e4ba853fa3162334a6f5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Avenue San Luis and Del Valle Street (East of Crespi Street)",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.618348,
+              34.166548
+            ],
+            [
+              -118.618021,
+              34.165857
+            ],
+            [
+              -118.617967,
+              34.165874
+            ],
+            [
+              -118.61828,
+              34.16657
+            ],
+            [
+              -118.618348,
+              34.166548
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "276d128905cf36f6bdd0a498512cbd64"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Corbin Avenue and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.562368,
+              34.173723
+            ],
+            [
+              -118.562363,
+              34.173128
+            ],
+            [
+              -118.562087,
+              34.173168
+            ],
+            [
+              -118.562083,
+              34.173793
+            ],
+            [
+              -118.562368,
+              34.173723
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "28aeafa8ecdc6871fc68ae7f029e83e6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "7277 Valjean Avenue",
+        "category": "Designated Facility - Shelter",
+        "date": "10/27/2021",
+        "set": 2
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.486058,
+              34.203418
+            ],
+            [
+              -118.48604,
+              34.201364
+            ],
+            [
+              -118.486062,
+              34.201331
+            ],
+            [
+              -118.486112,
+              34.20131
+            ],
+            [
+              -118.487667,
+              34.201371
+            ],
+            [
+              -118.487667,
+              34.202912
+            ],
+            [
+              -118.48797,
+              34.202901
+            ],
+            [
+              -118.487972,
+              34.203414
+            ],
+            [
+              -118.486058,
+              34.203418
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "29f8711b493334643374e65fdacaef5a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "14333 Aetna Street",
+        "category": "Designated Facility - Shelter",
+        "set": 2,
+        "date": "10/27/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.44853,
+              34.180505
+            ],
+            [
+              -118.448548,
+              34.180496
+            ],
+            [
+              -118.448555,
+              34.18048
+            ],
+            [
+              -118.448556,
+              34.180232
+            ],
+            [
+              -118.448548,
+              34.18021
+            ],
+            [
+              -118.448521,
+              34.180197
+            ],
+            [
+              -118.448469,
+              34.180197
+            ],
+            [
+              -118.444483,
+              34.180204
+            ],
+            [
+              -118.444444,
+              34.18022
+            ],
+            [
+              -118.444424,
+              34.180245
+            ],
+            [
+              -118.444424,
+              34.180338
+            ],
+            [
+              -118.444417,
+              34.180588
+            ],
+            [
+              -118.44443,
+              34.180595
+            ],
+            [
+              -118.447006,
+              34.18054
+            ],
+            [
+              -118.447464,
+              34.180506
+            ],
+            [
+              -118.447527,
+              34.180468
+            ],
+            [
+              -118.448324,
+              34.180503
+            ],
+            [
+              -118.44853,
+              34.180505
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "2e63fac5f54479ca59ff28ff812cb22d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Etiwanda Avenue and the 101 Freeway",
+        "category": "Tunnel",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.531016,
+              34.171869
+            ],
+            [
+              -118.530928,
+              34.17101
+            ],
+            [
+              -118.530807,
+              34.171078
+            ],
+            [
+              -118.530873,
+              34.171875
+            ],
+            [
+              -118.531016,
+              34.171869
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "2f61347b666d766c7a5026d14e109f5a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Van Nuys Elementary - 6464 Sylmar Avenue, Van Nuys",
+        "category": "School",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.446506,
+              34.188634
+            ],
+            [
+              -118.446478,
+              34.187731
+            ],
+            [
+              -118.444453,
+              34.187705
+            ],
+            [
+              -118.444461,
+              34.188651
+            ],
+            [
+              -118.446506,
+              34.188634
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "3536e48db20079921a886268798a56b3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Jamie Beth Slaven Park",
+        "category": "Public Park",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.405414,
+              34.217882
+            ],
+            [
+              -118.405406,
+              34.214553
+            ],
+            [
+              -118.405558,
+              34.214562
+            ],
+            [
+              -118.405907,
+              34.214902
+            ],
+            [
+              -118.408088,
+              34.21489
+            ],
+            [
+              -118.408797,
+              34.217872
+            ],
+            [
+              -118.405414,
+              34.217882
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "3c02d4d2d46c383c4eee31aa5accba0c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "19036 Vanowen Street",
+        "category": "Designated Facility / Safe Parking",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.54786,
+              34.193753
+            ],
+            [
+              -118.547848,
+              34.192935
+            ],
+            [
+              -118.548299,
+              34.192933
+            ],
+            [
+              -118.548291,
+              34.193748
+            ],
+            [
+              -118.54786,
+              34.193753
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "4b3e32659574512d702a6f7333e6be6e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "9700 Woodman Avenue A-23",
+        "date": "10/27/2021",
+        "category": "School",
+        "set": 2
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.446908,
+              34.247887
+            ],
+            [
+              -118.447992,
+              34.24708
+            ],
+            [
+              -118.447997,
+              34.247039
+            ],
+            [
+              -118.447984,
+              34.247008
+            ],
+            [
+              -118.447909,
+              34.246893
+            ],
+            [
+              -118.447284,
+              34.245928
+            ],
+            [
+              -118.44684,
+              34.246111
+            ],
+            [
+              -118.446151,
+              34.246614
+            ],
+            [
+              -118.445865,
+              34.247022
+            ],
+            [
+              -118.446859,
+              34.247921
+            ],
+            [
+              -118.446908,
+              34.247887
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "4bcf9c585e1d1ac514d2dfcb0c744b9c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "6909 Sepulveda Boulevard",
+        "category": "Designated Facility - Shelter",
+        "date": "10/27/2021",
+        "set": 2
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.467299,
+              34.196101
+            ],
+            [
+              -118.467299,
+              34.195826
+            ],
+            [
+              -118.466354,
+              34.195832
+            ],
+            [
+              -118.466342,
+              34.19611
+            ],
+            [
+              -118.467299,
+              34.196101
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "4c533750c2f1080b6cbd432d69295c8a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Sendak Elementary School/New Horizons Charter Academy",
+        "category": "School",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.379197,
+              34.177741
+            ],
+            [
+              -118.379249,
+              34.177694
+            ],
+            [
+              -118.381892,
+              34.1777
+            ],
+            [
+              -118.381904,
+              34.178045
+            ],
+            [
+              -118.381415,
+              34.178056
+            ],
+            [
+              -118.381419,
+              34.178235
+            ],
+            [
+              -118.381384,
+              34.178267
+            ],
+            [
+              -118.381173,
+              34.17826
+            ],
+            [
+              -118.381172,
+              34.178442
+            ],
+            [
+              -118.380493,
+              34.178447
+            ],
+            [
+              -118.380414,
+              34.178418
+            ],
+            [
+              -118.379686,
+              34.178418
+            ],
+            [
+              -118.379615,
+              34.178454
+            ],
+            [
+              -118.379235,
+              34.178449
+            ],
+            [
+              -118.379198,
+              34.178419
+            ],
+            [
+              -118.379197,
+              34.177741
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "55ad2a2f2e70bf9313f6e1d744f743b6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "828 Eubank Avenue",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.254973,
+              33.781432
+            ],
+            [
+              -118.254931,
+              33.780862
+            ],
+            [
+              -118.254193,
+              33.780891
+            ],
+            [
+              -118.254229,
+              33.781447
+            ],
+            [
+              -118.254231,
+              33.78151
+            ],
+            [
+              -118.254925,
+              33.781467
+            ],
+            [
+              -118.254973,
+              33.781432
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "5bb028c5359aec96ca133bd2df8ad1ee"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Day Care Center",
+        "address": "14113 Roscoe Boulevard ",
+        "date": "10/27/2021",
+        "set": 2
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.440531,
+              34.221768
+            ],
+            [
+              -118.440533,
+              34.222216
+            ],
+            [
+              -118.441154,
+              34.222212
+            ],
+            [
+              -118.441156,
+              34.221745
+            ],
+            [
+              -118.440553,
+              34.221745
+            ],
+            [
+              -118.440531,
+              34.221768
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "5f6c723d6ef3f26c85f05a24c4f56657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Canoga Avenue and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.597596,
+              34.169672
+            ],
+            [
+              -118.597582,
+              34.169287
+            ],
+            [
+              -118.597292,
+              34.169239
+            ],
+            [
+              -118.597277,
+              34.169623
+            ],
+            [
+              -118.597596,
+              34.169672
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "5fdd28d3e1b83853a09c7522d1269e66"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "8401 Winnetka Avenue",
+        "category": "Public Park",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.573259,
+              34.224545
+            ],
+            [
+              -118.573216,
+              34.221425
+            ],
+            [
+              -118.571188,
+              34.221411
+            ],
+            [
+              -118.571214,
+              34.224538
+            ],
+            [
+              -118.573259,
+              34.224545
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "64e8cec02bf7b5dd8599fc7e284cd750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "address": "Alexandria Tiny Homes Village, 6099 Laurel Canyon Boulevard",
-        "category": "Designated Facility – Shelter"
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
@@ -57,13 +1299,158 @@
         ],
         "type": "Polygon"
       },
-      "id": "00d1afcbc9ca39f158b29ee97de58894"
+      "id": "669949705e9c078e85b8e75d95e9dded"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Yolanda Avenue and the 101 Freeway",
+        "category": "Tunnel",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.54093,
+              34.17375
+            ],
+            [
+              -118.540913,
+              34.173098
+            ],
+            [
+              -118.540735,
+              34.173083
+            ],
+            [
+              -118.540762,
+              34.173736
+            ],
+            [
+              -118.54093,
+              34.17375
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "688d305ef836fbfaa28dbc46125e2db8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Victory Vineland Recreation Center",
+        "category": "Public Park",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.37324,
+              34.189422
+            ],
+            [
+              -118.373225,
+              34.186838
+            ],
+            [
+              -118.372248,
+              34.186841
+            ],
+            [
+              -118.37217,
+              34.186932
+            ],
+            [
+              -118.372185,
+              34.187984
+            ],
+            [
+              -118.372229,
+              34.188092
+            ],
+            [
+              -118.372252,
+              34.189352
+            ],
+            [
+              -118.370513,
+              34.189345
+            ],
+            [
+              -118.370503,
+              34.188474
+            ],
+            [
+              -118.370441,
+              34.188472
+            ],
+            [
+              -118.370444,
+              34.189338
+            ],
+            [
+              -118.370469,
+              34.189432
+            ],
+            [
+              -118.37324,
+              34.189422
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "70b503060347c13e09a7c47d86728b14"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Fallbrook Avenue and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.623457,
+              34.164902
+            ],
+            [
+              -118.623179,
+              34.164971
+            ],
+            [
+              -118.623172,
+              34.164232
+            ],
+            [
+              -118.62344,
+              34.164153
+            ],
+            [
+              -118.623457,
+              34.164902
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "728f57d8ef54ba294cd80c4754e498d5"
     },
     {
       "type": "Feature",
       "properties": {
         "address": "Van Nuys “A Bridge Home,” 7702 Van Nuys Boulevard",
-        "category": "Designated Facility – Shelter"
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
@@ -112,52 +1499,52 @@
         ],
         "type": "Polygon"
       },
-      "id": "03e04482f0f15db98d2cec8461b30db1"
+      "id": "78bb679ac25a25655250546ddd6ffd17"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "19600 Hamilton Avenue",
-        "category": "Designated Facility – Shelter"
+        "address": "525 North Beacon Street",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.285959,
-              33.854235
+              -118.280535,
+              33.746097
             ],
             [
-              -118.285949,
-              33.853213
+              -118.280946,
+              33.746084
             ],
             [
-              -118.285341,
-              33.853206
+              -118.280949,
+              33.748106
             ],
             [
-              -118.28531,
-              33.853448
+              -118.280535,
+              33.748104
             ],
             [
-              -118.285305,
-              33.854239
-            ],
-            [
-              -118.285959,
-              33.854235
+              -118.280535,
+              33.746097
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "040ab736b55a33229bdd4d2df09f5f18"
+      "id": "7d3e2ef973beddbbdb5d5bc117db2a79"
     },
     {
       "type": "Feature",
       "properties": {
         "address": "Whitsett Sports Complex/Valley Plaza Park – 6980 Whitsett Avenue; 12240 Archwood Street; 6715 Laurelgove Avenue; 12311 Vanowen Street; North Hollywood",
-        "category": "Public Park"
+        "category": "Public Park",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
@@ -294,438 +1681,854 @@
         ],
         "type": "Polygon"
       },
-      "id": "1ecb552c794091d2b29630c52e3f6303"
+      "id": "7e5e45e0202c9f8a2e3a95d876eef0de"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "828 Eubank Avenue",
-        "category": "Designated Facility – Shelter"
+        "address": "2316 E Imperial Highway",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.254973,
-              33.781432
+              -118.233098,
+              33.928946
             ],
             [
-              -118.254931,
-              33.780862
+              -118.233199,
+              33.928943
             ],
             [
-              -118.254193,
-              33.780891
+              -118.23326,
+              33.928904
             ],
             [
-              -118.254229,
-              33.781447
+              -118.233286,
+              33.928846
             ],
             [
-              -118.254231,
-              33.78151
+              -118.233281,
+              33.928785
             ],
             [
-              -118.254925,
-              33.781467
+              -118.233248,
+              33.928722
             ],
             [
-              -118.254973,
-              33.781432
+              -118.233163,
+              33.928649
+            ],
+            [
+              -118.231151,
+              33.92872
+            ],
+            [
+              -118.23111,
+              33.9286
+            ],
+            [
+              -118.230618,
+              33.928672
+            ],
+            [
+              -118.230611,
+              33.928623
+            ],
+            [
+              -118.230334,
+              33.928667
+            ],
+            [
+              -118.230354,
+              33.92876
+            ],
+            [
+              -118.23037,
+              33.928799
+            ],
+            [
+              -118.230393,
+              33.928817
+            ],
+            [
+              -118.230429,
+              33.928838
+            ],
+            [
+              -118.230459,
+              33.928844
+            ],
+            [
+              -118.230759,
+              33.928856
+            ],
+            [
+              -118.231394,
+              33.928879
+            ],
+            [
+              -118.233098,
+              33.928946
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "2301348946b1ad9849191d8b9a855c66"
+      "id": "863182fc2dcb512a7cef1d93ac178041"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "Avenue San Luis and Del Valle Street (East of Crespi Street)",
-        "category": "Underpass"
+        "address": "Wilbur Avenue and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.618348,
-              34.166548
+              -118.544896,
+              34.173773
             ],
             [
-              -118.618021,
-              34.165857
+              -118.54489,
+              34.173316
             ],
             [
-              -118.617967,
-              34.165874
+              -118.544875,
+              34.173122
             ],
             [
-              -118.61828,
-              34.16657
+              -118.54457,
+              34.173097
             ],
             [
-              -118.618348,
-              34.166548
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "24140dc766f2974f13b652bba06a804e"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "De Soto Avenue and the 101 Freeway",
-        "category": "Underpass"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.588352,
-              34.168271
+              -118.544549,
+              34.173453
             ],
             [
-              -118.588331,
-              34.167885
-            ],
-            [
-              -118.588024,
-              34.16784
-            ],
-            [
-              -118.588014,
-              34.168232
-            ],
-            [
-              -118.588352,
-              34.168271
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "2457c041ea1eed60af87f2cb76d9cafb"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Van Nuys Elementary - 6464 Sylmar Avenue, Van Nuys",
-        "category": "School"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.446506,
-              34.188634
-            ],
-            [
-              -118.446478,
-              34.187731
-            ],
-            [
-              -118.444453,
-              34.187705
-            ],
-            [
-              -118.444461,
-              34.188651
-            ],
-            [
-              -118.446506,
-              34.188634
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "28c92bb0340fcbb63cd5ae0284260d29"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "525 North Beacon Street",
-        "category": "Designated Facility – Shelter"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.280535,
-              33.746097
-            ],
-            [
-              -118.280946,
-              33.746084
-            ],
-            [
-              -118.280949,
-              33.748106
-            ],
-            [
-              -118.280535,
-              33.748104
-            ],
-            [
-              -118.280535,
-              33.746097
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "2d3dbba9d5b44e36a08bddba3156c6e9"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Etiwanda Avenue and the 101 Freeway",
-        "category": "Tunnel"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.531016,
-              34.171869
-            ],
-            [
-              -118.530928,
-              34.17101
-            ],
-            [
-              -118.530807,
-              34.171078
-            ],
-            [
-              -118.530873,
-              34.171875
-            ],
-            [
-              -118.531016,
-              34.171869
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "35ffabe1e1b47ca3523e6134d4a78eac"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Whitsett West Tiny Home Village, 12550 Saticoy Street South",
-        "category": "Designated Facility – Shelter"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.40692,
-              34.207957
-            ],
-            [
-              -118.406982,
-              34.207753
-            ],
-            [
-              -118.406833,
-              34.207388
-            ],
-            [
-              -118.406734,
-              34.207105
-            ],
-            [
-              -118.406602,
-              34.206526
-            ],
-            [
-              -118.406363,
-              34.205357
-            ],
-            [
-              -118.406297,
-              34.205128
-            ],
-            [
-              -118.406269,
-              34.205139
-            ],
-            [
-              -118.406293,
-              34.205503
-            ],
-            [
-              -118.40624,
-              34.205854
-            ],
-            [
-              -118.406219,
-              34.205995
-            ],
-            [
-              -118.406701,
-              34.208059
-            ],
-            [
-              -118.40692,
-              34.207957
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "36ad88a42bdff438e33c3a7788db96ce"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Yolanda Avenue and the 101 Freeway",
-        "category": "Tunnel"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.54093,
+              -118.544573,
               34.17375
             ],
             [
-              -118.540913,
-              34.173098
-            ],
-            [
-              -118.540735,
-              34.173083
-            ],
-            [
-              -118.540762,
-              34.173736
-            ],
-            [
-              -118.54093,
-              34.17375
+              -118.544896,
+              34.173773
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "3c22ba5b16733717620dfd2a46a954ab"
+      "id": "8ac5c17f7df450f2a0d09409636eb1fd"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "Lindley Avenue and the 101 Freeway",
-        "category": "Underpass"
+        "address": "7935 Vineland Avenue",
+        "place_name": "Sun Valley Branch Library",
+        "category": "Library",
+        "date": "10/27/2021",
+        "set": 2
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.52744,
-              34.171496
+              -118.370486,
+              34.215212
             ],
             [
-              -118.527433,
-              34.170892
+              -118.371437,
+              34.21521
             ],
             [
-              -118.527121,
-              34.170898
+              -118.371442,
+              34.214253
             ],
             [
-              -118.52717,
-              34.1715
+              -118.370483,
+              34.214249
             ],
             [
-              -118.52744,
-              34.171496
+              -118.370486,
+              34.215212
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "3cf49a6fea43d7f4f8cf10ba0540717b"
+      "id": "8aeb12b297256c562212ee11f73f5c30"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "Burbank Boulevard and the 101 Freeway",
-        "category": "Underpass"
+        "address": "San Fernando Road from Sunland Boulevard to Hollywood Way",
+        "category": "Active Railway   ",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.53221,
-              34.17225
+              -118.347478,
+              34.205103
             ],
             [
-              -118.532784,
-              34.171952
+              -118.347958,
+              34.204525
             ],
             [
-              -118.532625,
-              34.171751
+              -118.350006,
+              34.205934
             ],
             [
-              -118.531873,
-              34.172097
+              -118.369358,
+              34.21916
             ],
             [
-              -118.53221,
-              34.17225
+              -118.368856,
+              34.219619
+            ],
+            [
+              -118.348374,
+              34.20568
+            ],
+            [
+              -118.347478,
+              34.205103
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "43e8162d3efb19bed8cb7a27dbd74089"
+      "id": "8b3dd8af24a8abca6f21aa29774799d5"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "8401 Winnetka Avenue",
-        "category": "Public Park"
+        "address": "Tujunga Avenue between Sherman Way and Vanowen Street",
+        "category": "Active Railway",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.573259,
-              34.224545
+              -118.379278,
+              34.201366
             ],
             [
-              -118.573216,
-              34.221425
+              -118.379215,
+              34.196571
             ],
             [
-              -118.571188,
-              34.221411
+              -118.379233,
+              34.194035
             ],
             [
-              -118.571214,
-              34.224538
+              -118.378879,
+              34.19402
             ],
             [
-              -118.573259,
-              34.224545
+              -118.378904,
+              34.201362
+            ],
+            [
+              -118.379278,
+              34.201366
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "4c3ff605bf1340225f412b75337eb9c6"
+      "id": "8ec22d54b3074c6d056ed4120f9924a2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Strathern Park West",
+        "category": "Public Park",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.408888,
+              34.208121
+            ],
+            [
+              -118.408849,
+              34.207882
+            ],
+            [
+              -118.408614,
+              34.2078
+            ],
+            [
+              -118.408516,
+              34.207504
+            ],
+            [
+              -118.408448,
+              34.207265
+            ],
+            [
+              -118.406106,
+              34.20833
+            ],
+            [
+              -118.406167,
+              34.208524
+            ],
+            [
+              -118.406808,
+              34.208452
+            ],
+            [
+              -118.407749,
+              34.212066
+            ],
+            [
+              -118.408759,
+              34.215621
+            ],
+            [
+              -118.409634,
+              34.215646
+            ],
+            [
+              -118.408895,
+              34.214234
+            ],
+            [
+              -118.408667,
+              34.213842
+            ],
+            [
+              -118.408599,
+              34.213567
+            ],
+            [
+              -118.408437,
+              34.213003
+            ],
+            [
+              -118.40827,
+              34.212381
+            ],
+            [
+              -118.408074,
+              34.211589
+            ],
+            [
+              -118.407871,
+              34.210814
+            ],
+            [
+              -118.407655,
+              34.210014
+            ],
+            [
+              -118.407227,
+              34.20842
+            ],
+            [
+              -118.408466,
+              34.208217
+            ],
+            [
+              -118.408888,
+              34.208121
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "9105f7abee3bb4b476fea3a16ebc4e1a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "11839 Sherman Way – Designated Facility",
+        "category": "Navigation Center",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.392067,
+              34.201799
+            ],
+            [
+              -118.392064,
+              34.201597
+            ],
+            [
+              -118.391806,
+              34.201347
+            ],
+            [
+              -118.391187,
+              34.201348
+            ],
+            [
+              -118.391179,
+              34.201373
+            ],
+            [
+              -118.391634,
+              34.201799
+            ],
+            [
+              -118.392067,
+              34.201799
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "94c31aff3d41cb7bb721e2c8277249c4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "7843 Lankershim Boulevard",
+        "place_name": "LA Family Housing",
+        "date": "10/27/2021",
+        "category": "Designated Facility - Shelter",
+        "set": 2
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.388824,
+              34.213861
+            ],
+            [
+              -118.388828,
+              34.213293
+            ],
+            [
+              -118.387922,
+              34.213269
+            ],
+            [
+              -118.387917,
+              34.213865
+            ],
+            [
+              -118.388824,
+              34.213861
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "96fa553d96b9dded921387ada8cc67d9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "18606 Normandie Avenue",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.299103,
+              33.861904
+            ],
+            [
+              -118.299097,
+              33.861496
+            ],
+            [
+              -118.298711,
+              33.861487
+            ],
+            [
+              -118.298703,
+              33.86146
+            ],
+            [
+              -118.298635,
+              33.861454
+            ],
+            [
+              -118.29863,
+              33.861944
+            ],
+            [
+              -118.299103,
+              33.861904
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "985571756f214bfdfec3727ef97a5d06"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "7631 Topanga Canyon Boulevard",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.606966,
+              34.209203
+            ],
+            [
+              -118.606961,
+              34.208408
+            ],
+            [
+              -118.60614,
+              34.20841
+            ],
+            [
+              -118.606139,
+              34.2092
+            ],
+            [
+              -118.606966,
+              34.209203
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "9b80e0f8039486643624156343cd9967"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Moorpark St between Elmer Avenue and Bellflower Ave",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.376873,
+              34.150504
+            ],
+            [
+              -118.376866,
+              34.150298
+            ],
+            [
+              -118.373444,
+              34.150296
+            ],
+            [
+              -118.373472,
+              34.150528
+            ],
+            [
+              -118.376873,
+              34.150504
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "9d8bd46f7f06e70d065c712b61cd4349"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "525 South Harbor Boulevard",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.28004,
+              33.738832
+            ],
+            [
+              -118.280572,
+              33.738824
+            ],
+            [
+              -118.280568,
+              33.739235
+            ],
+            [
+              -118.280633,
+              33.739234
+            ],
+            [
+              -118.280629,
+              33.740349
+            ],
+            [
+              -118.280314,
+              33.740388
+            ],
+            [
+              -118.279968,
+              33.740388
+            ],
+            [
+              -118.279936,
+              33.740375
+            ],
+            [
+              -118.279927,
+              33.740346
+            ],
+            [
+              -118.279968,
+              33.74006
+            ],
+            [
+              -118.279998,
+              33.739869
+            ],
+            [
+              -118.280022,
+              33.739489
+            ],
+            [
+              -118.280028,
+              33.738874
+            ],
+            [
+              -118.28004,
+              33.738832
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "9dc2d883038ac397a5c2bf555f63bb09"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "8501 Arleta Avenue",
+        "category": "School",
+        "date": "10/27/2021",
+        "set": 2
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.405408,
+              34.221802
+            ],
+            [
+              -118.405459,
+              34.22203
+            ],
+            [
+              -118.405562,
+              34.222319
+            ],
+            [
+              -118.405792,
+              34.222718
+            ],
+            [
+              -118.406097,
+              34.223084
+            ],
+            [
+              -118.406507,
+              34.223462
+            ],
+            [
+              -118.407214,
+              34.224121
+            ],
+            [
+              -118.407741,
+              34.224524
+            ],
+            [
+              -118.40779,
+              34.224556
+            ],
+            [
+              -118.407847,
+              34.224599
+            ],
+            [
+              -118.408735,
+              34.225131
+            ],
+            [
+              -118.408817,
+              34.225192
+            ],
+            [
+              -118.40905,
+              34.225368
+            ],
+            [
+              -118.409304,
+              34.225592
+            ],
+            [
+              -118.409788,
+              34.226059
+            ],
+            [
+              -118.410211,
+              34.226462
+            ],
+            [
+              -118.410401,
+              34.226559
+            ],
+            [
+              -118.410464,
+              34.226567
+            ],
+            [
+              -118.41051,
+              34.22654
+            ],
+            [
+              -118.410557,
+              34.226433
+            ],
+            [
+              -118.410596,
+              34.226121
+            ],
+            [
+              -118.410619,
+              34.22572
+            ],
+            [
+              -118.410625,
+              34.22544
+            ],
+            [
+              -118.410595,
+              34.225123
+            ],
+            [
+              -118.410575,
+              34.224886
+            ],
+            [
+              -118.410497,
+              34.224408
+            ],
+            [
+              -118.410351,
+              34.223866
+            ],
+            [
+              -118.410136,
+              34.223152
+            ],
+            [
+              -118.409995,
+              34.22264
+            ],
+            [
+              -118.409818,
+              34.222689
+            ],
+            [
+              -118.409571,
+              34.222731
+            ],
+            [
+              -118.409483,
+              34.222745
+            ],
+            [
+              -118.409375,
+              34.222738
+            ],
+            [
+              -118.409334,
+              34.222727
+            ],
+            [
+              -118.409167,
+              34.222679
+            ],
+            [
+              -118.409097,
+              34.222637
+            ],
+            [
+              -118.408999,
+              34.222576
+            ],
+            [
+              -118.408882,
+              34.222431
+            ],
+            [
+              -118.40884,
+              34.22229
+            ],
+            [
+              -118.408848,
+              34.222175
+            ],
+            [
+              -118.408862,
+              34.222063
+            ],
+            [
+              -118.408965,
+              34.221898
+            ],
+            [
+              -118.409044,
+              34.221838
+            ],
+            [
+              -118.405408,
+              34.221802
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "a483d05720f2c697e384f75b59e13afc"
     },
     {
       "type": "Feature",
       "properties": {
         "category": "Designated Facility – Shelter",
-        "address": "7621 Canoga Avenue"
+        "address": "7621 Canoga Avenue",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
@@ -754,13 +2557,524 @@
         ],
         "type": "Polygon"
       },
-      "id": "4da2111c7bd5bbb2dec2fea4c9b7e632"
+      "id": "a57d6372071973f7a568cd5d02c2f53f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Lankershim Elementary – 5250 Bakman Avenue, North Hollywood",
+        "category": "School",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.376183,
+              34.16502
+            ],
+            [
+              -118.376186,
+              34.165566
+            ],
+            [
+              -118.375859,
+              34.165584
+            ],
+            [
+              -118.375864,
+              34.16584
+            ],
+            [
+              -118.376344,
+              34.16665
+            ],
+            [
+              -118.376851,
+              34.166648
+            ],
+            [
+              -118.376844,
+              34.166946
+            ],
+            [
+              -118.377279,
+              34.166942
+            ],
+            [
+              -118.377303,
+              34.165021
+            ],
+            [
+              -118.376183,
+              34.16502
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "a7afb6a2f367a836328e78080401a4b5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Oakdale Avenue and the 101 Freeway",
+        "category": "Tunnel",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.56606,
+              34.17291
+            ],
+            [
+              -118.566064,
+              34.172795
+            ],
+            [
+              -118.565982,
+              34.172801
+            ],
+            [
+              -118.566056,
+              34.173411
+            ],
+            [
+              -118.566127,
+              34.173403
+            ],
+            [
+              -118.56606,
+              34.17291
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "a879a73822b7c3e9592f829853ee9005"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "18616 West Topham Street",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.538068,
+              34.180669
+            ],
+            [
+              -118.538056,
+              34.180477
+            ],
+            [
+              -118.538471,
+              34.180501
+            ],
+            [
+              -118.539828,
+              34.180507
+            ],
+            [
+              -118.53982,
+              34.180665
+            ],
+            [
+              -118.538068,
+              34.180669
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "aa9a2bf5914edd6f6aa1fb0ed1a3f164"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "8647 Sepulveda Boulevard",
+        "set": 2,
+        "date": "10/27/2021",
+        "category": "Designated Facility - Shelter"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.468707,
+              34.227827
+            ],
+            [
+              -118.467829,
+              34.227819
+            ],
+            [
+              -118.467826,
+              34.227562
+            ],
+            [
+              -118.468707,
+              34.227553
+            ],
+            [
+              -118.468707,
+              34.227827
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "afdc3a57b884333b0ed2b96c597dcd11"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Burbank Boulevard and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.53221,
+              34.17225
+            ],
+            [
+              -118.532784,
+              34.171952
+            ],
+            [
+              -118.532625,
+              34.171751
+            ],
+            [
+              -118.531873,
+              34.172097
+            ],
+            [
+              -118.53221,
+              34.17225
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "b0d70e776eae32dbe18ef3ba4188639c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "122 West 8th Street",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.281285,
+              33.737316
+            ],
+            [
+              -118.281287,
+              33.737012
+            ],
+            [
+              -118.280556,
+              33.737009
+            ],
+            [
+              -118.28056,
+              33.737313
+            ],
+            [
+              -118.281285,
+              33.737316
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "b70c2e7341ca418e3b6e78bd0e5c3a79"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Shoup Avenue and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.614356,
+              34.168693
+            ],
+            [
+              -118.61456,
+              34.168638
+            ],
+            [
+              -118.614333,
+              34.168172
+            ],
+            [
+              -118.613991,
+              34.167336
+            ],
+            [
+              -118.613786,
+              34.167356
+            ],
+            [
+              -118.614356,
+              34.168693
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "bcd74ec5c5f75a0d813c3a67af543a4f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Chandler Tiny Homes, 11471 Chandler Boulevard ",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.381223,
+              34.168452
+            ],
+            [
+              -118.381215,
+              34.168173
+            ],
+            [
+              -118.38144,
+              34.168191
+            ],
+            [
+              -118.381597,
+              34.168222
+            ],
+            [
+              -118.381798,
+              34.168282
+            ],
+            [
+              -118.381967,
+              34.168332
+            ],
+            [
+              -118.382082,
+              34.168367
+            ],
+            [
+              -118.382377,
+              34.168417
+            ],
+            [
+              -118.382605,
+              34.168443
+            ],
+            [
+              -118.382688,
+              34.168447
+            ],
+            [
+              -118.382686,
+              34.168461
+            ],
+            [
+              -118.381223,
+              34.168452
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "c20669105629f943c7e35f466229617d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "14041 Chase Street",
+        "place_name": "Chase Street Elementary",
+        "category": "School",
+        "set": 2,
+        "date": "10/27/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.441213,
+              34.226544
+            ],
+            [
+              -118.440646,
+              34.225768
+            ],
+            [
+              -118.440501,
+              34.22551
+            ],
+            [
+              -118.440421,
+              34.225508
+            ],
+            [
+              -118.439146,
+              34.225865
+            ],
+            [
+              -118.438225,
+              34.226201
+            ],
+            [
+              -118.438241,
+              34.226254
+            ],
+            [
+              -118.438345,
+              34.226443
+            ],
+            [
+              -118.438553,
+              34.226787
+            ],
+            [
+              -118.438723,
+              34.227025
+            ],
+            [
+              -118.43922,
+              34.227639
+            ],
+            [
+              -118.439839,
+              34.227302
+            ],
+            [
+              -118.439945,
+              34.227257
+            ],
+            [
+              -118.439904,
+              34.227206
+            ],
+            [
+              -118.441213,
+              34.226544
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "c330da017fff146d8529d81de59a6d05"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "set": 2,
+        "address": "11530 Strathern Street",
+        "category": "School",
+        "date": "10/27/2021",
+        "place_name": "Arminta Elementary School"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.383374,
+              34.215636
+            ],
+            [
+              -118.383384,
+              34.213946
+            ],
+            [
+              -118.381858,
+              34.213953
+            ],
+            [
+              -118.381857,
+              34.215635
+            ],
+            [
+              -118.383374,
+              34.215636
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "cb328c17d16cd5b56bebbb1c0cafb700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Designated Facility – Shelter",
+        "address": "19040 Vanowen Street",
+        "set": "1",
+        "date": "10/20/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.54906,
+              34.193735
+            ],
+            [
+              -118.549049,
+              34.193061
+            ],
+            [
+              -118.548294,
+              34.193058
+            ],
+            [
+              -118.548294,
+              34.193736
+            ],
+            [
+              -118.54906,
+              34.193735
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "ce12a721971065c066bf34e6b72b8d39"
     },
     {
       "type": "Feature",
       "properties": {
         "address": "1221 Figueroa Place",
-        "category": "Designated Facility – Shelter"
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
@@ -877,48 +3191,15 @@
         ],
         "type": "Polygon"
       },
-      "id": "522c5d5c8c94205e7faac7a68fb34774"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Fallbrook Avenue and the 101 Freeway",
-        "category": "Underpass"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.623457,
-              34.164902
-            ],
-            [
-              -118.623179,
-              34.164971
-            ],
-            [
-              -118.623172,
-              34.164232
-            ],
-            [
-              -118.62344,
-              34.164153
-            ],
-            [
-              -118.623457,
-              34.164902
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "53ff6b364c3129d305c60a4680706081"
+      "id": "d1c1c94fdaf75e3565179e4e13542896"
     },
     {
       "type": "Feature",
       "properties": {
         "address": "Lankershim Boulevard between Hortense Street and Riverside Drive",
-        "category": "Underpass"
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
@@ -947,553 +3228,53 @@
         ],
         "type": "Polygon"
       },
-      "id": "55bfcfcaf24affb812697c028d342095"
+      "id": "d1dcd2c71ca20e1bd116c2e8bed48d6b"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "Moorpark St between Elmer Avenue and Bellflower Ave",
-        "category": "Underpass"
+        "address": "15040 Roscoe Boulevard",
+        "category": "School",
+        "set": 2,
+        "date": "10/27/2021",
+        "place_name": "Vista Middle School"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.376873,
-              34.150504
+              -118.461781,
+              34.221349
             ],
             [
-              -118.376866,
-              34.150298
+              -118.461782,
+              34.218808
             ],
             [
-              -118.373444,
-              34.150296
+              -118.459476,
+              34.218814
             ],
             [
-              -118.373472,
-              34.150528
+              -118.45992,
+              34.221359
             ],
             [
-              -118.376873,
-              34.150504
+              -118.461781,
+              34.221349
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "56978e28c96f085c556666c3d5548bba"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Sendak Elementary School/New Horizons Charter Academy",
-        "category": "School"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.379197,
-              34.177741
-            ],
-            [
-              -118.379249,
-              34.177694
-            ],
-            [
-              -118.381892,
-              34.1777
-            ],
-            [
-              -118.381904,
-              34.178045
-            ],
-            [
-              -118.381415,
-              34.178056
-            ],
-            [
-              -118.381419,
-              34.178235
-            ],
-            [
-              -118.381384,
-              34.178267
-            ],
-            [
-              -118.381173,
-              34.17826
-            ],
-            [
-              -118.381172,
-              34.178442
-            ],
-            [
-              -118.380493,
-              34.178447
-            ],
-            [
-              -118.380414,
-              34.178418
-            ],
-            [
-              -118.379686,
-              34.178418
-            ],
-            [
-              -118.379615,
-              34.178454
-            ],
-            [
-              -118.379235,
-              34.178449
-            ],
-            [
-              -118.379198,
-              34.178419
-            ],
-            [
-              -118.379197,
-              34.177741
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "5fa0199910c55eecffda64fd33680423"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Shoup Avenue and the 101 Freeway",
-        "category": "Underpass"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.614356,
-              34.168693
-            ],
-            [
-              -118.61456,
-              34.168638
-            ],
-            [
-              -118.614333,
-              34.168172
-            ],
-            [
-              -118.613991,
-              34.167336
-            ],
-            [
-              -118.613786,
-              34.167356
-            ],
-            [
-              -118.614356,
-              34.168693
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "61a4493ced6bdc5e2a852ec77fc75fb8"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "19036 Vanowen Street",
-        "category": "Designated Facility / Safe Parking"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.54786,
-              34.193753
-            ],
-            [
-              -118.547848,
-              34.192935
-            ],
-            [
-              -118.548299,
-              34.192933
-            ],
-            [
-              -118.548291,
-              34.193748
-            ],
-            [
-              -118.54786,
-              34.193753
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "6477e36241bd326c088656ce3952a016"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "7631 Topanga Canyon Boulevard",
-        "category": "Designated Facility – Shelter"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.606966,
-              34.209203
-            ],
-            [
-              -118.606961,
-              34.208408
-            ],
-            [
-              -118.60614,
-              34.20841
-            ],
-            [
-              -118.606139,
-              34.2092
-            ],
-            [
-              -118.606966,
-              34.209203
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "6e2578cb25c171703d6185468d285a77"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "525 South Harbor Boulevard",
-        "category": "Designated Facility – Shelter"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.28004,
-              33.738832
-            ],
-            [
-              -118.280572,
-              33.738824
-            ],
-            [
-              -118.280568,
-              33.739235
-            ],
-            [
-              -118.280633,
-              33.739234
-            ],
-            [
-              -118.280629,
-              33.740349
-            ],
-            [
-              -118.280314,
-              33.740388
-            ],
-            [
-              -118.279968,
-              33.740388
-            ],
-            [
-              -118.279936,
-              33.740375
-            ],
-            [
-              -118.279927,
-              33.740346
-            ],
-            [
-              -118.279968,
-              33.74006
-            ],
-            [
-              -118.279998,
-              33.739869
-            ],
-            [
-              -118.280022,
-              33.739489
-            ],
-            [
-              -118.280028,
-              33.738874
-            ],
-            [
-              -118.28004,
-              33.738832
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "718f35c1049e04526eb3f1568bbb2c75"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Designated Facility – Shelter",
-        "address": "19040 Vanowen Street"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.54906,
-              34.193735
-            ],
-            [
-              -118.549049,
-              34.193061
-            ],
-            [
-              -118.548294,
-              34.193058
-            ],
-            [
-              -118.548294,
-              34.193736
-            ],
-            [
-              -118.54906,
-              34.193735
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "73a5839f5c42aa12a758a272ec64ec4f"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Winnetka Avenue and the 101 Freeway",
-        "category": "Underpass"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.570773,
-              34.172485
-            ],
-            [
-              -118.570762,
-              34.172082
-            ],
-            [
-              -118.571131,
-              34.171969
-            ],
-            [
-              -118.571116,
-              34.172369
-            ],
-            [
-              -118.570773,
-              34.172485
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "75b39f0f68a80c7caf4fc6a16bc17be9"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "7134 North Jordan Avenue",
-        "category": "Designated Facility / Safe Parking"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.602776,
-              34.200484
-            ],
-            [
-              -118.602772,
-              34.200261
-            ],
-            [
-              -118.602251,
-              34.200252
-            ],
-            [
-              -118.602248,
-              34.200485
-            ],
-            [
-              -118.602776,
-              34.200484
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "80f65d09b55f64d77b5d33a2700db4a0"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Chandler Tiny Homes, 11471 Chandler Boulevard ",
-        "category": "Designated Facility – Shelter"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.381223,
-              34.168452
-            ],
-            [
-              -118.381215,
-              34.168173
-            ],
-            [
-              -118.38144,
-              34.168191
-            ],
-            [
-              -118.381597,
-              34.168222
-            ],
-            [
-              -118.381798,
-              34.168282
-            ],
-            [
-              -118.381967,
-              34.168332
-            ],
-            [
-              -118.382082,
-              34.168367
-            ],
-            [
-              -118.382377,
-              34.168417
-            ],
-            [
-              -118.382605,
-              34.168443
-            ],
-            [
-              -118.382688,
-              34.168447
-            ],
-            [
-              -118.382686,
-              34.168461
-            ],
-            [
-              -118.381223,
-              34.168452
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "81038443a87261232309e5768c962ced"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Tampa Avenue and the 101 Freeway",
-        "category": "Underpass"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.553662,
-              34.174012
-            ],
-            [
-              -118.55363,
-              34.173173
-            ],
-            [
-              -118.553324,
-              34.173156
-            ],
-            [
-              -118.553315,
-              34.174
-            ],
-            [
-              -118.553662,
-              34.174012
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "86b9d055792bd822fc35c75071fdcdd3"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "2175 John S. Gibson Boulevard",
-        "category": "Designated Facility – Shelter"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.288924,
-              33.757604
-            ],
-            [
-              -118.289282,
-              33.757796
-            ],
-            [
-              -118.288979,
-              33.758167
-            ],
-            [
-              -118.288793,
-              33.758078
-            ],
-            [
-              -118.288584,
-              33.75797
-            ],
-            [
-              -118.288905,
-              33.757586
-            ],
-            [
-              -118.288924,
-              33.757604
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "924917de30adbe9268e673b42f3aa3c9"
+      "id": "d35555adb02f7a47d21a0df5fe9fd902"
     },
     {
       "type": "Feature",
       "properties": {
         "address": "711 South Beacon Street",
-        "category": "Designated Facility – Shelter"
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
@@ -1530,463 +3311,168 @@
         ],
         "type": "Polygon"
       },
-      "id": "931705224d38550aa080a66449762fdc"
+      "id": "d433858f74cf45759f7c5c35301dc305"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "Raymer “A Bridge Home,” 13160 Raymer Street",
-        "category": "Designated Facility – Shelter"
+        "address": "De Soto Avenue and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.420694,
-              34.205888
+              -118.588352,
+              34.168271
             ],
             [
-              -118.420694,
-              34.205317
+              -118.588331,
+              34.167885
             ],
             [
-              -118.421022,
-              34.20531
+              -118.588024,
+              34.16784
             ],
             [
-              -118.421026,
-              34.205958
+              -118.588014,
+              34.168232
             ],
             [
-              -118.420694,
-              34.205888
+              -118.588352,
+              34.168271
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "9483ed27fb00c03084dedf806edc45e4"
+      "id": "d5b60e68926c1a2f043c21a35485a041"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "215 South Gaffey Street",
-        "category": "Designated Facility – Shelter"
+        "address": "14345 Roscoe Boulevard ",
+        "place_name": "Panorama City Branch Library",
+        "set": 2,
+        "category": "Library",
+        "date": "10/27/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.292954,
-              33.74235
+              -118.446784,
+              34.222195
             ],
             [
-              -118.293005,
-              33.742009
+              -118.446771,
+              34.221705
             ],
             [
-              -118.293003,
-              33.741919
+              -118.44602,
+              34.221713
             ],
             [
-              -118.293374,
-              33.741923
+              -118.446029,
+              34.222191
             ],
             [
-              -118.293367,
-              33.741607
-            ],
-            [
-              -118.292514,
-              33.741597
-            ],
-            [
-              -118.292505,
-              33.741616
-            ],
-            [
-              -118.292503,
-              33.742273
-            ],
-            [
-              -118.292551,
-              33.742331
-            ],
-            [
-              -118.292954,
-              33.74235
+              -118.446784,
+              34.222195
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "9bff4c49dea921b5dee567cf2ff05eea"
+      "id": "d9aeb210a6b4e91a96e5c19394e2c2a6"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "Canoga Avenue and the 101 Freeway",
-        "category": "Underpass"
+        "place_name": "Francis Polytechnic Senior High School",
+        "address": "12431 Roscone Boulevard",
+        "category": "School",
+        "set": 2,
+        "date": "10/27/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.597596,
-              34.169672
+              -118.403899,
+              34.22652
             ],
             [
-              -118.597582,
-              34.169287
+              -118.407028,
+              34.224251
             ],
             [
-              -118.597292,
-              34.169239
+              -118.405832,
+              34.223079
             ],
             [
-              -118.597277,
-              34.169623
+              -118.40558,
+              34.22285
             ],
             [
-              -118.597596,
-              34.169672
+              -118.40542,
+              34.222651
+            ],
+            [
+              -118.405286,
+              34.222416
+            ],
+            [
+              -118.405225,
+              34.222228
+            ],
+            [
+              -118.405178,
+              34.222035
+            ],
+            [
+              -118.405165,
+              34.221818
+            ],
+            [
+              -118.405022,
+              34.221794
+            ],
+            [
+              -118.4041,
+              34.221792
+            ],
+            [
+              -118.404025,
+              34.221768
+            ],
+            [
+              -118.403371,
+              34.221769
+            ],
+            [
+              -118.400798,
+              34.223647
+            ],
+            [
+              -118.403899,
+              34.22652
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "9c0f4ec5da0b86209bf36773dadb1c37"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Topanga Canyon Boulevard and the 101 Freeway",
-        "category": "Underpass"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.606037,
-              34.171021
-            ],
-            [
-              -118.60606,
-              34.170575
-            ],
-            [
-              -118.605613,
-              34.170522
-            ],
-            [
-              -118.605608,
-              34.170948
-            ],
-            [
-              -118.606037,
-              34.171021
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "9ebaab0fc9bf800d928e0c0dcb6807f1"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Ventura Boulevard and the 101 Freeway",
-        "category": "Underpass"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.611616,
-              34.169092
-            ],
-            [
-              -118.611676,
-              34.168791
-            ],
-            [
-              -118.612071,
-              34.168839
-            ],
-            [
-              -118.612604,
-              34.168854
-            ],
-            [
-              -118.613213,
-              34.168832
-            ],
-            [
-              -118.613582,
-              34.168858
-            ],
-            [
-              -118.613239,
-              34.169157
-            ],
-            [
-              -118.612777,
-              34.169164
-            ],
-            [
-              -118.612172,
-              34.169132
-            ],
-            [
-              -118.611616,
-              34.169092
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "a3073a08b51e30aa1797379e4af92817"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Reseda Boulevard and the 101 Freeway",
-        "category": "Underpass"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.536194,
-              34.173802
-            ],
-            [
-              -118.536181,
-              34.172861
-            ],
-            [
-              -118.535842,
-              34.172848
-            ],
-            [
-              -118.535855,
-              34.173772
-            ],
-            [
-              -118.536194,
-              34.173802
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "a93247452907a44d10bcf3bda290d5d7"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Victory Vineland Recreation Center",
-        "category": "Public Park"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.37324,
-              34.189422
-            ],
-            [
-              -118.373225,
-              34.186838
-            ],
-            [
-              -118.372248,
-              34.186841
-            ],
-            [
-              -118.37217,
-              34.186932
-            ],
-            [
-              -118.372185,
-              34.187984
-            ],
-            [
-              -118.372229,
-              34.188092
-            ],
-            [
-              -118.372252,
-              34.189352
-            ],
-            [
-              -118.370513,
-              34.189345
-            ],
-            [
-              -118.370503,
-              34.188474
-            ],
-            [
-              -118.370441,
-              34.188472
-            ],
-            [
-              -118.370444,
-              34.189338
-            ],
-            [
-              -118.370469,
-              34.189432
-            ],
-            [
-              -118.37324,
-              34.189422
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "a95b6c39343dbe58d7d64123fd48128a"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Lankershim Elementary – 5250 Bakman Avenue, North Hollywood",
-        "category": "School"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.376183,
-              34.16502
-            ],
-            [
-              -118.376186,
-              34.165566
-            ],
-            [
-              -118.375859,
-              34.165584
-            ],
-            [
-              -118.375864,
-              34.16584
-            ],
-            [
-              -118.376344,
-              34.16665
-            ],
-            [
-              -118.376851,
-              34.166648
-            ],
-            [
-              -118.376844,
-              34.166946
-            ],
-            [
-              -118.377279,
-              34.166942
-            ],
-            [
-              -118.377303,
-              34.165021
-            ],
-            [
-              -118.376183,
-              34.16502
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "af82ed9baa03ecbc5e5180bd93546de2"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "San Fernando Road from Sunland Boulevard to Hollywood Way",
-        "category": "Active Railway   "
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.347478,
-              34.205103
-            ],
-            [
-              -118.347958,
-              34.204525
-            ],
-            [
-              -118.350006,
-              34.205934
-            ],
-            [
-              -118.369358,
-              34.21916
-            ],
-            [
-              -118.368856,
-              34.219619
-            ],
-            [
-              -118.348374,
-              34.20568
-            ],
-            [
-              -118.347478,
-              34.205103
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "b51f4c3a7f9705f9dac0879fa966575b"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "7432 Reseda Boulevard",
-        "category": "Designated Facility – Shelter"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.535912,
-              34.205853
-            ],
-            [
-              -118.535914,
-              34.205505
-            ],
-            [
-              -118.534594,
-              34.205492
-            ],
-            [
-              -118.534592,
-              34.205857
-            ],
-            [
-              -118.535912,
-              34.205853
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "b73e4657cb64cfda1207fbc98d75470e"
+      "id": "db33eefe428011ca8947ead3ad4a5ca8"
     },
     {
       "type": "Feature",
       "properties": {
         "address": "Right Step Academy – 11432 Vanowen Street., North Hollywood",
-        "category": "School"
+        "category": "School",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
@@ -2035,725 +3521,248 @@
         ],
         "type": "Polygon"
       },
-      "id": "c149f376018104add02c148c4f223b21"
+      "id": "df13c76082346a783374e2c526eefd2b"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "Tujunga Avenue between Sherman Way and Vanowen Street",
-        "category": "Active Railway"
+        "address": "19600 Hamilton Avenue",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.379278,
-              34.201366
+              -118.285959,
+              33.854235
             ],
             [
-              -118.379215,
-              34.196571
+              -118.285949,
+              33.853213
             ],
             [
-              -118.379233,
-              34.194035
+              -118.285341,
+              33.853206
             ],
             [
-              -118.378879,
-              34.19402
+              -118.28531,
+              33.853448
             ],
             [
-              -118.378904,
-              34.201362
+              -118.285305,
+              33.854239
             ],
             [
-              -118.379278,
-              34.201366
+              -118.285959,
+              33.854235
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "c166ffba159434f80f49d4dab32adcfc"
+      "id": "df89acc011870af88911a8ce81d0f971"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "Corbin Avenue and the 101 Freeway",
-        "category": "Underpass"
+        "address": "Lindley Avenue and the 101 Freeway",
+        "category": "Underpass",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.562368,
-              34.173723
+              -118.52744,
+              34.171496
             ],
             [
-              -118.562363,
-              34.173128
+              -118.527433,
+              34.170892
             ],
             [
-              -118.562087,
-              34.173168
+              -118.527121,
+              34.170898
             ],
             [
-              -118.562083,
-              34.173793
+              -118.52717,
+              34.1715
             ],
             [
-              -118.562368,
-              34.173723
+              -118.52744,
+              34.171496
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "c4f90eda290a84921961f7ba84bd8397"
+      "id": "e18230dc931fe95f229bbc68509539be"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "Bellaire Pocket Park",
-        "category": ""
+        "address": "Whitsett West Tiny Home Village, 12550 Saticoy Street South",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.412757,
-              34.215646
+              -118.40692,
+              34.207957
             ],
             [
-              -118.412783,
-              34.215632
+              -118.406982,
+              34.207753
             ],
             [
-              -118.412796,
-              34.215604
+              -118.406833,
+              34.207388
             ],
             [
-              -118.412801,
-              34.215582
+              -118.406734,
+              34.207105
             ],
             [
-              -118.412759,
-              34.2155
+              -118.406602,
+              34.206526
             ],
             [
-              -118.412742,
-              34.215463
+              -118.406363,
+              34.205357
             ],
             [
-              -118.412475,
-              34.21554
+              -118.406297,
+              34.205128
             ],
             [
-              -118.412265,
-              34.215627
+              -118.406269,
+              34.205139
             ],
             [
-              -118.412718,
-              34.215648
+              -118.406293,
+              34.205503
             ],
             [
-              -118.412757,
-              34.215646
+              -118.40624,
+              34.205854
+            ],
+            [
+              -118.406219,
+              34.205995
+            ],
+            [
+              -118.406701,
+              34.208059
+            ],
+            [
+              -118.40692,
+              34.207957
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "c5b1d63cdc378d85356219312b33a42e"
+      "id": "e2e03a3579ebb8162fd2046f45d9bf5c"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "11839 Sherman Way – Designated Facility",
-        "category": "Navigation Center"
+        "address": "7432 Reseda Boulevard",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.392067,
-              34.201799
+              -118.535912,
+              34.205853
             ],
             [
-              -118.392064,
-              34.201597
+              -118.535914,
+              34.205505
             ],
             [
-              -118.391806,
-              34.201347
+              -118.534594,
+              34.205492
             ],
             [
-              -118.391187,
-              34.201348
+              -118.534592,
+              34.205857
             ],
             [
-              -118.391179,
-              34.201373
-            ],
-            [
-              -118.391634,
-              34.201799
-            ],
-            [
-              -118.392067,
-              34.201799
+              -118.535912,
+              34.205853
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "c76b65785026f59effff1bc29b251dbf"
+      "id": "f1b229195cc0c3a939946544295fd028"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "Jamie Beth Slaven Park",
-        "category": "Public Park"
+        "address": "215 South Gaffey Street",
+        "category": "Designated Facility – Shelter",
+        "set": "1",
+        "date": "10/20/2021"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              -118.405414,
-              34.217882
+              -118.292954,
+              33.74235
             ],
             [
-              -118.405406,
-              34.214553
+              -118.293005,
+              33.742009
             ],
             [
-              -118.405558,
-              34.214562
+              -118.293003,
+              33.741919
             ],
             [
-              -118.405907,
-              34.214902
+              -118.293374,
+              33.741923
             ],
             [
-              -118.408088,
-              34.21489
+              -118.293367,
+              33.741607
             ],
             [
-              -118.408797,
-              34.217872
+              -118.292514,
+              33.741597
             ],
             [
-              -118.405414,
-              34.217882
+              -118.292505,
+              33.741616
+            ],
+            [
+              -118.292503,
+              33.742273
+            ],
+            [
+              -118.292551,
+              33.742331
+            ],
+            [
+              -118.292954,
+              33.74235
             ]
           ]
         ],
         "type": "Polygon"
       },
-      "id": "c7e6bc8a12ffdf63325bd4fa49ee183a"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Shirley Avenue and the 101 Freeway",
-        "category": "Tunnel"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.557956,
-              34.173975
-            ],
-            [
-              -118.557974,
-              34.173312
-            ],
-            [
-              -118.557894,
-              34.17331
-            ],
-            [
-              -118.557851,
-              34.173973
-            ],
-            [
-              -118.557956,
-              34.173975
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "ce5638bee29a024a37b9c5a8e7f4ee31"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "2316 E Imperial Highway",
-        "category": "Designated Facility – Shelter"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.233098,
-              33.928946
-            ],
-            [
-              -118.233199,
-              33.928943
-            ],
-            [
-              -118.23326,
-              33.928904
-            ],
-            [
-              -118.233286,
-              33.928846
-            ],
-            [
-              -118.233281,
-              33.928785
-            ],
-            [
-              -118.233248,
-              33.928722
-            ],
-            [
-              -118.233163,
-              33.928649
-            ],
-            [
-              -118.231151,
-              33.92872
-            ],
-            [
-              -118.23111,
-              33.9286
-            ],
-            [
-              -118.230618,
-              33.928672
-            ],
-            [
-              -118.230611,
-              33.928623
-            ],
-            [
-              -118.230334,
-              33.928667
-            ],
-            [
-              -118.230354,
-              33.92876
-            ],
-            [
-              -118.23037,
-              33.928799
-            ],
-            [
-              -118.230393,
-              33.928817
-            ],
-            [
-              -118.230429,
-              33.928838
-            ],
-            [
-              -118.230459,
-              33.928844
-            ],
-            [
-              -118.230759,
-              33.928856
-            ],
-            [
-              -118.231394,
-              33.928879
-            ],
-            [
-              -118.233098,
-              33.928946
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "cf1068e597b8e9c1689f668eb9239f3d"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Wilbur Avenue and the 101 Freeway",
-        "category": "Underpass"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.544896,
-              34.173773
-            ],
-            [
-              -118.54489,
-              34.173316
-            ],
-            [
-              -118.544875,
-              34.173122
-            ],
-            [
-              -118.54457,
-              34.173097
-            ],
-            [
-              -118.544549,
-              34.173453
-            ],
-            [
-              -118.544573,
-              34.17375
-            ],
-            [
-              -118.544896,
-              34.173773
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "d6d3d6bf0073c5b8665ba666b3f89d2c"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "122 West 8th Street",
-        "category": "Designated Facility – Shelter"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.281285,
-              33.737316
-            ],
-            [
-              -118.281287,
-              33.737012
-            ],
-            [
-              -118.280556,
-              33.737009
-            ],
-            [
-              -118.28056,
-              33.737313
-            ],
-            [
-              -118.281285,
-              33.737316
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "d746042f59ca0b6d788d72a9c38453fc"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Oakdale Avenue and the 101 Freeway",
-        "category": "Tunnel"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.56606,
-              34.17291
-            ],
-            [
-              -118.566064,
-              34.172795
-            ],
-            [
-              -118.565982,
-              34.172801
-            ],
-            [
-              -118.566056,
-              34.173411
-            ],
-            [
-              -118.566127,
-              34.173403
-            ],
-            [
-              -118.56606,
-              34.17291
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "e169e90adf16870dedf3b8b4fd860c85"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Tiara Street Park",
-        "category": "Public Park"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.38255,
-              34.178434
-            ],
-            [
-              -118.382589,
-              34.178405
-            ],
-            [
-              -118.382592,
-              34.178365
-            ],
-            [
-              -118.382478,
-              34.178167
-            ],
-            [
-              -118.382209,
-              34.177732
-            ],
-            [
-              -118.382168,
-              34.177697
-            ],
-            [
-              -118.381893,
-              34.177697
-            ],
-            [
-              -118.381904,
-              34.178046
-            ],
-            [
-              -118.381418,
-              34.178056
-            ],
-            [
-              -118.381417,
-              34.178229
-            ],
-            [
-              -118.381378,
-              34.178264
-            ],
-            [
-              -118.38117,
-              34.17826
-            ],
-            [
-              -118.381171,
-              34.178439
-            ],
-            [
-              -118.38255,
-              34.178434
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "e7f0afc1d83f83faf793dc6c7d74f017"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "18606 Normandie Avenue",
-        "category": "Designated Facility – Shelter"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.299103,
-              33.861904
-            ],
-            [
-              -118.299097,
-              33.861496
-            ],
-            [
-              -118.298711,
-              33.861487
-            ],
-            [
-              -118.298703,
-              33.86146
-            ],
-            [
-              -118.298635,
-              33.861454
-            ],
-            [
-              -118.29863,
-              33.861944
-            ],
-            [
-              -118.299103,
-              33.861904
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "fa687bca92f69b6c98b98aa55b5f4565"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "18616 West Topham Street",
-        "category": "Designated Facility – Shelter"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.538068,
-              34.180669
-            ],
-            [
-              -118.538056,
-              34.180477
-            ],
-            [
-              -118.538471,
-              34.180501
-            ],
-            [
-              -118.539828,
-              34.180507
-            ],
-            [
-              -118.53982,
-              34.180665
-            ],
-            [
-              -118.538068,
-              34.180669
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "fb4600bc6b48563ebb3f76a2d6cacdfd"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Strathern Park West",
-        "category": "Public Park"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.408888,
-              34.208121
-            ],
-            [
-              -118.408849,
-              34.207882
-            ],
-            [
-              -118.408614,
-              34.2078
-            ],
-            [
-              -118.408516,
-              34.207504
-            ],
-            [
-              -118.408448,
-              34.207265
-            ],
-            [
-              -118.406106,
-              34.20833
-            ],
-            [
-              -118.406167,
-              34.208524
-            ],
-            [
-              -118.406808,
-              34.208452
-            ],
-            [
-              -118.407749,
-              34.212066
-            ],
-            [
-              -118.408759,
-              34.215621
-            ],
-            [
-              -118.409634,
-              34.215646
-            ],
-            [
-              -118.408895,
-              34.214234
-            ],
-            [
-              -118.408667,
-              34.213842
-            ],
-            [
-              -118.408599,
-              34.213567
-            ],
-            [
-              -118.408437,
-              34.213003
-            ],
-            [
-              -118.40827,
-              34.212381
-            ],
-            [
-              -118.408074,
-              34.211589
-            ],
-            [
-              -118.407871,
-              34.210814
-            ],
-            [
-              -118.407655,
-              34.210014
-            ],
-            [
-              -118.407227,
-              34.20842
-            ],
-            [
-              -118.408466,
-              34.208217
-            ],
-            [
-              -118.408888,
-              34.208121
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "fbb1ae7613dd2d90c1881328de895ed7"
+      "id": "fa680ba5043f2680fffbbb237a62d540"
     }
   ],
   "type": "FeatureCollection"
