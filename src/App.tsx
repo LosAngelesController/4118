@@ -17,6 +17,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY29tcmFkZWt5bGVyIiwiYSI6ImNrdjBkOXNyeDdscnoyc
  
 const locations = require('./features.json')
 
+
 //console.log(locations)
 
 function isStringOneThousandFt(stringInput: string) {
@@ -45,7 +46,7 @@ var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex
 
 //console.log(locationsBuffered)
 
-const currentSetGlobal = 1
+const currentSetGlobal = 2
 
 
 var geoJsonBoundary:any = {
@@ -217,6 +218,12 @@ const generateString = (length:any) =>  {
     return result;
 }
 
+const urlParams = new URLSearchParams(window.location.search);
+const latParam = urlParams.get('lat');
+const lngParam = urlParams.get('lng');
+const zoomParam = urlParams.get('zoom');
+const debugParam = urlParams.get('debug');
+
 export default class App extends React.PureComponent {
   mapContainer: any;
   state: any;
@@ -225,14 +232,15 @@ export default class App extends React.PureComponent {
 constructor(props:any) {
 super(props);
 this.state = {
-lng: -118.41,
-  lat: 34,
+lng: lngParam || -118.41,
+  lat:  latParam || 34,
   initialWindowWidth: window.innerWidth,
   isPopupActive: false,
-  zoom: formulaForZoom(),
+  zoom: zoomParam || formulaForZoom(),
   featureSelected: {},
   infoBoxShown: true,
-  currentSet: currentSetGlobal
+  currentSet: currentSetGlobal,
+  debugState: !!(debugParam)
 };
 this.mapContainer = React.createRef();
 }
@@ -374,7 +382,7 @@ map.addControl(
 
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
-  
+     
 map.on('move', () => {
 this.setState({
 lng: map.getCenter().lng.toFixed(4),
@@ -552,6 +560,7 @@ map.on('load', () => {
       'line-opacity': 0.5
     }
   });
+ 
 
 
   map.addLayer({
@@ -602,7 +611,13 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       className=' outsideTitle max-h-screen flex-col flex z-50'
     >
       <div className='titleBox max-h-screen mt-2 ml-2 md:mt-3 md:ml-3 break-words'>41.18 By-Resolution Areas</div>
- 
+      {
+        this.state.debugState && (
+          <div className="sidebar-debug mx-4 mt-2 mb-1 bg-gray-900 text-white">
+          Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
+          </div>
+     )
+      }
       <div className='flex flex-col md:flex-row w-auto md:auto md:flex-nowrap '>
       {this.state.infoBoxShown && (
           <div
@@ -615,12 +630,12 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
          <div
         className='md:max-w-xs  mt-1' 
             ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, bridge, active railway, etc.)</div>
-            <div
+           {/* <div
                className='md:max-w-xs flex flex-row  mt-1' 
             >
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 24 30" enable-background="new 0 0 24 24" className='text-white w-5 flex-none' stroke='currentColor' fill='currentColor'><path d="M7,11H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S7.6,11,7,11z"/><path d="M13,13c0.6,0,1-0.4,1-1s-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1H13z"/><path d="M19,11h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S19.6,11,19,11z"/></svg>
              : Pending Vote by Council
-            </div>
+            </div> */}
          <div className='md:max-w-xs mt-0'>Only covers by-resolution locations voted on by City Council. See ordinance for more info.</div>
             <div className='flex-row  mt-1'>
             <a  target="_blank" rel='external' className='underline text-mejito' href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'>41.18 Ordinance</a>
