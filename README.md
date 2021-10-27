@@ -1,3 +1,19 @@
+# License
+
+This Map was made by Kenneth Mejia For LA City Controller
+
+You're free to use this for whatever you want! (except certain cases)
+If you plan on using the map publically, please attribute "Kenneth Mejia For LA City Controller" in a clearly stated manner on the map.
+
+Tech Ethics (Tethics):
+- Do not use this to enforce criminalization against unhoused neighbours
+- Do not harrass unhoused people
+- You cannot use this map in anyway, shape, or form to enforce 41.18.
+- Do good, not evil
+
+
+# Technical Documentation
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -9,7 +25,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3006](http://localhost:3006) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
