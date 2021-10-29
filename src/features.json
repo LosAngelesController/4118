@@ -658,7 +658,13 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "category": "Public Right-of-Way",
+        "address": "Holt Avenue – from Burton Way to 3rd Street",
+        "date": "11/03/2021",
+        "section": 9,
+        "set": 3
+      },
       "geometry": {
         "coordinates": [
           [

@@ -17,7 +17,24 @@ mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worke
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29tcmFkZWt5bGVyIiwiYSI6ImNrdjBkOXNyeDdscnoycHE2cDk4aWJraTIifQ.77Gid9mgpEdLpFszO5n4oQ';
  
-const locations = require('./features.json')
+var locationsImport = require('./features.json')
+
+var locationsRemoveSections = locationsImport.features.filter((location:any) => {
+  if (location.properties.section) {
+    if ([16, 17, 18, 19].includes(location.properties.section)) {
+      return false;
+    } else {
+      return true;
+    }
+  } else {
+    return true;
+  }
+})
+
+var locations: any =  {
+  features:  locationsRemoveSections,
+  type: "FeatureCollection"
+}
 
 const citybound = require('./citybounds.json')
 
@@ -49,7 +66,7 @@ var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex
 
 //console.log(locationsBuffered)
 
-const currentSetGlobal = 2
+const currentSetGlobal = 3
 
 
 var geoJsonBoundary:any = {
@@ -466,7 +483,7 @@ map.on('load', () => {
     },
     paint: {
       "line-color": '#41ffca',
-      'line-opacity': 0.5,
+      'line-opacity': 0.8,
       'line-width': 2
     }
   })
@@ -480,7 +497,7 @@ map.on('load', () => {
     },
     paint: {
       'fill-color': '#ddffdd',
-      'fill-opacity': 0.1
+      'fill-opacity': 0.05
     }
   })
   
