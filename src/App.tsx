@@ -1,5 +1,7 @@
 import React from 'react';
-import 'mapbox-gl/dist/mapbox-gl.css';
+import 'mapbox-gl/dist/mapbox-gl.css'
+import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
+import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
  
 import * as turf from '@turf/turf'
 
@@ -17,6 +19,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY29tcmFkZWt5bGVyIiwiYSI6ImNrdjBkOXNyeDdscnoyc
  
 const locations = require('./features.json')
 
+const citybound = require('./citybounds.json')
 
 //console.log(locations)
 
@@ -224,6 +227,9 @@ const lngParam = urlParams.get('lng');
 const zoomParam = urlParams.get('zoom');
 const debugParam = urlParams.get('debug');
 
+
+const searchParam = urlParams.get('search');
+
 export default class App extends React.PureComponent {
   mapContainer: any;
   state: any;
@@ -237,6 +243,7 @@ lng: lngParam || -118.41,
   initialWindowWidth: window.innerWidth,
   isPopupActive: false,
   zoom: zoomParam || formulaForZoom(),
+  search: searchParam,
   featureSelected: {},
   infoBoxShown: true,
   currentSet: currentSetGlobal,
@@ -360,6 +367,16 @@ this.mapContainer = React.createRef();
   }));
   this.map = map
 
+     if (this.state.search) {
+       
+      map.addControl(
+        new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: map
+        })
+        );
+}
+     
   // Add geolocate control to the map.
 map.addControl(
   new mapboxgl.GeolocateControl({
@@ -371,7 +388,9 @@ map.addControl(
   // Draw an arrow next to the location dot to indicate which direction the device is heading.
   showUserHeading: true
   })
-  );
+);
+     
+
 
   console.log(map)
  
@@ -437,7 +456,33 @@ zoom: map.getZoom().toFixed(2)
      }
   
 map.on('load', () => {
- 
+
+  map.addLayer({
+    id: 'citybound',
+    type: 'line',
+    source: {
+      type: 'geojson',
+      data:  citybound
+    },
+    paint: {
+      "line-color": '#41ffca',
+      'line-opacity': 0.5,
+      'line-width': 2
+    }
+  })
+
+  map.addLayer({
+    id: 'cityboundfill',
+    type: 'fill',
+    source: {
+      type: 'geojson',
+      data:  citybound
+    },
+    paint: {
+      'fill-color': '#ddffdd',
+      'fill-opacity': 0.1
+    }
+  })
   
   map.addLayer({
     // buffer
