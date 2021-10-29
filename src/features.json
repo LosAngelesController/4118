@@ -1306,7 +1306,8 @@
         "set": 3,
         "section": 17,
         "date": "11/03/2021",
-        "place_name": "Chatsworth Branch Los Angeles Public Library"
+        "place_name": "Chatsworth Branch Los Angeles Public Library",
+        "category": "Library"
       },
       "geometry": {
         "coordinates": [
