@@ -459,6 +459,102 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "Las Palmas Senior Citizen Center – 1820 North Las Palmas Avenue",
+        "date": "11/02/2021",
+        "category": "Public Park",
+        "section": 1,
+        "set": 3
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.336226,
+              34.10514
+            ],
+            [
+              -118.336278,
+              34.105125
+            ],
+            [
+              -118.336314,
+              34.105092
+            ],
+            [
+              -118.336325,
+              34.105003
+            ],
+            [
+              -118.33619,
+              34.10465
+            ],
+            [
+              -118.336129,
+              34.104398
+            ],
+            [
+              -118.336117,
+              34.104283
+            ],
+            [
+              -118.335619,
+              34.104294
+            ],
+            [
+              -118.335645,
+              34.105141
+            ],
+            [
+              -118.336226,
+              34.10514
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "1fb9767bc0b26fdc2f3fb019c61bae96"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Vine Street Elementary School - 955 Vine Street",
+        "category": "School",
+        "date": "11/02/2021",
+        "section": 1,
+        "set": 3
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.327697,
+              34.088899
+            ],
+            [
+              -118.327678,
+              34.087171
+            ],
+            [
+              -118.326743,
+              34.087177
+            ],
+            [
+              -118.326748,
+              34.088902
+            ],
+            [
+              -118.327697,
+              34.088899
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "2147291b4ae18c3263591a84ef6bf761"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "address": "Tiara Street Park",
         "category": "Public Park",
         "set": "1",
@@ -663,7 +759,7 @@
         "address": "Holt Avenue – from Burton Way to 3rd Street",
         "date": "11/03/2021",
         "section": 9,
-        "set": 3
+        "set": 4
       },
       "geometry": {
         "coordinates": [
@@ -868,6 +964,100 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "Shatto Recreation Center – 3191 West 4th Street",
+        "category": "Public Park",
+        "date": "11/02/2021",
+        "set": 3,
+        "section": 1
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.290584,
+              34.068206
+            ],
+            [
+              -118.290579,
+              34.067352
+            ],
+            [
+              -118.29061,
+              34.067354
+            ],
+            [
+              -118.290605,
+              34.067097
+            ],
+            [
+              -118.29061,
+              34.067054
+            ],
+            [
+              -118.290386,
+              34.067019
+            ],
+            [
+              -118.289992,
+              34.067099
+            ],
+            [
+              -118.289762,
+              34.067142
+            ],
+            [
+              -118.289434,
+              34.067203
+            ],
+            [
+              -118.289251,
+              34.067181
+            ],
+            [
+              -118.28898,
+              34.067101
+            ],
+            [
+              -118.288834,
+              34.067032
+            ],
+            [
+              -118.288504,
+              34.06688
+            ],
+            [
+              -118.288525,
+              34.067535
+            ],
+            [
+              -118.288624,
+              34.067531
+            ],
+            [
+              -118.288639,
+              34.068257
+            ],
+            [
+              -118.289779,
+              34.068249
+            ],
+            [
+              -118.289784,
+              34.068204
+            ],
+            [
+              -118.290584,
+              34.068206
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "358fb5e1a807c544989a3cfe56d242a0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "address": "Jamie Beth Slaven Park",
         "category": "Public Park",
         "set": "1",
@@ -917,7 +1107,7 @@
         "category": "Public Park",
         "section": 9,
         "date": "11/03/2021",
-        "set": 3
+        "set": 4
       },
       "geometry": {
         "coordinates": [
@@ -1523,6 +1713,132 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "Barnsdall Art Park – 4800 Hollywood Boulevard",
+        "category": "Public Park",
+        "date": "11/02/2021",
+        "set": 3,
+        "section": 1
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.295327,
+              34.101696
+            ],
+            [
+              -118.29532,
+              34.101347
+            ],
+            [
+              -118.295196,
+              34.101282
+            ],
+            [
+              -118.295457,
+              34.101184
+            ],
+            [
+              -118.294972,
+              34.101047
+            ],
+            [
+              -118.295256,
+              34.100824
+            ],
+            [
+              -118.295313,
+              34.100763
+            ],
+            [
+              -118.295494,
+              34.100516
+            ],
+            [
+              -118.295552,
+              34.100281
+            ],
+            [
+              -118.295495,
+              34.100065
+            ],
+            [
+              -118.295433,
+              34.099871
+            ],
+            [
+              -118.295292,
+              34.099737
+            ],
+            [
+              -118.295331,
+              34.099692
+            ],
+            [
+              -118.295075,
+              34.09947
+            ],
+            [
+              -118.295025,
+              34.099426
+            ],
+            [
+              -118.294997,
+              34.099317
+            ],
+            [
+              -118.295004,
+              34.099307
+            ],
+            [
+              -118.295012,
+              34.099289
+            ],
+            [
+              -118.29503,
+              34.099238
+            ],
+            [
+              -118.294695,
+              34.099205
+            ],
+            [
+              -118.293257,
+              34.099173
+            ],
+            [
+              -118.292995,
+              34.099169
+            ],
+            [
+              -118.292949,
+              34.101006
+            ],
+            [
+              -118.293062,
+              34.101211
+            ],
+            [
+              -118.293283,
+              34.101298
+            ],
+            [
+              -118.293251,
+              34.101701
+            ],
+            [
+              -118.295327,
+              34.101696
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "6bc97542a4b2d2da60d98eccd11532dc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "address": "17141 Nordhodd Street",
         "category": "Public Park",
         "date": "11/03/2021",
@@ -1707,7 +2023,7 @@
         "category": "Underpass",
         "date": "11/03/2021",
         "section": 9,
-        "set": 3
+        "set": 4
       },
       "geometry": {
         "coordinates": [
@@ -2411,7 +2727,7 @@
         "category": "Public Right-of-Way",
         "date": "11/03/2021",
         "section": 9,
-        "set": 3
+        "set": 4
       },
       "geometry": {
         "coordinates": [
@@ -2453,8 +2769,8 @@
               34.071826
             ],
             [
-              -118.377527,
-              34.072235
+              -118.377122,
+              34.072091
             ],
             [
               -118.377884,
@@ -2493,6 +2809,44 @@
         "type": "Polygon"
       },
       "id": "8f911eacefa0b87deea9650a0b9440d9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Hollywood Recreation Center – 1122 Cole Avenue",
+        "category": "Public Park",
+        "date": "11/02/2021",
+        "section": 1,
+        "set": 3
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.329804,
+              34.092518
+            ],
+            [
+              -118.329815,
+              34.090832
+            ],
+            [
+              -118.32897,
+              34.090828
+            ],
+            [
+              -118.328973,
+              34.092527
+            ],
+            [
+              -118.329804,
+              34.092518
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "904a98955d465850f58d90394c16017e"
     },
     {
       "type": "Feature",
@@ -2919,6 +3273,44 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "Angelica’s Daycare - 6122 De Longpre Avenue",
+        "category": "Day Care Center",
+        "set": 3,
+        "date": "11/02/2021",
+        "section": 1
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.32327,
+              34.096163
+            ],
+            [
+              -118.323264,
+              34.095766
+            ],
+            [
+              -118.323094,
+              34.095766
+            ],
+            [
+              -118.32309,
+              34.096168
+            ],
+            [
+              -118.32327,
+              34.096163
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "9f2ad43b52df69243cfd0562cca25db2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "address": "8501 Arleta Avenue",
         "category": "School",
         "date": "10/27/2021",
@@ -3247,6 +3639,56 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "Madison West Park - 464 North Madison Avenue",
+        "date": "11/02/2021",
+        "category": "Public Park",
+        "section": 1,
+        "set": 3
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.289117,
+              34.079764
+            ],
+            [
+              -118.28911,
+              34.079611
+            ],
+            [
+              -118.288598,
+              34.079615
+            ],
+            [
+              -118.288595,
+              34.079482
+            ],
+            [
+              -118.288054,
+              34.079471
+            ],
+            [
+              -118.288061,
+              34.079791
+            ],
+            [
+              -118.289095,
+              34.079788
+            ],
+            [
+              -118.289117,
+              34.079764
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "a9b5cb8a06a408304eae06c6a53fd82d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "address": "18616 West Topham Street",
         "category": "Designated Facility – Shelter",
         "set": "1",
@@ -3343,6 +3785,96 @@
     {
       "type": "Feature",
       "properties": {
+        "address": "Camino Nuevo High School – 3500 West Temple Street",
+        "category": "School",
+        "date": "11/02/2021",
+        "set": 3,
+        "section": 1
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.284478,
+              34.076392
+            ],
+            [
+              -118.28444,
+              34.07641
+            ],
+            [
+              -118.284446,
+              34.07664
+            ],
+            [
+              -118.284524,
+              34.077533
+            ],
+            [
+              -118.285523,
+              34.077527
+            ],
+            [
+              -118.285498,
+              34.076804
+            ],
+            [
+              -118.285413,
+              34.07666
+            ],
+            [
+              -118.285802,
+              34.076656
+            ],
+            [
+              -118.286079,
+              34.076655
+            ],
+            [
+              -118.286436,
+              34.076586
+            ],
+            [
+              -118.286584,
+              34.076514
+            ],
+            [
+              -118.286566,
+              34.076397
+            ],
+            [
+              -118.286548,
+              34.076375
+            ],
+            [
+              -118.286435,
+              34.076355
+            ],
+            [
+              -118.286175,
+              34.076304
+            ],
+            [
+              -118.284949,
+              34.076303
+            ],
+            [
+              -118.284687,
+              34.076325
+            ],
+            [
+              -118.284478,
+              34.076392
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "aed90de38bc893da2fd10dff593fc59d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "address": "8647 Sepulveda Boulevard",
         "set": 2,
         "date": "10/27/2021",
@@ -3421,7 +3953,7 @@
         "category": "Sidewalk",
         "date": "11/03/2021",
         "section": 9,
-        "set": 3
+        "set": 4
       },
       "geometry": {
         "coordinates": [
@@ -3529,6 +4061,68 @@
         "type": "Polygon"
       },
       "id": "bcd74ec5c5f75a0d813c3a67af543a4f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Clifford Street Elementary School - 2150 Duane Street",
+        "category": "School",
+        "section": 1,
+        "set": 3,
+        "date": "11/02/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.258516,
+              34.089633
+            ],
+            [
+              -118.258774,
+              34.089221
+            ],
+            [
+              -118.258578,
+              34.089136
+            ],
+            [
+              -118.258601,
+              34.089095
+            ],
+            [
+              -118.258625,
+              34.089098
+            ],
+            [
+              -118.258844,
+              34.088723
+            ],
+            [
+              -118.258037,
+              34.088377
+            ],
+            [
+              -118.257508,
+              34.089175
+            ],
+            [
+              -118.258461,
+              34.089597
+            ],
+            [
+              -118.258505,
+              34.089638
+            ],
+            [
+              -118.258516,
+              34.089633
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "c0ac3e9d9f942b0612e60ad0bcd906ad"
     },
     {
       "type": "Feature",
@@ -4628,7 +5222,7 @@
       "properties": {
         "address": "8216 Beverly Boulevard (Southeast corner of Beverly and Harper, adjacent to LADWP Facility)",
         "category": "Sidewalk",
-        "set": 3,
+        "set": 4,
         "section": 9,
         "date": "11/03/2021"
       },
