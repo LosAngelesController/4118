@@ -247,6 +247,7 @@ const debugParam = urlParams.get('debug');
 
 const searchParam = urlParams.get('search');
 
+const cityBoundParam = urlParams.get('citybound')
 export default class App extends React.PureComponent {
   mapContainer: any;
   state: any;
@@ -474,32 +475,35 @@ zoom: map.getZoom().toFixed(2)
   
 map.on('load', () => {
 
-  map.addLayer({
-    id: 'citybound',
-    type: 'line',
-    source: {
-      type: 'geojson',
-      data:  citybound
-    },
-    paint: {
-      "line-color": '#41ffca',
-      'line-opacity': 0.8,
-      'line-width': 2
-    }
-  })
+  if (cityBoundParam) {
+    map.addLayer({
+      id: 'citybound',
+      type: 'line',
+      source: {
+        type: 'geojson',
+        data:  citybound
+      },
+      paint: {
+        "line-color": '#41ffca',
+        'line-opacity': 0.8,
+        'line-width': 2
+      }
+    })
+  
+    map.addLayer({
+      id: 'cityboundfill',
+      type: 'fill',
+      source: {
+        type: 'geojson',
+        data:  citybound
+      },
+      paint: {
+        'fill-color': '#ddffdd',
+        'fill-opacity': 0.05
+      }
+    })
+  }
 
-  map.addLayer({
-    id: 'cityboundfill',
-    type: 'fill',
-    source: {
-      type: 'geojson',
-      data:  citybound
-    },
-    paint: {
-      'fill-color': '#ddffdd',
-      'fill-opacity': 0.05
-    }
-  })
   
   map.addLayer({
     // buffer
