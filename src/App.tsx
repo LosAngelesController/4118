@@ -1,5 +1,7 @@
 import React from 'react';
-import 'mapbox-gl/dist/mapbox-gl.css';
+import 'mapbox-gl/dist/mapbox-gl.css'
+import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
+import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
  
 import * as turf from '@turf/turf'
 
@@ -15,8 +17,26 @@ mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worke
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29tcmFkZWt5bGVyIiwiYSI6ImNrdjBkOXNyeDdscnoycHE2cDk4aWJraTIifQ.77Gid9mgpEdLpFszO5n4oQ';
  
-const locations = require('./features.json')
+var locationsImport = require('./features.json')
 
+var locationsRemoveSections = locationsImport.features.filter((location:any) => {
+  if (location.properties.section) {
+    if ([16, 17, 18, 19].includes(location.properties.section)) {
+      return false;
+    } else {
+      return true;
+    }
+  } else {
+    return true;
+  }
+})
+
+var locations: any =  {
+  features:  locationsRemoveSections,
+  type: "FeatureCollection"
+}
+
+const citybound = require('./citybounds.json')
 
 //console.log(locations)
 
@@ -46,7 +66,7 @@ var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex
 
 //console.log(locationsBuffered)
 
-const currentSetGlobal = 2
+const currentSetGlobal = 3
 
 
 var geoJsonBoundary:any = {
@@ -224,6 +244,10 @@ const lngParam = urlParams.get('lng');
 const zoomParam = urlParams.get('zoom');
 const debugParam = urlParams.get('debug');
 
+
+const searchParam = urlParams.get('search');
+
+const cityBoundParam = urlParams.get('citybound')
 export default class App extends React.PureComponent {
   mapContainer: any;
   state: any;
@@ -237,6 +261,7 @@ lng: lngParam || -118.41,
   initialWindowWidth: window.innerWidth,
   isPopupActive: false,
   zoom: zoomParam || formulaForZoom(),
+  search: searchParam,
   featureSelected: {},
   infoBoxShown: true,
   currentSet: currentSetGlobal,
@@ -360,6 +385,16 @@ this.mapContainer = React.createRef();
   }));
   this.map = map
 
+     if (this.state.search) {
+       
+      map.addControl(
+        new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: map
+        })
+        );
+}
+     
   // Add geolocate control to the map.
 map.addControl(
   new mapboxgl.GeolocateControl({
@@ -371,7 +406,9 @@ map.addControl(
   // Draw an arrow next to the location dot to indicate which direction the device is heading.
   showUserHeading: true
   })
-  );
+);
+     
+
 
   console.log(map)
  
@@ -437,7 +474,36 @@ zoom: map.getZoom().toFixed(2)
      }
   
 map.on('load', () => {
- 
+
+  if (cityBoundParam) {
+    map.addLayer({
+      id: 'citybound',
+      type: 'line',
+      source: {
+        type: 'geojson',
+        data:  citybound
+      },
+      paint: {
+        "line-color": '#41ffca',
+        'line-opacity': 0.8,
+        'line-width': 2
+      }
+    })
+  
+    map.addLayer({
+      id: 'cityboundfill',
+      type: 'fill',
+      source: {
+        type: 'geojson',
+        data:  citybound
+      },
+      paint: {
+        'fill-color': '#ddffdd',
+        'fill-opacity': 0.05
+      }
+    })
+  }
+
   
   map.addLayer({
     // buffer
@@ -626,7 +692,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
         }}> <div className='md:max-w-xs  mt-1'>Banned: sit, lie, sleep, or store, use, maintain, or place personal property within:</div>
         <div
         className='md:max-w-xs mt-1'
-        ><span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-2 py-1 mr-2'>1000ft</span>Facility providing shelter, safe sleeping, safe parking, or serving as a homeless services navigation center</div>
+        ><span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-2 py-1 mr-2'>1000ft</span><span className='font-xs'> </span>Facility providing shelter, safe sleeping, safe parking, or serving as a homeless services navigation center</div>
          <div
         className='md:max-w-xs  mt-1' 
             ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, bridge, active railway, etc.)</div>
