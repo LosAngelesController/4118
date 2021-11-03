@@ -22,7 +22,7 @@ var locationsImport = require('./features.json')
 var locationsRemoveSections = locationsImport.features.filter((location:any) => {
   if (location.properties.section) {
     // 9 will be passed nov 3
-    if ([16, 17, 18, 19, 9].includes(location.properties.section)) {
+    if ([16, 17, 18, 19].includes(location.properties.section)) {
       return false;
     } else {
       return true;
