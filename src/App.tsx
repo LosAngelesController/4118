@@ -67,7 +67,7 @@ var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex
 
 //console.log(locationsBuffered)
 
-const currentSetGlobal = 5
+const currentSetGlobal = 6
 
 
 var geoJsonBoundary:any = {
