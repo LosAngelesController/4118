@@ -4136,88 +4136,6 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "9800 Laurel Canyon Boulevard",
-        "category": "Alleyway",
-        "date": "11/12/2021",
-        "section": 11,
-        "set": 6
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.421372,
-              34.249427
-            ],
-            [
-              -118.421429,
-              34.249385
-            ],
-            [
-              -118.421168,
-              34.249136
-            ],
-            [
-              -118.420675,
-              34.248664
-            ],
-            [
-              -118.420471,
-              34.24853
-            ],
-            [
-              -118.420257,
-              34.24845
-            ],
-            [
-              -118.419971,
-              34.248361
-            ],
-            [
-              -118.419747,
-              34.248185
-            ],
-            [
-              -118.418964,
-              34.247422
-            ],
-            [
-              -118.418915,
-              34.247485
-            ],
-            [
-              -118.419444,
-              34.247981
-            ],
-            [
-              -118.419786,
-              34.248322
-            ],
-            [
-              -118.420041,
-              34.248446
-            ],
-            [
-              -118.4204,
-              34.248553
-            ],
-            [
-              -118.42051,
-              34.248622
-            ],
-            [
-              -118.421372,
-              34.249427
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "9b30bc79543fd3e78adecddab772d3a7"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "address": "7631 Topanga Canyon Boulevard",
         "category": "Designated Facility – Shelter",
         "set": "1",
@@ -5189,44 +5107,6 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "Pacoima Public Health Center at 13300 Van Nuys Blvd",
-        "category": "Health Center",
-        "date": "11/02/2021",
-        "section": 11,
-        "set": 6
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.422977,
-              34.265338
-            ],
-            [
-              -118.423214,
-              34.265159
-            ],
-            [
-              -118.422741,
-              34.264675
-            ],
-            [
-              -118.422454,
-              34.264872
-            ],
-            [
-              -118.422977,
-              34.265338
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "ae98be15a03aa008e0d44de25e3424a9"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "address": "Camino Nuevo High School – 3500 West Temple Street",
         "category": "School",
         "date": "11/02/2021",
@@ -5425,44 +5305,6 @@
         "type": "Polygon"
       },
       "id": "b5d3f8027479f978dcafef34e8f87269"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "Los Angeles City Fire Station 24, 9411 Wentworth Street",
-        "category": "Public Facility",
-        "section": 11,
-        "set": 6,
-        "date": "11/12/2021"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -118.337014,
-              34.264291
-            ],
-            [
-              -118.337102,
-              34.263855
-            ],
-            [
-              -118.336762,
-              34.263808
-            ],
-            [
-              -118.336684,
-              34.264247
-            ],
-            [
-              -118.337014,
-              34.264291
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "b6dbc753faaee34299b98dab3919094e"
     },
     {
       "type": "Feature",

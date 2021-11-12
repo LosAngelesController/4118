@@ -42,7 +42,7 @@ const citybound = require('./citybounds.json')
 //console.log(locations)
 
 function isStringOneThousandFt(stringInput: string) {
-  console.log('stringinput', stringInput)
+ // console.log('stringinput', stringInput)
   return (stringInput.match(/Design/gi) || stringInput.match(/Navigation/gi))
 }
 
@@ -248,7 +248,31 @@ const debugParam = urlParams.get('debug');
 
 const searchParam = urlParams.get('search');
 
+const pinSetParam = urlParams.get('pinset');
+
+var pinSetGeojson: any;
+
+if (pinSetParam) {
+  console.log('locationscentroids', locationsCentroids)
+  const pinSetArray =locationsCentroids.features.filter((eachItem:any) => parseInt(eachItem.properties.set,10) === parseInt(pinSetParam,10)).map((eachItem:any) => eachItem.properties.centroid)
+  .map((eachItem:any) => {
+    eachItem.properties['marker-size'] = "small";
+    eachItem.properties['marker-symbol'] = "1";
+    eachItem.properties['marker-color'] = "small";
+    return eachItem;
+  })
+
+  pinSetGeojson = {
+    features: pinSetArray,
+    type: "FeatureCollection"
+  }
+
+  console.log('pinsetgeojsonresult',  pinSetGeojson )
+}
+
 const cityBoundParam = urlParams.get('citybound')
+
+
 export default class App extends React.PureComponent {
   mapContainer: any;
   state: any;
@@ -266,7 +290,8 @@ lng: lngParam || -118.41,
   featureSelected: {},
   infoBoxShown: true,
   currentSet: currentSetGlobal,
-  debugState: !!(debugParam)
+  debugState: !!(debugParam),
+  pinset: pinSetParam
 };
 this.mapContainer = React.createRef();
 }
@@ -490,7 +515,12 @@ map.on('load', () => {
         'line-width': 2
       }
     })
+
+   
+
   
+  
+
     map.addLayer({
       id: 'cityboundfill',
       type: 'fill',
@@ -657,6 +687,31 @@ map.on('load', () => {
    ],
     }
   });
+
+  if (this.state.pinset) {
+    console.log('pinSetGeojson', pinSetGeojson)
+
+  
+      
+      map.addLayer({
+        'id': 'points',
+        'type': 'symbol',
+        'source': {
+          type: 'geojson',
+          data: pinSetGeojson,
+      
+        'tolerance': 0,  },
+        'layout': {
+       'icon-image': 'custom-marker',
+        // get the title name from the source's "title" property
+        'text-allow-overlap': true,
+        "icon-allow-overlap": true
+        },
+        });
+   
+
+  
+  }
 });
     
      
