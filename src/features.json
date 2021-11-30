@@ -2209,7 +2209,7 @@
         "set": 7,
         "category": "Public Park",
         "section": 17,
-        "date": "11/03/2021"
+        "date": "11/30/2021"
       },
       "geometry": {
         "coordinates": [
@@ -2678,7 +2678,7 @@
         "address": "21052 Devonshire Street",
         "set": 7,
         "section": 17,
-        "date": "11/03/2021",
+        "date": "11/30/2021",
         "place_name": "Chatsworth Branch Los Angeles Public Library",
         "category": "Library"
       },
@@ -2940,7 +2940,7 @@
       "properties": {
         "address": "17141 Nordhodd Street",
         "category": "Public Park",
-        "date": "11/03/2021",
+        "date": "11/30/2021",
         "section": 17,
         "set": 7,
         "place_name": "Dearborn Park"
@@ -3511,7 +3511,7 @@
         "address": "9240 Wish Avenue",
         "category": "School",
         "place_name": "Dearborn Elementary School",
-        "date": "11/03/2021",
+        "date": "11/30/2021",
         "section": 17,
         "set": 7
       },
@@ -4118,7 +4118,7 @@
         "set": 7,
         "category": "Public Park",
         "section": 17,
-        "date": "11/03/2021"
+        "date": "11/30/2021"
       },
       "geometry": {
         "coordinates": [
@@ -5566,7 +5566,7 @@
       "properties": {
         "address": "22633 Vanowen Street",
         "category": "Public Park",
-        "date": "11/03/2021",
+        "date": "11/30/2021",
         "section": 17,
         "set": 7,
         "place_name": "Shadow Ranch"
@@ -6650,7 +6650,7 @@
       "properties": {
         "address": "10058 Reseda Boulevard",
         "category": "Public Park",
-        "date": "11/03/2021",
+        "date": "11/30/2021",
         "set": 7,
         "section": 17,
         "place_name": "Northridge Park"
@@ -7700,7 +7700,7 @@
       "properties": {
         "address": "25500 S Waterman Way",
         "category": "Drainage Channel",
-        "date": "11/03/2021",
+        "date": "11/30/2021",
         "set": 7,
         "section": 17
       },
