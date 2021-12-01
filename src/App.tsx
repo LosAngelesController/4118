@@ -7,6 +7,7 @@ import * as turf from '@turf/turf'
 
     // added the following 6 lines.
     import mapboxgl from 'mapbox-gl';
+import { assertDeclareExportAllDeclaration } from '@babel/types';
 
     // The following is required to stop "npm build" from transpiling mapbox code.
     // notice the exclamation point in the import.
@@ -22,7 +23,7 @@ var locationsImport = require('./features.json')
 var locationsRemoveSections = locationsImport.features.filter((location:any) => {
   if (location.properties.section) {
     // 9 will be passed nov 3
-    if ([16, 17, 18, 19].includes(location.properties.section)) {
+    if ([16,15,18].includes(location.properties.section)) {
       return false;
     } else {
       return true;
@@ -67,7 +68,7 @@ var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex
 
 //console.log(locationsBuffered)
 
-const currentSetGlobal = 6
+const currentSetGlobal = 7
 
 
 var geoJsonBoundary:any = {
@@ -167,6 +168,20 @@ function checkStateOfSidebarAndUpdateOtherComponents() {
       //
     }
   }
+}
+
+function checkHideOrShowTopRightGeocoder() {
+  var toprightbox = document.querySelector(".mapboxgl-ctrl-top-right")
+ if (toprightbox) {
+  var toprightgeocoderbox:any = toprightbox.querySelector(".mapboxgl-ctrl-geocoder");
+  if (toprightgeocoderbox) {
+    if (window.innerWidth >= 768) {
+      toprightgeocoderbox.style.display = 'block'
+    } else {
+      toprightgeocoderbox.style.display = 'none'
+    }
+  }
+ }
 }
 
 function splitIntoYellowAndRed(geojsonobj: any) {
@@ -291,12 +306,15 @@ lng: lngParam || -118.41,
   infoBoxShown: true,
   currentSet: currentSetGlobal,
   debugState: !!(debugParam),
-  pinset: pinSetParam
+  pinset: pinSetParam,
+  pendinglegend: false
 };
 this.mapContainer = React.createRef();
 }
   
   handleResize = () => {
+    checkHideOrShowTopRightGeocoder()
+
     const sidebar = document.querySelector(".sidebar-4118-list");
     if (sidebar) {
       if ((window.innerWidth < 768)) {
@@ -411,29 +429,16 @@ this.mapContainer = React.createRef();
   }));
   this.map = map
 
-     if (this.state.search) {
-       
-      map.addControl(
-        new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken,
-        mapboxgl: map
-        })
-        );
+     if (true) {
+
+     
+    
+      
+
+         
+        
 }
-     
-  // Add geolocate control to the map.
-map.addControl(
-  new mapboxgl.GeolocateControl({
-  positionOptions: {
-  enableHighAccuracy: true
-  },
-  // When active the map will receive updates to the device's location as it changes.
-  trackUserLocation: true,
-  // Draw an arrow next to the location dot to indicate which direction the device is heading.
-  showUserHeading: true
-  })
-);
-     
+
 
 
   console.log(map)
@@ -443,8 +448,7 @@ map.addControl(
     mapboxlogo.classList.add('hidden')
   }
 
-// Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
+
      
 map.on('move', () => {
 this.setState({
@@ -500,6 +504,71 @@ zoom: map.getZoom().toFixed(2)
      }
   
 map.on('load', () => {
+
+
+  map.addSource('single-point', {
+    type: 'geojson',
+    data: {
+      type: 'FeatureCollection',
+      features: []
+    }
+  });
+
+  map.addLayer({
+    id: 'point',
+    source: 'single-point',
+    type: 'circle',
+    paint: {
+      'circle-radius': 10,
+      'circle-color': '#448ee4'
+    }
+  });
+
+  const geocoder:any = new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: map,
+    proximity: {
+      longitude: -118.41,
+      latitude: 34
+    },
+    marker: true
+    })
+  geocoder.on('result', (event:any) => {
+    var singlePointSet:any = map.getSource('single-point')
+    singlePointSet.setData(event.result.geometry);
+    console.log('event.result.geometry',event.result.geometry)
+  });
+
+  geocoder.on('select', function(object:any){
+    var coord = object.feature.geometry.coordinates;
+    var singlePointSet:any = map.getSource('single-point')
+    singlePointSet.setData(object.feature.geometry);
+});
+
+  var geocoderId = document.getElementById('geocoder')
+
+  map.addControl(
+    geocoder
+    );
+
+    checkHideOrShowTopRightGeocoder()
+  
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+     
+  // Add geolocate control to the map.
+  map.addControl(
+    new mapboxgl.GeolocateControl({
+    positionOptions: {
+    enableHighAccuracy: true
+    },
+    // When active the map will receive updates to the device's location as it changes.
+    trackUserLocation: true,
+    // Draw an arrow next to the location dot to indicate which direction the device is heading.
+    showUserHeading: true
+    })
+  );
+       
 
   if (cityBoundParam) {
     map.addLayer({
@@ -752,12 +821,16 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
          <div
         className='md:max-w-xs  mt-1' 
             ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, bridge, active railway, etc.)</div>
-           <div
-               className='md:max-w-xs flex flex-row  mt-1' 
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 24 30" enable-background="new 0 0 24 24" className='text-white w-5 flex-none' stroke='currentColor' fill='currentColor'><path d="M7,11H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S7.6,11,7,11z"/><path d="M13,13c0.6,0,1-0.4,1-1s-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1H13z"/><path d="M19,11h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S19.6,11,19,11z"/></svg>
-             : Pending Vote by Council
-            </div> 
+          {
+            this.state.pendinglegend === true && (
+              <div
+              className='md:max-w-xs flex flex-row  mt-1' 
+           >
+           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 24 30" enable-background="new 0 0 24 24" className='text-white w-5 flex-none' stroke='currentColor' fill='currentColor'><path d="M7,11H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S7.6,11,7,11z"/><path d="M13,13c0.6,0,1-0.4,1-1s-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1H13z"/><path d="M19,11h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S19.6,11,19,11z"/></svg>
+            : Pending Vote by Council
+           </div> 
+            )
+          }
          <div className='md:max-w-xs mt-0'>Only covers by-resolution locations voted on by City Council. See ordinance for more info.</div>
             <div className='flex-row  mt-1'>
             <a  target="_blank" rel='external' className='underline text-mejito' href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'>41.18 Ordinance</a>
@@ -900,7 +973,11 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
         </div>
        
     </div>
+
     )}
+
+    <div
+    className='geocoder'></div>
     
     <div className='absolute z-10 md:hidden rounded-full bottom-4 right-4 bg-mejito w-16 h-16 '
       onClick={(event: any) => {
