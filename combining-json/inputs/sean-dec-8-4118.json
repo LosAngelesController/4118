@@ -1,0 +1,237 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "adress": "52nd Place and the 110 Freeway ",
+        "category": "Overpass",
+        "date": "12/08/2021",
+        "section": 20,
+        "set": 9
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.280616,
+              33.995123
+            ],
+            [
+              -118.280611,
+              33.994955
+            ],
+            [
+              -118.280383,
+              33.994954
+            ],
+            [
+              -118.280389,
+              33.995125
+            ],
+            [
+              -118.280616,
+              33.995123
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "07dbdeb848af09683dce5f671eee280f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "adress": "Vernon Avenue and the 110 Freeway",
+        "category": "Overpass",
+        "date": "12/08/2021",
+        "section": 20,
+        "set": 9
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.281195,
+              34.003915
+            ],
+            [
+              -118.280967,
+              34.003917
+            ],
+            [
+              -118.280972,
+              34.003642
+            ],
+            [
+              -118.2812,
+              34.003639
+            ],
+            [
+              -118.281195,
+              34.003915
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "42cb3d40a9ed7383a679580a346a7576"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "adress": "49th Street and the 110 Freeway ",
+        "category": "Overpass",
+        "date": "12/08/2021",
+        "section": 20,
+        "set": 9
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.28091,
+              33.998414
+            ],
+            [
+              -118.280894,
+              33.998214
+            ],
+            [
+              -118.280674,
+              33.998218
+            ],
+            [
+              -118.28069,
+              33.998415
+            ],
+            [
+              -118.28091,
+              33.998414
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "49e122820ca2b1a00330ec1c5d0772b6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "adress": "47th Street and the 110 Freeway",
+        "category": "Overpass",
+        "date": "12/08/2021",
+        "section": 20,
+        "set": 9
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.280906,
+              34.000963
+            ],
+            [
+              -118.280928,
+              34.00116
+            ],
+            [
+              -118.281093,
+              34.001155
+            ],
+            [
+              -118.281079,
+              34.000958
+            ],
+            [
+              -118.280906,
+              34.000963
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "4b8c7ccb78f687f39ad25d8620a1cf6a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "adress": "42nd Street and the 110 Freeway",
+        "category": "Overpass",
+        "date": "12/08/2021",
+        "section": 20,
+        "set": 9
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.281158,
+              34.007511
+            ],
+            [
+              -118.281157,
+              34.007312
+            ],
+            [
+              -118.28093,
+              34.007314
+            ],
+            [
+              -118.280931,
+              34.007413
+            ],
+            [
+              -118.280928,
+              34.007511
+            ],
+            [
+              -118.281158,
+              34.007511
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "548de96b852a4048e6d5cc52a7a901d2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "adress": "43rd Street and the 110 Freeway ",
+        "category": "Overpass",
+        "date": "12/08/2021",
+        "section": 20,
+        "set": 9
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.281163,
+              34.005693
+            ],
+            [
+              -118.281162,
+              34.005497
+            ],
+            [
+              -118.28094,
+              34.005501
+            ],
+            [
+              -118.280939,
+              34.005696
+            ],
+            [
+              -118.281163,
+              34.005693
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "5b962f551c547b6ef481cab62ca4f126"
+    }
+  ],
+  "type": "FeatureCollection"
+}
