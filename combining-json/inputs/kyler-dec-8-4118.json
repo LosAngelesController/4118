@@ -1,0 +1,219 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "39th Street and the 110 Freeway",
+        "set": 9,
+        "section": 20,
+        "category": "Underpass",
+        "date": "12/08/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.281533,
+              34.014116
+            ],
+            [
+              -118.281527,
+              34.013838
+            ],
+            [
+              -118.281088,
+              34.013711
+            ],
+            [
+              -118.280446,
+              34.013502
+            ],
+            [
+              -118.280331,
+              34.013775
+            ],
+            [
+              -118.280894,
+              34.013959
+            ],
+            [
+              -118.281275,
+              34.014081
+            ],
+            [
+              -118.281515,
+              34.014119
+            ],
+            [
+              -118.281533,
+              34.014116
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "143b60cc2b373fe75169fddf672cca2c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Martin Luther King, Jr. Boulevard and the 110 Freeway",
+        "category": "Underpass",
+        "set": 9,
+        "section": 20,
+        "date": "12/08/2021"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.281519,
+              34.011219
+            ],
+            [
+              -118.281531,
+              34.01096
+            ],
+            [
+              -118.280398,
+              34.010954
+            ],
+            [
+              -118.280405,
+              34.01123
+            ],
+            [
+              -118.281519,
+              34.011219
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "3c41b3b134a66be485c4ee6b3c3757d1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "51st Street and the 110 Freeway ",
+        "category": "Overpass",
+        "date": "12/08/2021",
+        "section": 20,
+        "set": 9
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.280952,
+              33.996629
+            ],
+            [
+              -118.280924,
+              33.996368
+            ],
+            [
+              -118.280183,
+              33.996362
+            ],
+            [
+              -118.280192,
+              33.99664
+            ],
+            [
+              -118.280952,
+              33.996629
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "89443fceec2de73b8c79ebd1ea53884a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "54th Street and the 110 Freeway",
+        "category": "Overpass",
+        "date": "12/08/2021",
+        "section": 20,
+        "set": 9
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.280901,
+              33.993404
+            ],
+            [
+              -118.280903,
+              33.993203
+            ],
+            [
+              -118.280122,
+              33.993204
+            ],
+            [
+              -118.280125,
+              33.993409
+            ],
+            [
+              -118.280901,
+              33.993404
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "b3127854ac09e39899522c016d877ef8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "37th Street and the 110 Freeway",
+        "category": "Underpass",
+        "date": "12/08/2021",
+        "section": 20,
+        "set": 9
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.279392,
+              34.017246
+            ],
+            [
+              -118.279516,
+              34.01701
+            ],
+            [
+              -118.280368,
+              34.017397
+            ],
+            [
+              -118.281027,
+              34.017665
+            ],
+            [
+              -118.280898,
+              34.017858
+            ],
+            [
+              -118.280303,
+              34.017619
+            ],
+            [
+              -118.279392,
+              34.017246
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "bd17173086476bd1663e543c8e48d3bf"
+    }
+  ],
+  "type": "FeatureCollection"
+}
