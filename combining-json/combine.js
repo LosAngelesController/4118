@@ -18,7 +18,6 @@ arrayOfFiles.forEach((eachFile, itemIndex) => {
     locations.features = [...locations.features, ...eachFile.features]
 })
 
-
 console.log(locations.features.length)
 
 var jsonData = JSON.stringify(locations);

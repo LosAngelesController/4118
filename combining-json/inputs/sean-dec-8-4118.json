@@ -3,7 +3,7 @@
     {
       "type": "Feature",
       "properties": {
-        "adress": "52nd Place and the 110 Freeway ",
+        "address": "52nd Place and the 110 Freeway ",
         "category": "Overpass",
         "date": "12/08/2021",
         "section": 20,
@@ -41,7 +41,7 @@
     {
       "type": "Feature",
       "properties": {
-        "adress": "Vernon Avenue and the 110 Freeway",
+        "address": "Vernon Avenue and the 110 Freeway",
         "category": "Overpass",
         "date": "12/08/2021",
         "section": 20,
@@ -79,7 +79,7 @@
     {
       "type": "Feature",
       "properties": {
-        "adress": "49th Street and the 110 Freeway ",
+        "address": "49th Street and the 110 Freeway ",
         "category": "Overpass",
         "date": "12/08/2021",
         "section": 20,
@@ -117,7 +117,7 @@
     {
       "type": "Feature",
       "properties": {
-        "adress": "47th Street and the 110 Freeway",
+        "address": "47th Street and the 110 Freeway",
         "category": "Overpass",
         "date": "12/08/2021",
         "section": 20,
@@ -155,7 +155,7 @@
     {
       "type": "Feature",
       "properties": {
-        "adress": "42nd Street and the 110 Freeway",
+        "address": "42nd Street and the 110 Freeway",
         "category": "Overpass",
         "date": "12/08/2021",
         "section": 20,
@@ -197,7 +197,7 @@
     {
       "type": "Feature",
       "properties": {
-        "adress": "43rd Street and the 110 Freeway ",
+        "address": "43rd Street and the 110 Freeway ",
         "category": "Overpass",
         "date": "12/08/2021",
         "section": 20,
