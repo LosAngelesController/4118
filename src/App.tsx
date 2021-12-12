@@ -570,7 +570,7 @@ map.addControl(new mapboxgl.NavigationControl());
   );
        
 
-  if (cityBoundParam) {
+  if (true) {
     map.addLayer({
       id: 'citybound',
       type: 'line',
