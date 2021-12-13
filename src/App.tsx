@@ -876,7 +876,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
           </div>
         </div>
     )}
-        <div className={`hidden md:block flex-none ${this.state.infoBoxShown ? 'absolute' : ''} w-6 h-6 bg-opacity-95 bg-mejito text-black rounded-full md:ml-3 md:my-3`}
+        <div className={`hidden md:block flex-none ${this.state.infoBoxShown ? 'absolute' : ''} w-6 h-6 bg-opacity-95 bg-mejito text-black rounded-full md:ml-2 md:my-2`}
           
           style={
             {

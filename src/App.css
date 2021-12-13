@@ -117,6 +117,10 @@ scroll-margin-right: 3px;
     color: #fafafa;
   }
 
+  .mapboxgl-ctrl-geocoder--input:focus-visible {
+    border-style: solid !important;
+  }
+
   .active .mapboxgl-ctrl-geocoder--suggestion {
     background-color: #2a2a2a;
     color: #ffffff;
