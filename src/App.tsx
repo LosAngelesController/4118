@@ -581,6 +581,23 @@ map.on('load', () => {
       geocoderId.appendChild(geocoder3.onAdd(map));
 
       var inputMobile = document.querySelector(".geocoder input");
+
+      try {
+        var loadboi =  document.querySelector('.mapboxgl-ctrl-geocoder--icon-loading')
+        if (loadboi) {
+          var brightspin:any = loadboi.firstChild;
+       if (brightspin) {
+        brightspin.setAttribute('style', 'fill: #e2e8f0');
+       }
+       var darkspin:any = loadboi.lastChild;
+       if (darkspin) {
+        darkspin.setAttribute('style', 'fill: #94a3b8');
+       }
+        }
+       
+      } catch (err) {
+        console.error(err)
+      }
     
       if (inputMobile) {
         inputMobile.addEventListener("focus", () => {

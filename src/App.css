@@ -69,7 +69,7 @@ scroll-margin-right: 3px;
   }
 
   .geocoder .mapboxgl-ctrl-geocoder--icon-search {
-    top: 9.5px;
+    top: 7px;
   }
 
 
@@ -131,6 +131,14 @@ scroll-margin-right: 3px;
     color: #ffffff;
   }
 
+  .geocoder input:focus {
+    outline-style: none;
+  }
+
+  .mapboxgl-ctrl-geocoder--icon-close {
+    margin-top: 2px;
+  }
+
 .suggestions-wrapper .suggestions .active {
   background-color: #262626;
 }
@@ -157,4 +165,22 @@ scroll-margin-right: 3px;
 
   .mapboxgl-ctrl-geocoder--button {
     background: transparent;
+  }
+
+  .mapboxgl-ctrl-geocoder--icon-loading {
+    top: 2px !important;
+    fill: #e2e8f0 !important;
+  }
+
+  .mapboxgl-ctrl-geocoder--icon-loading:first-child {
+ 
+    fill: #e2e8f0 !important;
+  }
+
+  .mapboxgl-ctrl-geocoder--icon-loading:last-child {
+    fill: #64748b !important;
+  }
+
+  .mapboxgl-ctrl-geocoder--icon-loading {
+    top: 2px !important;
   }
