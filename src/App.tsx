@@ -2,6 +2,7 @@ import React from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css'
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
+import './App.css'
  
 import * as turf from '@turf/turf'
 
@@ -87,7 +88,7 @@ function centroids(geojsonobj: any) {
 
     var centroid = turf.centroid(polygon);
     eachFeature.properties['centroid'] = centroid
-    console.log(centroid)
+   // console.log(centroid)
 
     featuresTotal.features.push(eachFeature)
   });
@@ -96,7 +97,7 @@ function centroids(geojsonobj: any) {
 }
 
 var locationsCentroids = centroids(locations)
-console.log('locationsCentroids', locationsCentroids)
+//console.log('locationsCentroids', locationsCentroids)
 
 function showMapboxStuff() {
   /*
@@ -107,7 +108,7 @@ function showMapboxStuff() {
   }*/
 
   var mapboxtopright = document.querySelector(".mapboxgl-ctrl-top-right")
-  console.log('topright',mapboxtopright)
+ // console.log('topright',mapboxtopright)
   if (mapboxtopright) {
     mapboxtopright.classList.remove('hidden')
   }
@@ -207,7 +208,7 @@ function splitIntoYellowAndRed(geojsonobj: any) {
    
       eachFeature.properties['buffer'] = '1000'
       
-      console.log()
+     // console.log()
       thousands['features'].push(eachFeature)
     } else {
       eachFeature.properties['buffer'] = '500'
@@ -231,7 +232,7 @@ const { thousands, fivehundreds, featuresTotal } = splitIntoYellowAndRed(locatio
 const {thousands : thousandsBuffer, fivehundreds : fivehundredsBuffer, featuresTotal: featuresTotalBuffer} = splitIntoYellowAndRed(geoJsonBoundary)
 const {thousands : thousandsBufferUpcoming, fivehundreds : fivehundredsBufferUpcoming, featuresTotal: featuresTotalBufferUpcoming} = splitIntoYellowAndRed(boundsUpcomingGeojson)
 
-console.log('thousandsBufferUpcoming', thousandsBufferUpcoming)
+//console.log('thousandsBufferUpcoming', thousandsBufferUpcoming)
 
 
 const formulaForZoom = () => {
@@ -268,7 +269,7 @@ const pinSetParam = urlParams.get('pinset');
 var pinSetGeojson: any;
 
 if (pinSetParam) {
-  console.log('locationscentroids', locationsCentroids)
+  //console.log('locationscentroids', locationsCentroids)
   const pinSetArray =locationsCentroids.features.filter((eachItem:any) => parseInt(eachItem.properties.set,10) === parseInt(pinSetParam,10)).map((eachItem:any) => eachItem.properties.centroid)
   .map((eachItem:any) => {
     eachItem.properties['marker-size'] = "small";
@@ -282,7 +283,7 @@ if (pinSetParam) {
     type: "FeatureCollection"
   }
 
-  console.log('pinsetgeojsonresult',  pinSetGeojson )
+ // console.log('pinsetgeojsonresult',  pinSetGeojson )
 }
 
 const cityBoundParam = urlParams.get('citybound')
@@ -424,9 +425,10 @@ this.mapContainer = React.createRef();
     center: [lng, lat],
     zoom: zoom,
     attributionControl: false
-  }).addControl(new mapboxgl.AttributionControl({
-    customAttribution: 'Paid for by Mejia for City Controller 2022, FPPC ID#: 1435234 1001 Wilshire Blvd. Suite 102, Los Angeles, CA, 90017. Additional information is available at ethics.lacity.org.'
-  }));
+  })
+  //.addControl(new mapboxgl.AttributionControl({
+   // customAttribution: 'Paid for by Mejia for City Controller 2022, FPPC ID#: 1435234 1001 Wilshire Blvd. Suite 102, Los Angeles, CA, 90017. Additional information is available at ethics.lacity.org.'
+  //}));
   this.map = map
 
      if (true) {
@@ -520,7 +522,7 @@ map.on('load', () => {
     type: 'circle',
     paint: {
       'circle-radius': 10,
-      'circle-color': '#448ee4'
+      'circle-color': '#41ffca'
     }
   });
 
@@ -532,11 +534,33 @@ map.on('load', () => {
       latitude: 34
     },
     marker: true
-    })
+    });
+
+    var colormarker = new mapboxgl.Marker({
+      color: '#41ffca'
+    });
+
+    const geocoderopt:any = 
+      {
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+        marker: {
+          color: '#41ffca'
+        }
+        }
+    
+
+    const geocoder2 = new MapboxGeocoder(geocoderopt);
+    const geocoder3 = new MapboxGeocoder(geocoderopt);
+
+
+   
+       
   geocoder.on('result', (event:any) => {
     var singlePointSet:any = map.getSource('single-point')
     singlePointSet.setData(event.result.geometry);
     console.log('event.result.geometry',event.result.geometry)
+    console.log('geocoderesult', event)
   });
 
   geocoder.on('select', function(object:any){
@@ -547,8 +571,56 @@ map.on('load', () => {
 
   var geocoderId = document.getElementById('geocoder')
 
+
+
+  if (geocoderId) {
+    console.log(
+    'geocoder div found'
+    )
+
+    if (!document.querySelector(".geocoder input")) {
+      geocoderId.appendChild(geocoder3.onAdd(map));
+
+      var inputMobile = document.querySelector(".geocoder input");
+
+      try {
+        var loadboi =  document.querySelector('.mapboxgl-ctrl-geocoder--icon-loading')
+        if (loadboi) {
+          var brightspin:any = loadboi.firstChild;
+       if (brightspin) {
+        brightspin.setAttribute('style', 'fill: #e2e8f0');
+       }
+       var darkspin:any = loadboi.lastChild;
+       if (darkspin) {
+        darkspin.setAttribute('style', 'fill: #94a3b8');
+       }
+        }
+       
+      } catch (err) {
+        console.error(err)
+      }
+    
+      if (inputMobile) {
+        inputMobile.addEventListener("focus", () => {
+          //make the box below go away
+          this.setState((state: any, props: any) => {
+          return {
+            infoBoxShown: false
+          }
+          })
+          });
+      }
+    }
+  
+
+  } else {
+    console.log('no geocoder div')
+    console.log(geocoderId)
+  }
+
+
   map.addControl(
-    geocoder
+    geocoder2
     );
 
     checkHideOrShowTopRightGeocoder()
@@ -802,6 +874,10 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       className=' outsideTitle max-h-screen flex-col flex z-50'
     >
       <div className='titleBox max-h-screen mt-2 ml-2 md:mt-3 md:ml-3 break-words'>41.18 By-Resolution Areas</div>
+
+      <div
+    className={`geocoder md:hidden`} id='geocoder'></div>
+
       {
         this.state.debugState && (
           <div className="sidebar-debug mx-4 mt-2 mb-1 bg-gray-900 text-white">
@@ -812,7 +888,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       <div className='flex flex-col md:flex-row w-auto md:auto md:flex-nowrap '>
       {this.state.infoBoxShown && (
           <div
-          className='flex-none font-sans mt-5 md:mt-3 p-2 banned-box-text ml-2 md:ml-3 bg-truegray-900 bg-opacity-90 md:bg-opacity-70 rounded-xl text-xs' style={{
+          className='flex-none font-sans mt-3 md:mt-3 p-2 banned-box-text ml-2 md:ml-3 bg-truegray-900 bg-opacity-90 md:bg-opacity-70 rounded-xl text-xs' style={{
           
         }}> <div className='md:max-w-xs  mt-1'>Banned: sit, lie, sleep, or store, use, maintain, or place personal property within:</div>
         <div
@@ -838,7 +914,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
           </div>
         </div>
     )}
-        <div className={`hidden md:block flex-none ${this.state.infoBoxShown ? 'absolute' : ''} w-6 h-6 bg-opacity-95 bg-mejito text-black rounded-full md:ml-3 md:my-3`}
+        <div className={`hidden md:block flex-none ${this.state.infoBoxShown ? 'absolute' : ''} w-6 h-6 bg-opacity-95 bg-mejito text-black rounded-full md:ml-2 md:my-2`}
           
           style={
             {
@@ -877,9 +953,11 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
           }
          </div>
       </div>
+
+
      
       
-      <div className={`w-screen md:w-auto  scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 max-h-screen transform overflow-y-auto transition-all z-50 sidebar-4118-list md:ml-3 absolute md:static ${(this.state.initialWindowWidth >= 768)  ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs text-xs font-sans bg-truegray-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl md:mb-10 mejiascrollbar`}>
+      <div className={`w-screen md:w-auto  scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 max-h-screen transform overflow-y-auto transition-all z-50 sidebar-4118-list md:ml-3 absolute md:static ${(this.state.initialWindowWidth >= 768)  ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs text-xs font-sans bg-truegray-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl mejiascrollbar`}>
      
         <div className='pl-1 pt-2 text-base flex flex-row flex-nowrap'>
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -972,14 +1050,24 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
               {this.state.featureSelected.properties.date}</p>
         </div>
        
+                
+    
+
     </div>
 
     )}
-
-    <div
-    className='geocoder'></div>
+<div className={`absolute md:mx-auto z-9 bottom-2 left-1 md:left-1/2 md:transform md:-translate-x-1/2`}>
+<a href='https://mejiaforcontroller.com/' target="_blank">
     
-    <div className='absolute z-10 md:hidden rounded-full bottom-4 right-4 bg-mejito w-16 h-16 '
+  
+                  <img src='/mejia-watermark-smol.png' className='h-9 md:h-10'></img>
+                  
+    </a>
+  
+                </div>
+  
+    
+    <div className='absolute z-10 md:hidden rounded-full bottom-3 right-3 bg-mejito w-16 h-16 '
       onClick={(event: any) => {
         this.toggleList();
         checkStateOfSidebarAndUpdateOtherComponents();
