@@ -570,11 +570,31 @@ map.on('load', () => {
 
   var geocoderId = document.getElementById('geocoder')
 
+
+
   if (geocoderId) {
     console.log(
     'geocoder div found'
     )
-  geocoderId.appendChild(geocoder3.onAdd(map));
+
+    if (!document.querySelector(".geocoder input")) {
+      geocoderId.appendChild(geocoder3.onAdd(map));
+
+      var inputMobile = document.querySelector(".geocoder input");
+    
+      if (inputMobile) {
+        inputMobile.addEventListener("focus", () => {
+          //make the box below go away
+          this.setState((state: any, props: any) => {
+          return {
+            infoBoxShown: false
+          }
+          })
+          });
+      }
+    }
+  
+
   } else {
     console.log('no geocoder div')
     console.log(geocoderId)
