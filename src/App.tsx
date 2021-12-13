@@ -425,9 +425,10 @@ this.mapContainer = React.createRef();
     center: [lng, lat],
     zoom: zoom,
     attributionControl: false
-  }).addControl(new mapboxgl.AttributionControl({
-    customAttribution: 'Paid for by Mejia for City Controller 2022, FPPC ID#: 1435234 1001 Wilshire Blvd. Suite 102, Los Angeles, CA, 90017. Additional information is available at ethics.lacity.org.'
-  }));
+  })
+  //.addControl(new mapboxgl.AttributionControl({
+   // customAttribution: 'Paid for by Mejia for City Controller 2022, FPPC ID#: 1435234 1001 Wilshire Blvd. Suite 102, Los Angeles, CA, 90017. Additional information is available at ethics.lacity.org.'
+  //}));
   this.map = map
 
      if (true) {
@@ -956,7 +957,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
 
      
       
-      <div className={`w-screen md:w-auto  scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 max-h-screen transform overflow-y-auto transition-all z-50 sidebar-4118-list md:ml-3 absolute md:static ${(this.state.initialWindowWidth >= 768)  ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs text-xs font-sans bg-truegray-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl md:mb-10 mejiascrollbar`}>
+      <div className={`w-screen md:w-auto  scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 max-h-screen transform overflow-y-auto transition-all z-50 sidebar-4118-list md:ml-3 absolute md:static ${(this.state.initialWindowWidth >= 768)  ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs text-xs font-sans bg-truegray-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl mejiascrollbar`}>
      
         <div className='pl-1 pt-2 text-base flex flex-row flex-nowrap'>
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -1055,9 +1056,18 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
     </div>
 
     )}
-
+<div className={`absolute md:mx-auto z-9 bottom-2 left-1 md:left-1/2 md:transform md:-translate-x-1/2`}>
+<a href='https://mejiaforcontroller.com/' target="_blank">
     
-    <div className='absolute z-10 md:hidden rounded-full bottom-4 right-4 bg-mejito w-16 h-16 '
+  
+                  <img src='/mejia-watermark-smol.png' className='h-9 md:h-10'></img>
+                  
+    </a>
+  
+                </div>
+  
+    
+    <div className='absolute z-10 md:hidden rounded-full bottom-3 right-3 bg-mejito w-16 h-16 '
       onClick={(event: any) => {
         this.toggleList();
         checkStateOfSidebarAndUpdateOtherComponents();
