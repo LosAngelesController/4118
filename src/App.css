@@ -174,11 +174,11 @@ scroll-margin-right: 3px;
 
   .mapboxgl-ctrl-geocoder--icon-loading:first-child {
  
-    fill: #e2e8f0 !important;
+    /*fill: #e2e8f0 !important;*/
   }
 
   .mapboxgl-ctrl-geocoder--icon-loading:last-child {
-    fill: #64748b !important;
+   /* fill: #64748b !important;*/
   }
 
   .mapboxgl-ctrl-geocoder--icon-loading {
