@@ -297,6 +297,7 @@ export default class App extends React.PureComponent {
 constructor(props:any) {
 super(props);
 this.state = {
+  isButtonExit: false,
 lng: lngParam || -118.41,
   lat:  latParam || 34,
   initialWindowWidth: window.innerWidth,
@@ -353,6 +354,25 @@ this.mapContainer = React.createRef();
         }
         } 
         sidebardom()
+        this.updatebuttonstate()
+  }
+
+  updatebuttonstate = () => {
+    const sidebar:any = document.querySelector(".sidebar-4118-list");
+
+    if (sidebar != null) {
+      var classList = sidebar.classList
+
+      if (classList.contains("-translate-x-full")) {
+        this.setState({
+          isButtonExit: false
+        })
+      } else {
+        this.setState({
+          isButtonExit: true
+        })
+      }
+    }
   }
   
   flyToPoint = (longcoord: any, latcoord: any, map: any, eachFeature: any, indexOfFeature: any, bufferFeat:any) => {
@@ -1074,9 +1094,25 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
         this.toggleList();
         checkStateOfSidebarAndUpdateOtherComponents();
       }}>
-      <svg width="24" height="24" fill="none" className="text-black absolute m-auto top-1/2 left-1/2 -mt-3 -ml-3 transition duration-300 transform scale-80">
-      <path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"></path>  
-      </svg>
+     
+      {
+  this.state.isButtonExit === false && (
+    <svg width="24" height="24" fill="none" className="text-black absolute m-auto top-1/2 left-1/2 -mt-3 -ml-3 transition duration-300 transform scale-80">
+    <path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"></path>  
+    </svg>
+  )
+}
+      {
+  this.state.isButtonExit === true && (
+<svg width="24" height="24"  xmlns="http://www.w3.org/2000/svg" className="text-black absolute m-auto top-1/2 left-1/2 -mt-3 -ml-3 transition duration-300 transform scale-80"
+       fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+</svg>
+  )
+}
+
+
+      
     </div>
 </div>
 );
