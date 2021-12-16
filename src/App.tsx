@@ -1017,9 +1017,19 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       
     }} className="map-container" />
 
+<div className={`absolute md:mx-auto z-9 bottom-2 left-1 md:left-1/2 md:transform md:-translate-x-1/2`}>
+<a href='https://mejiaforcontroller.com/' target="_blank">
+    
+  
+                  <img src='/mejia-watermark-smol.png' className='h-9 md:h-10'></img>
+                  
+    </a>
+  
+                </div>
+
     {this.state.isPopupActive && (
     <div className={`
-    text-xs absolute bottom-4 left-4 md:right-4 md:left-auto md:bottom-9 w-auto text-white z-10 popupbox z-auto  rounded-sm bg-opacity-75`}>
+    text-xs absolute bottom-3 left-3 md:right-4 md:left-auto md:bottom-9 w-auto text-white z-10 popupbox z-auto  rounded-sm bg-opacity-75`}>
          
          <div className='' onClick={(event) => {
           this.setState((state: any, props: any) => {
@@ -1056,15 +1066,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
     </div>
 
     )}
-<div className={`absolute md:mx-auto z-9 bottom-2 left-1 md:left-1/2 md:transform md:-translate-x-1/2`}>
-<a href='https://mejiaforcontroller.com/' target="_blank">
-    
-  
-                  <img src='/mejia-watermark-smol.png' className='h-9 md:h-10'></img>
-                  
-    </a>
-  
-                </div>
+
   
     
     <div className='absolute z-10 md:hidden rounded-full bottom-3 right-3 bg-mejito w-16 h-16 '
