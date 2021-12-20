@@ -15,7 +15,13 @@ var locations =  {
   
 arrayOfFiles.forEach((eachFile, itemIndex) => {
     console.log(itemIndex + " has " + eachFile.features.length + " locs")
-    locations.features = [...locations.features, ...eachFile.features]
+
+        var filteredEachFiles = eachFile.features.filter((eachItem) => {
+            console.log(eachItem.properties.address)
+           return eachItem.properties.address.trim() != "25500 S Waterman Way"
+
+        })
+    locations.features = [...locations.features, ...filteredEachFiles]
 })
 
 console.log(locations.features.length)
