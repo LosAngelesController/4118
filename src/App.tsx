@@ -671,8 +671,8 @@ map.addControl(new mapboxgl.NavigationControl());
         data:  citybound
       },
       paint: {
-        "line-color": '#41ffca',
-        'line-opacity': 0.8,
+        "line-color": '#51ffea',
+        'line-opacity': 0.9,
         'line-width': 2
       }
     })
@@ -690,8 +690,8 @@ map.addControl(new mapboxgl.NavigationControl());
         data:  citybound
       },
       paint: {
-        'fill-color': '#ddffdd',
-        'fill-opacity': 0.05
+        'fill-color': '#aaaaaa',
+        'fill-opacity': 0.01
       }
     })
   }
