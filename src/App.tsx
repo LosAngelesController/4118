@@ -10,6 +10,26 @@ import * as turf from '@turf/turf'
     import mapboxgl from 'mapbox-gl';
 import { assertDeclareExportAllDeclaration } from '@babel/types';
 
+import { datadogRum } from '@datadog/browser-rum';
+try {
+  datadogRum.init({
+    applicationId: '0f167d08-abab-4f76-bdc7-71efacca54d8',
+    clientToken: 'pub15407666c25ebb17ff50cdde4892057f',
+    site: 'datadoghq.com',
+    service:'4118',
+    // Specify a version number to identify the deployed version of your application in Datadog 
+    version: '1.0.0',
+    sampleRate: 100,
+    trackInteractions: true,
+    defaultPrivacyLevel: 'allow'
+  });
+    
+  datadogRum.startSessionReplayRecording();
+} catch (datadogerr) {
+  console.error(datadogerr)
+}
+
+
     // The following is required to stop "npm build" from transpiling mapbox code.
     // notice the exclamation point in the import.
     // @ts-ignore
