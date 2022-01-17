@@ -18,8 +18,7 @@ arrayOfFiles.forEach((eachFile, itemIndex) => {
 
         var filteredEachFiles = eachFile.features.filter((eachItem) => {
             console.log(eachItem.properties.address)
-           return eachItem.properties.address.trim() != "25500 S Waterman Way"
-
+           return eachItem.properties.address.trim() != "25500 S Waterman Way" && eachItem.properties.address.trim() != "Shatto Recreation Center – 3191 West 4th Street"
         })
     locations.features = [...locations.features, ...filteredEachFiles]
 })
