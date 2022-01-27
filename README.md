@@ -2,6 +2,9 @@
 
 This Map was made by Kenneth Mejia For LA City Controller
 
+Software development and Map Design: Kyler Chin
+Drawing Map Credits: Kyler Chin, Seanathan
+
 You're free to use this for whatever you want! (except certain cases)
 If you plan on using the map publically, please attribute "Kenneth Mejia For LA City Controller" in a clearly stated manner on the map. 
 If you would like an exception on a case-by-case basis to this, contact kyler@mejiaforcontroller.com
