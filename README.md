@@ -3,6 +3,7 @@
 This Map was made by Kenneth Mejia For LA City Controller
 
 Software development and Map Design: Kyler Chin
+
 Drawing Map Credits: Kyler Chin, Seanathan
 
 You're free to use this for whatever you want! (except certain cases)
@@ -71,3 +72,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Abolish 41.18
