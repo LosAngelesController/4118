@@ -18,13 +18,19 @@ Tech Ethics (Tethics):
 - Do good, not evil
 
 # Using the finished compiled files from this project.
-Our Geojson export file is stored in `src/features.json`
+Our Geojson export file is stored in `src/features.json`. We plan on exporting a buffer file for the public coming soon!
 
 Our team generates new kml files after each updates and they are stored in `kmlexport` folder. Bring in both files into your own software program and layer them on top of each other.
 
 Any files in the `combining-json` are used by our team to join our geojson files after drawing into a single file to be imported into the app. It's a mess and we recommend you work with the single built file at `src/features.json` and not `combining-json`
 
 # Technical Documentation
+
+In our online web app, The defined buffers are not loaded in. The areas are loaded in, the software seperates the areas into 500 and 1000 buffers using a function. It checks if the category contains the string "Navigation" or "Design" since that means it's a 1000 zone. Then the javascript library Turf generates the buffer for both layers. Then all 4 layers are inserted into the Mapbox GLJS.
+
+The map also contains a scrollable list. We plan on making proximity shown to the edge of each zone with geolocation coming soon!
+
+The map also has a search box using Mapbox Geocoding, it's not as accurate as google maps and is missing many business names but it works.
 
 # Getting Started with Create React App
 
