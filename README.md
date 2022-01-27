@@ -13,6 +13,12 @@ Tech Ethics (Tethics):
 - You cannot use this map in anyway, shape, or form to enforce 41.18.
 - Do good, not evil
 
+# Using the finished compiled files from this project.
+Our Geojson export file is stored in `src/features.json`
+
+Our team generates new kml files after each updates and they are stored in `kmlexport` folder. Bring in both files into your own software program and layer them on top of each other.
+
+Any files in the `combining-json` are used by our team to join our geojson files after drawing into a single file to be imported into the app. It's a mess and we recommend you work with the single built file at `src/features.json` and not `combining-json`
 
 # Technical Documentation
 
