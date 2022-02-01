@@ -1007,7 +1007,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             }}
             className="h-6 w-6 flex-shrink md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-</svg><p className='flex-grow  scrollbar scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 '>List - By-Resolution Areas</p>
+</svg><p className='flex-grow  scrollbar scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 font-bold'>List of By-Resolution Areas</p>
         
         </div>
         {
@@ -1024,7 +1024,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
           this.flyToPoint(eachFeature.properties.centroid.geometry.coordinates[0], eachFeature.properties.centroid.geometry.coordinates[1], this.map, eachFeature, eachFeatureIndex,
             featuresTotalBuffer.features[eachFeatureIndex])
           }}>
-          <p className='font-bold'>{eachFeature.properties.address}</p>
+          <p className='font-bold py-2'>{eachFeature.properties.address}</p>
        
           <p>{(eachFeature.properties.buffer === '1000' && (
             <span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-1 py-1 mr-1 font-xs'>1000ft</span>
@@ -1034,7 +1034,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             ))}
             {eachFeature.properties.category}<br>
             </br>
-            <p>{parseInt(eachFeature.properties.set, 10) > this.state.currentSet && (
+            <p className='py-2'>{parseInt(eachFeature.properties.set, 10) > this.state.currentSet && (
               "Pending "
             )}
               {parseInt(eachFeature.properties.set, 10) <= this.state.currentSet && (
@@ -1042,7 +1042,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             )}
               {eachFeature.properties.date}</p>
             {/*eachFeature.properties.centroid.geometry.coordinates[0]} {eachFeature.properties.centroid.geometry.coordinates[1]*/}
-            <p className='pt-1 underline'>View on Map</p>
+            <p className='pt-1 underline py-1'>View on Map</p>
           </p>
        </div>
       ))
