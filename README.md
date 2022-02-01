@@ -1,15 +1,16 @@
 # License
 
-This Map was made by Kenneth Mejia For LA City Controller
+This map was made by [Kenneth Mejia For LA City Controller](https://mejiaforcontroller.com/meet-kenneth/).
 
-Software development and Map Design: Kyler Chin
+Software Development and Map Design: **Kyler Chin**
 
-Drawing Map Credits: Kyler Chin, Seanathan
+Drawing Map Credits: **Kyler Chin**, **Seanathan**
 
-You're free to use this for whatever you want! (except certain cases)
-If you plan on using the map publically, please attribute "Kenneth Mejia For LA City Controller" in a clearly stated manner on the map. 
-If you would like an exception on a case-by-case basis to this, contact kyler@mejiaforcontroller.com
-If your additions to this map are public, you must maintain the same Tethics on your project and ensure your code is Open-Source.
+You're mostly free to use this for whatever you want! However, There are a few exceptions and things to note:
+
+- If you plan on using the map publicly, please attribute "Kenneth Mejia For LA City Controller" in a clearly stated manner on the map.
+- If you would like an exception on a case-by-case basis to this, please contact kyler@mejiaforcontroller.com
+- If your additions to this map are public, you must maintain the same Tethics on your project and ensure your code is Open-Source.
 
 Tech Ethics (Tethics):
 - Do not use this to enforce criminalization against unhoused neighbours
