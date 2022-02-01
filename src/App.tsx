@@ -932,10 +932,10 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
           
         }}> <div className='md:max-w-xs  mt-1'>Banned: sit, lie, sleep, or store, use, maintain, or place personal property within:</div>
         <div
-        className='md:max-w-xs mt-1'
+        className='md:max-w-xs mt-1 pt-3'
         ><span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-2 py-1 mr-2'>1000ft</span><span className='font-xs'> </span>Facility providing shelter, safe sleeping, safe parking, or serving as a homeless services navigation center</div>
          <div
-        className='md:max-w-xs  mt-1' 
+        className='md:max-w-xs  mt-1 pt-3' 
             ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, bridge, active railway, etc.)</div>
           {
             this.state.pendinglegend === true && (
