@@ -2,7 +2,9 @@
 
 This map was made by [Kenneth Mejia For LA City Controller](https://mejiaforcontroller.com/meet-kenneth/).
 
-Software Development and Map Design: **Kyler Chin**
+Software Development and Map Design: **[Kyler Chin](https://github.com/kylerchin)**
+
+Code Cleanup: **[Vinesse](https://github.com/Vinesse)**
 
 Drawing Map Credits: **Kyler Chin**, **Seanathan**
 
