@@ -1,0 +1,218 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Burlington and Wilshire Blvd",
+        "date": "12/16/2022"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.272569,
+              34.056633
+            ],
+            [
+              -118.272729,
+              34.056391
+            ],
+            [
+              -118.272419,
+              34.056261
+            ],
+            [
+              -118.272247,
+              34.056509
+            ],
+            [
+              -118.272569,
+              34.056633
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "0b157e52baa328fab9e5f2626430a65b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Pico Blvd between Menlo and Westmoreland",
+        "date": "12/16/2022"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.290879,
+              34.047424
+            ],
+            [
+              -118.290882,
+              34.047154
+            ],
+            [
+              -118.289032,
+              34.04714
+            ],
+            [
+              -118.288877,
+              34.047414
+            ],
+            [
+              -118.290879,
+              34.047424
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "3936a9a1e41770dff8e0b9e752224376"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Bonnie Brae and Wilshire Blvd",
+        "date": "12/16/2022"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.273666,
+              34.057091
+            ],
+            [
+              -118.273825,
+              34.056849
+            ],
+            [
+              -118.273516,
+              34.056718
+            ],
+            [
+              -118.273343,
+              34.056967
+            ],
+            [
+              -118.273666,
+              34.057091
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "4ad2eef40c0fa9dde110c95d75a86afc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Washington Blvd between Normandie and Walton",
+        "date": "2/16/2022",
+        "category": "Public Safety",
+        "section": 26
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.3006,
+              34.040127
+            ],
+            [
+              -118.300531,
+              34.039817
+            ],
+            [
+              -118.294948,
+              34.039836
+            ],
+            [
+              -118.294992,
+              34.040195
+            ],
+            [
+              -118.3006,
+              34.040127
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "5f33abfb855e1881807705b812e0a788"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Sunset PI between Wilshire PI and Hoover",
+        "date": "12/16/2022"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.287882,
+              34.060888
+            ],
+            [
+              -118.287887,
+              34.060701
+            ],
+            [
+              -118.284104,
+              34.06071
+            ],
+            [
+              -118.284093,
+              34.060906
+            ],
+            [
+              -118.287882,
+              34.060888
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "7748388745518346ddc7f19478c5c689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Witmer between Wilshire Blvd and Ingraham St",
+        "date": "12/16/2022",
+        "category": "Public Safety"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.266723,
+              34.053983
+            ],
+            [
+              -118.267315,
+              34.053037
+            ],
+            [
+              -118.267088,
+              34.05292
+            ],
+            [
+              -118.266463,
+              34.05388
+            ],
+            [
+              -118.266723,
+              34.053983
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "a201210d4b7763855b00de0a315daf60"
+    }
+  ],
+  "type": "FeatureCollection"
+}

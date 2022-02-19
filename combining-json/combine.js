@@ -3,15 +3,45 @@ const kyler1 = require('./inputs/kyler-dec-8-4118.json');
 const kyleroriginal = require('./inputs/features.json');
 
 const sean2 = require('./inputs/sean-2-corrected.json');
+
+const feb16seanimport = require('./inputs/4118_02_19_2022-sean.json');
+const feb16kylerimport = require('./inputs/4118-02-19-2022-kyler.json');
 const editJsonFile = require("edit-json-file");
 var fs = require('fs');
 // If the file doesn't exist, the content will be an empty object by default.
 let file = editJsonFile(`${__dirname}/features.json`);
 
-var arrayOfFiles = [sean1,kyler1,kyleroriginal,sean2]
+var arrayOfFilesBatchFeb16 = [feb16seanimport,feb16kylerimport]
+
+var locationsBatchFeb16 = []
+
+arrayOfFilesBatchFeb16.forEach((eachFile, itemIndex) => {
+        var mappedImports = eachFile.features.map((eachItem) => {
+            
+            eachItem.properties['category'] = "Public Safety";
+            eachItem.properties['section'] = 26;
+
+            if (!eachItem.properties.address) {
+                console('what the fuck no addy')
+            }
+
+            return eachItem;
+        });
+
+        locationsBatchFeb16 = [...locationsBatchFeb16, ...mappedImports];
+
+})
+
+var locationsBatchCompilefeb16 =  {
+    features: locationsBatchFeb16,
+    type: "FeatureCollection"
+  }
+
+
+var arrayOfFiles = [locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2]
 
 var locations =  {
-    features:  [],
+    features: [],
     type: "FeatureCollection"
   }
   
