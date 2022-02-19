@@ -1,11 +1,18 @@
 # License
 
-This Map was made by Kenneth Mejia For LA City Controller
+This map was made by [Kenneth Mejia For LA City Controller](https://mejiaforcontroller.com/meet-kenneth/).
 
-You're free to use this for whatever you want! (except certain cases)
-If you plan on using the map publically, please attribute "Kenneth Mejia For LA City Controller" in a clearly stated manner on the map. 
-If you would like an exception on a case-by-case basis to this, contact kyler@mejiaforcontroller.com
-If your additions to this map are public, you must maintain the same Tethics on your project and ensure your code is Open-Source.
+Software Development and Map Design: **[Kyler Chin](https://github.com/kylerchin)**
+
+Code Cleanup: **[Vinesse](https://github.com/Vinesse)**
+
+Drawing Map Credits: **Kyler Chin**, **Seanathan**
+
+You're mostly free to use this for whatever you want! However, There are a few exceptions and things to note:
+
+- If you plan on using the map publicly, please attribute "Kenneth Mejia For LA City Controller" in a clearly stated manner on the map.
+- If you would like an exception on a case-by-case basis to this, please contact kyler@mejiaforcontroller.com
+- If your additions to this map are public, you must maintain the same Tethics on your project and ensure your code is Open-Source.
 
 Tech Ethics (Tethics):
 - Do not use this to enforce criminalization against unhoused neighbours
@@ -13,14 +20,30 @@ Tech Ethics (Tethics):
 - You cannot use this map in anyway, shape, or form to enforce 41.18.
 - Do good, not evil
 
+# Using the finished compiled files from this project.
+Our Geojson export file is stored in `src/features.json`. We plan on exporting a buffer file for the public coming soon!
+
+Our team generates new kml files after each updates and they are stored in `kmlexport` folder. Bring in both files into your own software program and layer them on top of each other.
+
+Any files in the `combining-json` are used by our team to join our geojson files after drawing into a single file to be imported into the app. It's a mess and we recommend you work with the single built file at `src/features.json` and not `combining-json`
 
 # Technical Documentation
+
+In our online web app, The defined buffers are not loaded in. The areas are loaded in, the software seperates the areas into 500 and 1000 buffers using a function. It checks if the category contains the string "Navigation" or "Design" since that means it's a 1000 zone. Then the javascript library Turf generates the buffer for both layers. Then all 4 layers are inserted into the Mapbox GLJS.
+
+The map also contains a scrollable list. We plan on making proximity shown to the edge of each zone with geolocation coming soon!
+
+The map also has a search box using Mapbox Geocoding, it's not as accurate as google maps and is missing many business names but it works.
 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+If you've never run this project before, you'll need to install the dependencies by running
+
+### `npm install`
 
 In the project directory, you can run:
 
@@ -62,3 +85,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Abolish 41.18
