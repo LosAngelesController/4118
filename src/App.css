@@ -184,3 +184,11 @@ scroll-margin-right: 3px;
   .mapboxgl-ctrl-geocoder--icon-loading {
     top: 2px !important;
   }
+
+  .mapboxgl-ctrl-logo {
+    display: none
+  }
+  
+  .mapboxgl-ctrl-bottom-right {
+    display: none
+  }

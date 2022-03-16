@@ -4,6 +4,9 @@ import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import './App.css'
  
+
+       
+import {DisclaimerPopup} from './Disclaimer'
 import * as turf from '@turf/turf'
 
     // added the following 6 lines.
@@ -90,7 +93,6 @@ var locationsBuffered = locations.features.map((eachFeature:any,eachFeatureIndex
 //console.log(locationsBuffered)
 
 const currentSetGlobal = 9
-
 
 var geoJsonBoundary:any = {
   features: locationsBuffered,
@@ -317,6 +319,7 @@ export default class App extends React.PureComponent {
 constructor(props:any) {
 super(props);
 this.state = {
+  disclaimerOpen: false,
   isButtonExit: false,
 lng: lngParam || -118.41,
   lat:  latParam || 34,
@@ -333,6 +336,19 @@ lng: lngParam || -118.41,
 };
 this.mapContainer = React.createRef();
 }
+
+closeModal =() =>  {
+  this.setState({
+    disclaimerOpen: false
+  })
+}
+
+openModal = () => {
+  this.setState({
+    disclaimerOpen: true
+  })
+}
+
   
   handleResize = () => {
     checkHideOrShowTopRightGeocoder()
@@ -458,14 +474,18 @@ this.mapContainer = React.createRef();
    componentDidMount() {
     window.addEventListener('resize', this.handleResize);
   const { lng, lat, zoom } = this.state;
-  const map = new mapboxgl.Map({
-    container: this.mapContainer.current,
-    //style: 'mapbox://styles/comradekyler/ckv0iinpk1tlj15o2y6v1cur9',
-    style: 'mapbox://styles/comradekyler/ckv1ai7fb27w614s0d4tfbsac',
-    center: [lng, lat],
-    zoom: zoom,
-    attributionControl: false
-  })
+
+    var customobj:any = {
+      container: this.mapContainer.current,
+      //style: 'mapbox://styles/comradekyler/ckv0iinpk1tlj15o2y6v1cur9',
+      style: 'mapbox://styles/comradekyler/ckv1ai7fb27w614s0d4tfbsac',
+      center: [lng, lat],
+      zoom: zoom,
+      attributionControl: false,
+      projection: { name: 'globe', center: [0, 0], parallels: [30, 30] }
+    }
+
+  const map = new mapboxgl.Map(customobj)
   //.addControl(new mapboxgl.AttributionControl({
    // customAttribution: 'Paid for by Mejia for City Controller 2022, FPPC ID#: 1435234 1001 Wilshire Blvd. Suite 102, Los Angeles, CA, 90017. Additional information is available at ethics.lacity.org.'
   //}));
@@ -1056,6 +1076,13 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
     <div ref={this.mapContainer} style={{
       
     }} className="map-container" />
+
+         
+<DisclaimerPopup
+        open={this.state.disclaimerOpen}
+        openModal={this.openModal}
+        closeModal={this.closeModal}
+        />
 
 <div className={`absolute md:mx-auto z-9 bottom-2 left-1 md:left-1/2 md:transform md:-translate-x-1/2`}>
 <a href='https://mejiaforcontroller.com/' target="_blank">
