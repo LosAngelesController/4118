@@ -491,18 +491,6 @@ openModal = () => {
   //}));
   this.map = map
 
-     if (true) {
-
-     
-    
-      
-
-         
-        
-}
-
-
-
   console.log(map)
  
   var mapboxlogo = document.querySelector('.mapboxgl-ctrl-bottom-left')
