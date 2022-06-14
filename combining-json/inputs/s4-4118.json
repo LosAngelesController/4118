@@ -1,0 +1,230 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Designated Facility - Safe Sleeping",
+        "address": "Lincoln Theater, 2300 S. Central Avenue",
+        "date": "06/07/2022",
+        "section": 3
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.254039,
+              34.02048
+            ],
+            [
+              -118.254168,
+              34.020336
+            ],
+            [
+              -118.254354,
+              34.019905
+            ],
+            [
+              -118.253629,
+              34.019554
+            ],
+            [
+              -118.253372,
+              34.019948
+            ],
+            [
+              -118.253701,
+              34.020134
+            ],
+            [
+              -118.253592,
+              34.020274
+            ],
+            [
+              -118.254039,
+              34.02048
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "3966ea9cd9b89469cf485ebdb4ed410d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "South Pacific Ave & W. 19th Ave",
+        "category": "Public Safety",
+        "date": "06/07/2022",
+        "section": 3
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.287901,
+              33.727283
+            ],
+            [
+              -118.287851,
+              33.727291
+            ],
+            [
+              -118.287859,
+              33.726661
+            ],
+            [
+              -118.287913,
+              33.726656
+            ],
+            [
+              -118.287901,
+              33.727283
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "5274953eb0ce218f57eb726bdde2b688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "1332 W. Slauson Ave",
+        "category": "Designated Facility - Shelter",
+        "date": "06/07/2022",
+        "section": 3
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.299717,
+              33.989029
+            ],
+            [
+              -118.299728,
+              33.988793
+            ],
+            [
+              -118.299183,
+              33.988767
+            ],
+            [
+              -118.299186,
+              33.989022
+            ],
+            [
+              -118.299717,
+              33.989029
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "c32785650a1a02dc36ff82e5d3effb51"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "WIlmington Town Square Park, 836 N. Avalon Blvd",
+        "category": "Public Park",
+        "date": "06/07/2022",
+        "section": 3
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.262445,
+              33.78117
+            ],
+            [
+              -118.262423,
+              33.780777
+            ],
+            [
+              -118.261839,
+              33.780801
+            ],
+            [
+              -118.261857,
+              33.781211
+            ],
+            [
+              -118.262445,
+              33.78117
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "d344de75070214fda44c66922b212e4e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Dominguez Channel, south of Grant St. and East of Henry Ford",
+        "category": "Wash/Spreading Ground",
+        "date": "06/07/2022",
+        "section": 3
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.236281,
+              33.785573
+            ],
+            [
+              -118.235479,
+              33.785373
+            ],
+            [
+              -118.237273,
+              33.782771
+            ],
+            [
+              -118.237378,
+              33.782813
+            ],
+            [
+              -118.237043,
+              33.783742
+            ],
+            [
+              -118.237053,
+              33.78393
+            ],
+            [
+              -118.236958,
+              33.783944
+            ],
+            [
+              -118.236855,
+              33.784
+            ],
+            [
+              -118.236107,
+              33.785103
+            ],
+            [
+              -118.236144,
+              33.78523
+            ],
+            [
+              -118.236283,
+              33.785289
+            ],
+            [
+              -118.236281,
+              33.785573
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e10efe7643b9feb97031fea94506fcc3"
+    }
+  ],
+  "type": "FeatureCollection"
+}

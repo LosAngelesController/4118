@@ -1,7 +1,7 @@
 const sean1 = require('./inputs/sean-dec-8-4118.json');
 const kyler1 = require('./inputs/kyler-dec-8-4118.json');
 const kyleroriginal = require('./inputs/features.json');
-
+const s4 = require('./inputs/s4-4118.json');
 const sean2 = require('./inputs/sean-2-corrected.json');
 
 const feb16seanimport = require('./inputs/4118_02_19_2022-sean.json');
@@ -38,7 +38,7 @@ var locationsBatchCompilefeb16 =  {
   }
 
 
-var arrayOfFiles = [locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2]
+var arrayOfFiles = [locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4]
 
 var locations =  {
     features: [],
