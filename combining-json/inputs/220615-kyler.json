@@ -1,0 +1,312 @@
+{
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "category": "School",
+          "date": "06/14/2022",
+          "address": "St. Augustine Catholic School, 3819 Clarington Avenue ",
+          "section": 5
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                -118.400034,
+                34.022048
+              ],
+              [
+                -118.399738,
+                34.021681
+              ],
+              [
+                -118.400514,
+                34.021316
+              ],
+              [
+                -118.400624,
+                34.021453
+              ],
+              [
+                -118.40129,
+                34.021056
+              ],
+              [
+                -118.401473,
+                34.021306
+              ],
+              [
+                -118.400786,
+                34.021689
+              ],
+              [
+                -118.400755,
+                34.021643
+              ],
+              [
+                -118.400034,
+                34.022048
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "id": "57387071ce9558dfac880ff669a6d4fe"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "address": "Blackburn Avenue and North La Cienega Boulevard",
+          "category": "Public Park",
+          "date": "06/14/2022",
+          "section": 5
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                -118.376636,
+                34.072557
+              ],
+              [
+                -118.376309,
+                34.072535
+              ],
+              [
+                -118.376283,
+                34.07233
+              ],
+              [
+                -118.376633,
+                34.072339
+              ],
+              [
+                -118.376636,
+                34.072557
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "id": "5f46ca180964481252f5f3886ca41dc9"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "address": "La Brea Tar Pits 5843 Wilshire Boulevard",
+          "category": "Public Park",
+          "date": "06/14/2022",
+          "section": 5
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                -118.354768,
+                34.064218
+              ],
+              [
+                -118.354764,
+                34.06319
+              ],
+              [
+                -118.355015,
+                34.062645
+              ],
+              [
+                -118.357553,
+                34.0627
+              ],
+              [
+                -118.357605,
+                34.062606
+              ],
+              [
+                -118.354986,
+                34.062535
+              ],
+              [
+                -118.354697,
+                34.063155
+              ],
+              [
+                -118.354707,
+                34.06423
+              ],
+              [
+                -118.354768,
+                34.064218
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "id": "6f056bfb6ebb2afcf577120795b5c4cd"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "address": "11001 West Pico Boulevard",
+          "category": "Public Safety",
+          "date": "06/14/2022",
+          "section": 5
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                -118.433245,
+                34.038381
+              ],
+              [
+                -118.433003,
+                34.038095
+              ],
+              [
+                -118.432446,
+                34.03837
+              ],
+              [
+                -118.432686,
+                34.038646
+              ],
+              [
+                -118.433245,
+                34.038381
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "id": "758497d6a0fe9ff5634a69970075e059"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "address": "Alleyway, 350 North Hayworth Avenue",
+          "category": "Public Safety",
+          "date": "06/14/2022",
+          "section": 5
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                -118.361002,
+                34.078172
+              ],
+              [
+                -118.360981,
+                34.07622
+              ],
+              [
+                -118.360896,
+                34.076211
+              ],
+              [
+                -118.360904,
+                34.078176
+              ],
+              [
+                -118.361002,
+                34.078172
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "id": "7e62b7a301b293c507d7be5381ff9c35"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "address": "987 South Gramercy Place",
+          "category": "School",
+          "date": "06/14/2022",
+          "section": 5
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                -118.314204,
+                34.053616
+              ],
+              [
+                -118.314333,
+                34.053228
+              ],
+              [
+                -118.314206,
+                34.053205
+              ],
+              [
+                -118.314038,
+                34.053197
+              ],
+              [
+                -118.313365,
+                34.052915
+              ],
+              [
+                -118.313265,
+                34.053209
+              ],
+              [
+                -118.313311,
+                34.053609
+              ],
+              [
+                -118.314204,
+                34.053616
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "id": "8a4f613bf3a4ffcf967809692af4210e"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "address": "Cotner Avenue and Santa Monica Boulevard ",
+          "category": "Public Safety",
+          "date": "06/14/2022",
+          "section": 5
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                -118.446475,
+                34.047197
+              ],
+              [
+                -118.446282,
+                34.046953
+              ],
+              [
+                -118.445799,
+                34.046986
+              ],
+              [
+                -118.445732,
+                34.047025
+              ],
+              [
+                -118.446097,
+                34.047358
+              ],
+              [
+                -118.446475,
+                34.047197
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "id": "edcf65ccef2d14bc29325f040e20e907"
+      }
+    ],
+    "type": "FeatureCollection"
+  }
