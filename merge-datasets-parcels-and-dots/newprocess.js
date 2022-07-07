@@ -14,9 +14,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 exports.__esModule = true;
-var joined_fixed_crs_new_school_map_parcels_json_1 = __importDefault(require("./joined-fixed-crs-new-school-map-parcels.json"));
+//import areas from './joined-fixed-crs-new-school-map-parcels.json'
+var daycare_export_v4_correct_format_json_1 = __importDefault(require("./daycare-export-v4-correct-format.json"));
 if (false) {
-    var cleanedareafeatures = joined_fixed_crs_new_school_map_parcels_json_1["default"].features.map(function (eachFeature) {
+    var cleanedareafeatures = daycare_export_v4_correct_format_json_1["default"].features.map(function (eachFeature) {
         if (eachFeature.geometry.coordinates.length > 1) {
             console.log('multi');
         }
@@ -36,30 +37,50 @@ if (false) {
     });
 }
 var cleanedareafeatures = [];
-joined_fixed_crs_new_school_map_parcels_json_1["default"].features.forEach(function (eachFeature) {
+daycare_export_v4_correct_format_json_1["default"].features.forEach(function (eachFeature) {
     if (eachFeature.geometry.coordinates.length > 1) {
         console.log('multi');
     }
     eachFeature.geometry.coordinates.forEach(function (eachCoordSystem) {
-        cleanedareafeatures.push({
-            "type": "feature",
-            "properties": {
-                "address": eachFeature.properties['StreetAbr'],
-                "place_name": eachFeature.properties['School'],
-                "set": 10,
-                "section": 1,
-                "date": '7/27/2022',
-                "category": "School",
-                "autoadd": true
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": eachCoordSystem
-            }
-        });
+        if (false) {
+            cleanedareafeatures.push({
+                "type": "feature",
+                "properties": {
+                    "address": eachFeature.properties['StreetAbr'],
+                    "place_name": eachFeature.properties['School'],
+                    "set": 10,
+                    "section": 1,
+                    "date": '7/27/2022',
+                    "category": "School",
+                    "autoadd": true
+                },
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": eachCoordSystem
+                }
+            });
+        }
+        else {
+            cleanedareafeatures.push({
+                "type": "feature",
+                "properties": {
+                    "address": eachFeature.properties['facilityaddress'],
+                    "place_name": eachFeature.properties['name'],
+                    "set": 10,
+                    "section": 1,
+                    "date": '7/27/2022',
+                    "category": "Daycare",
+                    "autoadd": true
+                },
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": eachCoordSystem
+                }
+            });
+        }
     });
 });
-var writeout = __assign(__assign({}, joined_fixed_crs_new_school_map_parcels_json_1["default"]), { features: cleanedareafeatures });
+var writeout = __assign(__assign({}, daycare_export_v4_correct_format_json_1["default"]), { features: cleanedareafeatures });
 var fs = require('fs');
 // Or
 fs.writeFileSync('./output4118-autoschools-v2.json', JSON.stringify(writeout));

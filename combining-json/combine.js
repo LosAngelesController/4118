@@ -4,6 +4,8 @@ const kyleroriginal = require('./inputs/features.json');
 const s4 = require('./inputs/s4-4118.json');
 const autoinputschools = require('./inputs/output4118-autoschools.json')
 
+const autoinputdaycares = require('./inputs/daycares.json')
+
 const s5 = require('./inputs/220615-kyler.json');
 const sean2 = require('./inputs/sean-2-corrected.json');
 const feb16seanimport = require('./inputs/4118_02_19_2022-sean.json');
@@ -40,7 +42,7 @@ var locationsBatchCompilefeb16 =  {
   }
 
 
-var arrayOfFiles = [ autoinputschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5]
+var arrayOfFiles = [autoinputdaycares, autoinputschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5]
 
 var locations =  {
     features: [],

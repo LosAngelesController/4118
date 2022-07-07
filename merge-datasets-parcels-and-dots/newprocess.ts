@@ -1,5 +1,7 @@
-import areas from './joined-fixed-crs-new-school-map-parcels.json'
- if (false ) {
+//import areas from './joined-fixed-crs-new-school-map-parcels.json'
+import areas from './daycare-export-v4-correct-format.json'
+
+if (false ) {
     
 var cleanedareafeatures = areas.features.map((eachFeature) => {
 
@@ -36,22 +38,42 @@ var cleanedareafeatures = areas.features.map((eachFeature) => {
     }
 
     eachFeature.geometry.coordinates.forEach((eachCoordSystem) => {
-        cleanedareafeatures.push({
-            "type": "feature",
-            "properties": {
-                "address": eachFeature.properties['StreetAbr'],
-                "place_name": eachFeature.properties['School'],
-                "set": 10,
-                "section": 1,
-                "date": '7/27/2022',
-                "category": "School",
-                "autoadd": true
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": eachCoordSystem
-            }
-        })
+        if (false) {
+            cleanedareafeatures.push({
+                "type": "feature",
+                "properties": {
+                    "address": eachFeature.properties['StreetAbr'],
+                    "place_name": eachFeature.properties['School'],
+                    "set": 10,
+                    "section": 1,
+                    "date": '7/27/2022',
+                    "category": "School",
+                    "autoadd": true,
+                },
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": eachCoordSystem
+                }
+            })
+        } else {
+            cleanedareafeatures.push({
+                "type": "feature",
+                "properties": {
+                    "address": eachFeature.properties['facilityaddress'],
+                    "place_name": eachFeature.properties['name'],
+                    "set": 10,
+                    "section": 1,
+                    "date": '7/27/2022',
+                    "category": "Daycare",
+                    "autoadd": true,
+                },
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": eachCoordSystem
+                }
+            })
+        } 
+        
     })
 
   
