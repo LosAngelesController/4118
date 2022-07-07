@@ -332,7 +332,7 @@ lng: lngParam || -118.41,
   currentSet: currentSetGlobal,
   debugState: !!(debugParam),
   pinset: pinSetParam,
-  pendinglegend: false
+  pendinglegend: true
 };
 this.mapContainer = React.createRef();
 }

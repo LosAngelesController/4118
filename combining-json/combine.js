@@ -2,6 +2,7 @@ const sean1 = require('./inputs/sean-dec-8-4118.json');
 const kyler1 = require('./inputs/kyler-dec-8-4118.json');
 const kyleroriginal = require('./inputs/features.json');
 const s4 = require('./inputs/s4-4118.json');
+const autoinputschools = require('./inputs/output4118-autoschools.json')
 
 const s5 = require('./inputs/220615-kyler.json');
 const sean2 = require('./inputs/sean-2-corrected.json');
@@ -39,7 +40,7 @@ var locationsBatchCompilefeb16 =  {
   }
 
 
-var arrayOfFiles = [locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5]
+var arrayOfFiles = [ autoinputschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5]
 
 var locations =  {
     features: [],
@@ -50,9 +51,9 @@ arrayOfFiles.forEach((eachFile, itemIndex) => {
     console.log(itemIndex + " has " + eachFile.features.length + " locs")
 
         var filteredEachFiles = eachFile.features.filter((eachItem) => {
-            console.log(eachItem.properties.address)
-            console.log(eachItem)
-            console.log(eachItem.geometry.coordinates)
+          //  console.log(eachItem.properties.address)
+         //   console.log(eachItem)
+         //   console.log(eachItem.geometry.coordinates)
            return  eachItem.properties.address.trim() != "Shatto Recreation Center – 3191 West 4th Street"
         })
         .map((eachItem) => {
@@ -70,7 +71,7 @@ arrayOfFiles.forEach((eachFile, itemIndex) => {
 console.log(locations.features.length)
 
 var jsonData = JSON.stringify(locations);
-fs.writeFile("features.json", jsonData, function(err) {
+fs.writeFile("features-new.json", jsonData, function(err) {
     if (err) {
         console.log(err);
     }
