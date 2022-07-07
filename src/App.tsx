@@ -3,7 +3,7 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import './App.css'
- 
+import { Switch,MantineProvider  } from '@mantine/core';
 
        
 import {DisclaimerPopup} from './Disclaimer'
@@ -332,9 +332,25 @@ lng: lngParam || -118.41,
   currentSet: currentSetGlobal,
   debugState: !!(debugParam),
   pinset: pinSetParam,
-  pendinglegend: false
+  pendinglegend: true,
+  showpending: false
 };
 this.mapContainer = React.createRef();
+}
+
+refilterpending = () => {
+  const arrayoflayerstofilter = ['locationsThousandsBuffer','locationsBuffer','locationsThousands','locations']
+  var filtertoapply:any = null;
+  
+  if (this.state.showpending === false) {
+    filtertoapply = ['<=', 'set', currentSetGlobal]
+  } else {
+    filtertoapply = null;
+  }
+  arrayoflayerstofilter.forEach((eachlayer) => {
+    this.map.setFilter(eachlayer, filtertoapply);
+  })
+
 }
 
 closeModal =() =>  {
@@ -705,11 +721,7 @@ map.addControl(new mapboxgl.NavigationControl());
       }
     })
 
-   
-
   
-  
-
     map.addLayer({
       id: 'cityboundfill',
       type: 'fill',
@@ -819,10 +831,10 @@ map.addControl(new mapboxgl.NavigationControl());
 
   map.on('click', 'locationsThousands', event => this.popupfunc(event))
 
-
+this.refilterpending()
 
   //dashed upcoming lines
-
+/*
 
   map.addLayer({
     //illegal zone solid
@@ -845,9 +857,9 @@ map.addControl(new mapboxgl.NavigationControl());
       'line-offset': 3,
       'line-opacity': 0.5
     }
-  });
+  });*/
  
-
+/*
 
   map.addLayer({
     //illegal zone solid
@@ -875,7 +887,7 @@ map.addControl(new mapboxgl.NavigationControl());
          13, 0.9
    ],
     }
-  });
+  });*/
 
   if (this.state.pinset) {
     console.log('pinSetGeojson', pinSetGeojson)
@@ -907,10 +919,14 @@ map.addControl(new mapboxgl.NavigationControl());
      
 }
   
-  
+
+
 render() {
+ 
+  
 const { lng, lat, zoom } = this.state;
 return (
+  <MantineProvider theme={{ colorScheme: 'dark' }} withGlobalStyles withNormalizeCSS>
 <div>
  {/*<div className="sidebar">
 Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
@@ -948,14 +964,21 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
           {
             this.state.pendinglegend === true && (
               <div
-              className='md:max-w-xs flex flex-row  mt-1' 
+              className='md:max-w-xs flex flex-row space-x-1  mt-1' 
            >
-           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 24 30" enable-background="new 0 0 24 24" className='text-white w-5 flex-none' stroke='currentColor' fill='currentColor'><path d="M7,11H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S7.6,11,7,11z"/><path d="M13,13c0.6,0,1-0.4,1-1s-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1H13z"/><path d="M19,11h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S19.6,11,19,11z"/></svg>
-            : Pending Vote by Council
+           <Switch
+           checked={this.state.showpending}
+           onChange={(newstate:any) => {
+            console.log(newstate);
+            this.setState({showpending: !this.state.showpending}, () => {
+            this.refilterpending()
+           }); }}
+    />
+            View Pending Sites
            </div> 
             )
           }
-         <div className='md:max-w-xs mt-0'>Only covers by-resolution locations voted on by City Council. See ordinance for more info.</div>
+         <div className='md:max-w-xs mt-0'>Covers schools, daycares, and by-resolution locations voted on by City Council. See ordinance for more info.</div>
             <div className='flex-row  mt-1'>
             <a  target="_blank" rel='external' className='underline text-mejito' href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'>41.18 Ordinance</a>
             <a  target="_blank" rel='author' className='underline text-mejito ml-4' href='https://mejiaforcontroller.com'>Mejia For Controller</a>
@@ -1032,6 +1055,12 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
           this.flyToPoint(eachFeature.properties.centroid.geometry.coordinates[0], eachFeature.properties.centroid.geometry.coordinates[1], this.map, eachFeature, eachFeatureIndex,
             featuresTotalBuffer.features[eachFeatureIndex])
           }}>
+            {
+              eachFeature.properties.place_name && (
+                <p className='font-bold py-2'>{eachFeature.properties.place_name}</p>
+              )
+            }
+            
           <p className='font-bold py-2'>{eachFeature.properties.address}</p>
        
           <p>{(eachFeature.properties.buffer === '1000' && (
@@ -1098,6 +1127,9 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
 </svg>
         </div>
         <div className='bg-truegray-900 border-2 px-2 py-2 md:font-base max-w-xxs md:w-max-sm md:w-auto'>
+     {this.state.featureSelected.properties.place_name && (
+       <p className='font-bold'>{this.state.featureSelected.properties.place_name}</p>
+     )}
         <p className='font-bold'>{this.state.featureSelected.properties.address}</p>
           {(this.state.featureSelected.properties.buffer === '1000' && (
             <span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-1 py-1 mr-1 font-xs md:font-base'>1000ft</span>
@@ -1150,6 +1182,10 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       
     </div>
 </div>
+
+</MantineProvider>
 );
+
 }
+
 }
