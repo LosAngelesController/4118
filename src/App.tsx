@@ -1069,8 +1069,14 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             {(eachFeature.properties.buffer === '500' && (
             <span className='font-mono h-1 w-1 bg-red-600 text-black rounded-full px-1 py-1 mr-1 font-xs'>500ft</span>
             ))}
+            {(eachFeature.properties.autoadd) && (
+                <span className='font-mono h-1 w-1 bg-blue-400 text-black rounded-full px-1 py-1 mr-1 font-xs  md:font-base'>Auto Added</span>
+          )}
             {eachFeature.properties.category}<br>
+
             </br>
+            
+          <br></br>
             <p className='py-2'>{parseInt(eachFeature.properties.set, 10) > this.state.currentSet && (
               "Pending "
             )}
@@ -1138,8 +1144,10 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             <span className='font-mono h-1 w-1 bg-red-600 text-black rounded-full px-1 py-1 mr-1 font-xs  md:font-base'>500ft</span>
           ))}
           {this.state.featureSelected.properties.category}
-          {this.state.featureSelected.properties.autoadd && (
-                <span className='font-mono h-1 w-1 bg-blue-400 text-black rounded-full px-1 py-1 mr-1 font-xs  md:font-base'>Auto Added</span>
+         
+          {(typeof this.state.featureSelected.properties.autoadd != undefined) && (
+                <>
+                 <br></br><span className='font-mono h-1 w-1 bg-blue-400 text-black rounded-full px-1 py-1 mr-1 font-xs  md:font-base'>Auto Added</span></>
           )}
           <p>{parseInt(this.state.featureSelected.properties.set, 10) > this.state.currentSet && (
               "Pending "
