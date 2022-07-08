@@ -956,10 +956,10 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
           
         }}> <div className='md:max-w-xs  mt-1'>Banned: sit, lie, sleep, or store, use, maintain, or place personal property within:</div>
         <div
-        className='md:max-w-xs mt-1 pt-1 sm:pt-3'
+        className='md:max-w-xs mt-1 pt-3'
         ><span className='font-mono h-1 w-1 bg-yellow-500 text-black rounded-full px-2 py-1 mr-2'>1000ft</span><span className='font-xs'> </span>Facility providing shelter, safe sleeping, safe parking, or serving as a homeless services navigation center</div>
          <div
-        className='md:max-w-xs  mt-1 pt-1 sm:pt-3' 
+        className='md:max-w-xs  mt-1 pt-3' 
             ><span className='font-mono h-1 w-1 bg-red-600 rounded-full px-2 py-1 mr-2'>500ft</span>Other locations (school, park, tunnel, underpass, bridge, active railway, etc.)</div>
           {
             this.state.pendinglegend === true && (
@@ -974,7 +974,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             this.refilterpending()
            }); }}
     />
-           <span className='pl-1'>View Pending Sites</span>
+            View Pending Sites
            </div> 
             )
           }
@@ -1069,14 +1069,8 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             {(eachFeature.properties.buffer === '500' && (
             <span className='font-mono h-1 w-1 bg-red-600 text-black rounded-full px-1 py-1 mr-1 font-xs'>500ft</span>
             ))}
-            {(eachFeature.properties.autoadd) && (
-                <span className='font-mono h-1 w-1 bg-blue-400 text-black rounded-full px-1 py-1 mr-1 font-xs  md:font-base'>Auto Added</span>
-          )}
             {eachFeature.properties.category}<br>
-
             </br>
-            
-          <br></br>
             <p className='py-2'>{parseInt(eachFeature.properties.set, 10) > this.state.currentSet && (
               "Pending "
             )}
@@ -1144,11 +1138,6 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             <span className='font-mono h-1 w-1 bg-red-600 text-black rounded-full px-1 py-1 mr-1 font-xs  md:font-base'>500ft</span>
           ))}
           {this.state.featureSelected.properties.category}
-         
-          {(typeof this.state.featureSelected.properties.autoadd != undefined) && (
-                <>
-                 <br></br><span className='font-mono h-1 w-1 bg-blue-400 text-black rounded-full px-1 py-1 mr-1 font-xs  md:font-base'>Auto Added</span></>
-          )}
           <p>{parseInt(this.state.featureSelected.properties.set, 10) > this.state.currentSet && (
               "Pending "
             )}
