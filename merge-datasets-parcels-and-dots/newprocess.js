@@ -15,9 +15,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 exports.__esModule = true;
 //import areas from './joined-fixed-crs-new-school-map-parcels.json'
-var daycare_export_v4_correct_format_json_1 = __importDefault(require("./daycare-export-v4-correct-format.json"));
+var v5_daycare_retained_commerical_export_json_1 = __importDefault(require("./v5-daycare-retained-commerical-export.json"));
 if (false) {
-    var cleanedareafeatures = daycare_export_v4_correct_format_json_1["default"].features.map(function (eachFeature) {
+    var cleanedareafeatures = v5_daycare_retained_commerical_export_json_1["default"].features.map(function (eachFeature) {
         if (eachFeature.geometry.coordinates.length > 1) {
             console.log('multi');
         }
@@ -37,7 +37,7 @@ if (false) {
     });
 }
 var cleanedareafeatures = [];
-daycare_export_v4_correct_format_json_1["default"].features.forEach(function (eachFeature) {
+v5_daycare_retained_commerical_export_json_1["default"].features.forEach(function (eachFeature) {
     if (eachFeature.geometry.coordinates.length > 1) {
         console.log('multi');
     }
@@ -80,7 +80,7 @@ daycare_export_v4_correct_format_json_1["default"].features.forEach(function (ea
         }
     });
 });
-var writeout = __assign(__assign({}, daycare_export_v4_correct_format_json_1["default"]), { features: cleanedareafeatures });
+var writeout = __assign(__assign({}, v5_daycare_retained_commerical_export_json_1["default"]), { features: cleanedareafeatures });
 var fs = require('fs');
 // Or
-fs.writeFileSync('./output4118-autoschools-v2.json', JSON.stringify(writeout));
+fs.writeFileSync('./output4118-daycare-v5.json', JSON.stringify(writeout));

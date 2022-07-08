@@ -1,5 +1,5 @@
 //import areas from './joined-fixed-crs-new-school-map-parcels.json'
-import areas from './daycare-export-v4-correct-format.json'
+import areas from './v5-daycare-retained-commerical-export.json'
 
 if (false ) {
     
@@ -85,4 +85,4 @@ var writeout = {...areas, features: cleanedareafeatures}
 const fs = require('fs');
 
 // Or
-fs.writeFileSync('./output4118-autoschools-v2.json', JSON.stringify(writeout));
+fs.writeFileSync('./output4118-daycare-v5.json', JSON.stringify(writeout));
