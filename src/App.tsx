@@ -1071,7 +1071,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
                       {(eachFeature.properties.buffer === '500' && (
                         <span className='font-mono h-1 w-1 bg-red-600 text-black rounded-full px-1 py-1 mr-1 font-xs'>500ft</span>
                       ))}
-                      {(eachFeature.properties.autoadd) && (
+                      {(eachFeature.properties.autoadd === true) && (
                         <span className='font-mono h-1 w-1 bg-blue-400 text-black rounded-full px-1 py-1 mr-1 font-xs  md:font-base'>Auto Added</span>
                       )}
                       {eachFeature.properties.category}<br>
@@ -1147,7 +1147,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
                 ))}
                 {this.state.featureSelected.properties.category}
 
-                {(typeof this.state.featureSelected.properties.autoadd != undefined) && (
+                {(this.state.featureSelected.properties.autoadd === true) && (
                   <>
                     <br></br><span className='font-mono h-1 w-1 bg-blue-400 text-black rounded-full px-1 py-1 mr-1 font-xs  md:font-base'>Auto Added</span></>
                 )}
