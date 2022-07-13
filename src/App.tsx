@@ -4,7 +4,7 @@ import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import './App.css'
  
-
+import MapboxLanguage from '@mapbox/mapbox-gl-language';
        
 import {DisclaimerPopup} from './Disclaimer'
 import * as turf from '@turf/turf'
@@ -498,7 +498,13 @@ openModal = () => {
     mapboxlogo.classList.add('hidden')
   }
 
+  
+  mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.10.1/mapbox-gl-rtl-text.js', (callbackinfo: any) => {
+    console.log(callbackinfo);
+  });
 
+  const language = new MapboxLanguage();
+  map.addControl(language);
      
 map.on('move', () => {
 this.setState({
