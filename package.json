@@ -9,6 +9,7 @@
     "@mantine/core": "^4.2.12",
     "@mantine/hooks": "^4.2.12",
     "@mapbox/mapbox-gl-geocoder": "^4.7.4",
+    "@mapbox/mapbox-gl-language": "^1.0.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
