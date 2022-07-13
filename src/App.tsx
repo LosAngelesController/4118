@@ -4,6 +4,7 @@ import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import './App.css'
 import { Switch, MantineProvider } from '@mantine/core';
+import MapboxLanguage from '@mapbox/mapbox-gl-language';
 
 
 import { DisclaimerPopup } from './Disclaimer'
@@ -501,19 +502,25 @@ export default class App extends React.PureComponent {
       projection: { name: 'globe', center: [0, 0], parallels: [30, 30] }
     }
 
-    const map = new mapboxgl.Map(customobj)
+    const map = new mapboxgl.Map(customobj);
     //.addControl(new mapboxgl.AttributionControl({
     // customAttribution: 'Paid for by Mejia for City Controller 2022, FPPC ID#: 1435234 1001 Wilshire Blvd. Suite 102, Los Angeles, CA, 90017. Additional information is available at ethics.lacity.org.'
     //}));
-    this.map = map
+    this.map = map;
 
-    console.log(map)
+    console.log(map);
 
     var mapboxlogo = document.querySelector('.mapboxgl-ctrl-bottom-left')
     if (mapboxlogo) {
       mapboxlogo.classList.add('hidden')
     }
 
+    mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.10.1/mapbox-gl-rtl-text.js', (callbackinfo: any) => {
+      console.log(callbackinfo);
+    });
+
+    const language = new MapboxLanguage();
+    map.addControl(language);
 
 
     map.on('move', () => {
