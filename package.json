@@ -18,7 +18,7 @@
     "@types/react": "^17.0.31",
     "@types/react-dom": "^17.0.10",
     "edit-json-file": "^1.6.0",
-    "mapbox-gl": "^2.8.0-alpha.1",
+    "mapbox-gl": "^2.9.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-gtm-module": "^2.0.11",
