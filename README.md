@@ -8,6 +8,8 @@ Code Cleanup: **[Vinesse](https://github.com/Vinesse)**
 
 Drawing Map Credits: **Kyler Chin**, **Seanathan**
 
+Additional Dataset Processing and Parsing: **Nik**
+
 You're mostly free to use this for whatever you want! However, There are a few exceptions and things to note:
 
 - If you plan on using the map publicly, please attribute "Kenneth Mejia For LA City Controller" in a clearly stated manner on the map.

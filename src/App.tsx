@@ -545,6 +545,7 @@ export default class App extends React.PureComponent {
 
       //foreach thing in featuresTotalBuffer
       featuresTotalBuffer.features.forEach((eachFeature: any) => {
+
         // console.log(eachFeature)
         var poly = turf.polygon([eachFeature.geometry.coordinates[0]]);
 
