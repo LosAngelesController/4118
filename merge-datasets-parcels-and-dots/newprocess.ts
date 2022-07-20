@@ -1,5 +1,5 @@
-//import areas from './joined-fixed-crs-new-school-map-parcels.json'
-import areas from './v5-daycare-retained-commerical-export.json'
+import areas from './joined-fixed-crs-new-school-map-parcels.json'
+//import areas from './v5-daycare-retained-commerical-export.json'
 
 if (false ) {
     
@@ -38,7 +38,7 @@ var cleanedareafeatures = areas.features.map((eachFeature) => {
     }
 
     eachFeature.geometry.coordinates.forEach((eachCoordSystem) => {
-        if (false) {
+        if (true) {
             cleanedareafeatures.push({
                 "type": "feature",
                 "properties": {
@@ -85,4 +85,4 @@ var writeout = {...areas, features: cleanedareafeatures}
 const fs = require('fs');
 
 // Or
-fs.writeFileSync('./output4118-daycare-v5.json', JSON.stringify(writeout));
+fs.writeFileSync('./output4118-schools-v6.json', JSON.stringify(writeout));

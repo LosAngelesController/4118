@@ -14,10 +14,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 exports.__esModule = true;
-//import areas from './joined-fixed-crs-new-school-map-parcels.json'
-var v5_daycare_retained_commerical_export_json_1 = __importDefault(require("./v5-daycare-retained-commerical-export.json"));
+var joined_fixed_crs_new_school_map_parcels_json_1 = __importDefault(require("./joined-fixed-crs-new-school-map-parcels.json"));
+//import areas from './v5-daycare-retained-commerical-export.json'
 if (false) {
-    var cleanedareafeatures = v5_daycare_retained_commerical_export_json_1["default"].features.map(function (eachFeature) {
+    var cleanedareafeatures = joined_fixed_crs_new_school_map_parcels_json_1["default"].features.map(function (eachFeature) {
         if (eachFeature.geometry.coordinates.length > 1) {
             console.log('multi');
         }
@@ -37,12 +37,12 @@ if (false) {
     });
 }
 var cleanedareafeatures = [];
-v5_daycare_retained_commerical_export_json_1["default"].features.forEach(function (eachFeature) {
+joined_fixed_crs_new_school_map_parcels_json_1["default"].features.forEach(function (eachFeature) {
     if (eachFeature.geometry.coordinates.length > 1) {
         console.log('multi');
     }
     eachFeature.geometry.coordinates.forEach(function (eachCoordSystem) {
-        if (false) {
+        if (true) {
             cleanedareafeatures.push({
                 "type": "feature",
                 "properties": {
@@ -80,7 +80,7 @@ v5_daycare_retained_commerical_export_json_1["default"].features.forEach(functio
         }
     });
 });
-var writeout = __assign(__assign({}, v5_daycare_retained_commerical_export_json_1["default"]), { features: cleanedareafeatures });
+var writeout = __assign(__assign({}, joined_fixed_crs_new_school_map_parcels_json_1["default"]), { features: cleanedareafeatures });
 var fs = require('fs');
 // Or
-fs.writeFileSync('./output4118-daycare-v5.json', JSON.stringify(writeout));
+fs.writeFileSync('./output4118-schools-v6.json', JSON.stringify(writeout));
