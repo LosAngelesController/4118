@@ -1,6 +1,13 @@
 //import areas from './joined-fixed-crs-new-school-map-parcels.json'
-import areas from './export-private-schools-joined-missing-07-20.json'
+import areas from './missing-daycares-like-15-of-them.json'
 //import areas from './v5-daycare-retained-commerical-export.json'
+
+// proper case function (JScript 5.5+)
+function toProperCase(s)
+{
+  return s.toLowerCase().replace(/^(.)|\s(.)/g, 
+          function($1) { return $1.toUpperCase(); });
+}
 
 if (false ) {
     
@@ -39,7 +46,7 @@ var cleanedareafeatures = areas.features.map((eachFeature) => {
     }
 
     eachFeature.geometry.coordinates.forEach((eachCoordSystem) => {
-        if (true) {
+        if (false) {
             cleanedareafeatures.push({
                 "type": "feature",
                 "properties": {
@@ -60,8 +67,8 @@ var cleanedareafeatures = areas.features.map((eachFeature) => {
             cleanedareafeatures.push({
                 "type": "feature",
                 "properties": {
-                    "address": eachFeature.properties['facilityaddress'],
-                    "place_name": eachFeature.properties['name'],
+                    "address": toProperCase(eachFeature.properties['Facility_Address']),
+                    "place_name": toProperCase(eachFeature.properties['Facility_Name']),
                     "set": 10,
                     "section": 1,
                     "date": '7/27/2022',
@@ -86,4 +93,4 @@ var writeout = {...areas, features: cleanedareafeatures}
 const fs = require('fs');
 
 // Or
-fs.writeFileSync('./output4118-missing-private-schools-v1.json', JSON.stringify(writeout));
+fs.writeFileSync('./output4118-missing-daycares-v1.json', JSON.stringify(writeout));

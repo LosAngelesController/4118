@@ -544,16 +544,37 @@ export default class App extends React.PureComponent {
       var featureMatchingClick: any;
 
       //foreach thing in featuresTotalBuffer
-      featuresTotalBuffer.features.forEach((eachFeature: any) => {
+      featuresTotalBuffer.features
+      .filter((eachfeature:any) => {
+        var doesithaveanycoordswithlessthanthree = eachfeature.geometry.coordinates.some((eachring:Array<any>) => eachring.length < 3)
+
+        return !doesithaveanycoordswithlessthanthree
+      })
+      .forEach((eachFeature: any) => {
 
         // console.log(eachFeature)
-        var poly = turf.polygon([eachFeature.geometry.coordinates[0]]);
+
+       // console.log('eachFeature.geometry.coordinates', eachFeature.geometry.coordinates);
+        
+        /*
+        eachFeature.geometry.coordinates.forEach((eachSubpolygon:any) => {
+          var poly = turf.polygon([eachSubpolygon]);
+
+          resultOfCalculation = turf.booleanPointInPolygon(pt, poly)
+          if (resultOfCalculation === true) {
+            featureMatchingClick = eachFeature;
+            return eachFeature;
+          }
+        })*/
+       
+        var poly = turf.polygon(eachFeature.geometry.coordinates);
 
         resultOfCalculation = turf.booleanPointInPolygon(pt, poly)
         if (resultOfCalculation === true) {
           featureMatchingClick = eachFeature;
           return eachFeature;
         }
+
       })
 
       console.log('success found feature clicked', featureMatchingClick)

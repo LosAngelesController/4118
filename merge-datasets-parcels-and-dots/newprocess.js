@@ -15,10 +15,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 exports.__esModule = true;
 //import areas from './joined-fixed-crs-new-school-map-parcels.json'
-var export_private_schools_joined_missing_07_20_json_1 = __importDefault(require("./export-private-schools-joined-missing-07-20.json"));
+var missing_daycares_like_15_of_them_json_1 = __importDefault(require("./missing-daycares-like-15-of-them.json"));
 //import areas from './v5-daycare-retained-commerical-export.json'
+// proper case function (JScript 5.5+)
+function toProperCase(s) {
+    return s.toLowerCase().replace(/^(.)|\s(.)/g, function ($1) { return $1.toUpperCase(); });
+}
 if (false) {
-    var cleanedareafeatures = export_private_schools_joined_missing_07_20_json_1["default"].features.map(function (eachFeature) {
+    var cleanedareafeatures = missing_daycares_like_15_of_them_json_1["default"].features.map(function (eachFeature) {
         if (eachFeature.geometry.coordinates.length > 1) {
             console.log('multi');
         }
@@ -38,12 +42,12 @@ if (false) {
     });
 }
 var cleanedareafeatures = [];
-export_private_schools_joined_missing_07_20_json_1["default"].features.forEach(function (eachFeature) {
+missing_daycares_like_15_of_them_json_1["default"].features.forEach(function (eachFeature) {
     if (eachFeature.geometry.coordinates.length > 1) {
         console.log('multi');
     }
     eachFeature.geometry.coordinates.forEach(function (eachCoordSystem) {
-        if (true) {
+        if (false) {
             cleanedareafeatures.push({
                 "type": "feature",
                 "properties": {
@@ -65,8 +69,8 @@ export_private_schools_joined_missing_07_20_json_1["default"].features.forEach(f
             cleanedareafeatures.push({
                 "type": "feature",
                 "properties": {
-                    "address": eachFeature.properties['facilityaddress'],
-                    "place_name": eachFeature.properties['name'],
+                    "address": toProperCase(eachFeature.properties['Facility_Address']),
+                    "place_name": toProperCase(eachFeature.properties['Facility_Name']),
                     "set": 10,
                     "section": 1,
                     "date": '7/27/2022',
@@ -81,7 +85,7 @@ export_private_schools_joined_missing_07_20_json_1["default"].features.forEach(f
         }
     });
 });
-var writeout = __assign(__assign({}, export_private_schools_joined_missing_07_20_json_1["default"]), { features: cleanedareafeatures });
+var writeout = __assign(__assign({}, missing_daycares_like_15_of_them_json_1["default"]), { features: cleanedareafeatures });
 var fs = require('fs');
 // Or
-fs.writeFileSync('./output4118-missing-private-schools-v1.json', JSON.stringify(writeout));
+fs.writeFileSync('./output4118-missing-daycares-v1.json', JSON.stringify(writeout));

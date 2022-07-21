@@ -1,0 +1,696 @@
+{
+    "type": "FeatureCollection",
+    "name": "missing-daycares-like-15-of-them",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 112,
+                "id_2": "b86eb1031cec1d16380f5aa6fb27c87d",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "197416908",
+                "Facility_Zip": "91311",
+                "Facility_City": "CANOGA PARK",
+                "Facility_Name": "CCRC HEAD START - DENNIS P ZINE COMMUNITY CENTER",
+                "councildist": "3",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "DAY CARE CENTER",
+                "Facility_Address": "21400 W. SATICOY STREET",
+                "isInLABounds": "TRUE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.598189698505166,
+                                34.208224268872463
+                            ],
+                            [
+                                -118.598151603996101,
+                                34.207799834510546
+                            ],
+                            [
+                                -118.597664441383785,
+                                34.207791512966779
+                            ],
+                            [
+                                -118.597660174418223,
+                                34.208226887402837
+                            ],
+                            [
+                                -118.598189698505166,
+                                34.208224268872463
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 152,
+                "id_2": "ef4115b661174b5cd68affa14aec0f39",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "198012439",
+                "Facility_Zip": "91352",
+                "Facility_City": "SUN VALLEY",
+                "Facility_Name": "KIDZHAVEN",
+                "councildist": "6",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "DAY CARE CENTER",
+                "Facility_Address": "9052 & 9052 1/2 SUNLAND BLVD.",
+                "isInLABounds": "TRUE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.369884489375551,
+                                34.21798676845679
+                            ],
+                            [
+                                -118.370042211511475,
+                                34.217767078817467
+                            ],
+                            [
+                                -118.369726635820996,
+                                34.217551899388752
+                            ],
+                            [
+                                -118.369619278176771,
+                                34.217685591261109
+                            ],
+                            [
+                                -118.369533035651472,
+                                34.217795458334209
+                            ],
+                            [
+                                -118.369884489375551,
+                                34.21798676845679
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 36,
+                "id_2": "438d85848e48d7059cf9e80963148041",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "191805520",
+                "Facility_Zip": "91040",
+                "Facility_City": "SUNLAND",
+                "Facility_Name": "SUNLAND ELEMENTARY SCHOOL(STATE PRESCHOOL)",
+                "councildist": "7",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "DAY CARE CENTER",
+                "Facility_Address": "8350 HILLROSE STREET",
+                "isInLABounds": "TRUE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.315708411355757,
+                                34.263356534124526
+                            ],
+                            [
+                                -118.313618332203063,
+                                34.263337431905896
+                            ],
+                            [
+                                -118.313598972466096,
+                                34.261133156350631
+                            ],
+                            [
+                                -118.315703547585258,
+                                34.263046898816491
+                            ],
+                            [
+                                -118.315708411355757,
+                                34.263356534124526
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 13,
+                "id_2": "1c0e9da1874b7e5cf63d58f66d0c8ac9",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "192006337",
+                "Facility_Zip": "90033",
+                "Facility_City": "LOS ANGELES",
+                "Facility_Name": "CENTRO DE ALEGRIA",
+                "councildist": "14",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "DAY CARE CENTER",
+                "Facility_Address": "420 N. SOTO STREET",
+                "isInLABounds": "TRUE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.206799060350733,
+                                34.04827913484732
+                            ],
+                            [
+                                -118.206951079988897,
+                                34.048038013053095
+                            ],
+                            [
+                                -118.206569530588752,
+                                34.047895534458412
+                            ],
+                            [
+                                -118.206378786924191,
+                                34.048116028003065
+                            ],
+                            [
+                                -118.206799060350733,
+                                34.04827913484732
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 121,
+                "id_2": "c4bf4eee8b9cc155650cfe649bec7a35",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "198020576",
+                "Facility_Zip": "90032",
+                "Facility_City": "LOS ANGELES",
+                "Facility_Name": "BELL TOWER SCHOOL",
+                "councildist": "",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "DAY CARE CENTER",
+                "Facility_Address": "5561 HUNTINGTON DR N.",
+                "isInLABounds": "FALSE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.158913031074817,
+                                34.094317511065242
+                            ],
+                            [
+                                -118.158914335867479,
+                                34.093913969005577
+                            ],
+                            [
+                                -118.158243531203624,
+                                34.094337366110118
+                            ],
+                            [
+                                -118.158232788989523,
+                                34.09468487333919
+                            ],
+                            [
+                                -118.158913031074817,
+                                34.094317511065242
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 93,
+                "id_2": "9ee3e12b84e2953d3191377f9a997cd6",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "197401089",
+                "Facility_Zip": "90036",
+                "Facility_City": "LOS ANGELES",
+                "Facility_Name": "SONY PICTURES ENTERTAINMENT CHILD DEV. CTR.",
+                "councildist": "",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "DAY CARE CENTER",
+                "Facility_Address": "3845 CLARINGTON AVE.",
+                "isInLABounds": "FALSE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.400313969820075,
+                                34.021364517886319
+                            ],
+                            [
+                                -118.400095072521367,
+                                34.021065172159751
+                            ],
+                            [
+                                -118.399512149501945,
+                                34.02130163075639
+                            ],
+                            [
+                                -118.399768563675849,
+                                34.021650865228018
+                            ],
+                            [
+                                -118.400313969820075,
+                                34.021364517886319
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 28,
+                "id_2": "31e9486f2f7a8ab2b93455c03ba6e11f",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "191600479",
+                "Facility_Zip": "90034",
+                "Facility_City": "LOS ANGELES",
+                "Facility_Name": "PLAY MOUNTAIN PLACE",
+                "councildist": "10",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "DAY CARE CENTER",
+                "Facility_Address": "6063 HARGIS STREET",
+                "isInLABounds": "FALSE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.376070183636386,
+                                34.032568385640538
+                            ],
+                            [
+                                -118.376331576469994,
+                                34.0323114816726
+                            ],
+                            [
+                                -118.376301441078553,
+                                34.03228915627826
+                            ],
+                            [
+                                -118.376281645003402,
+                                34.03226291859562
+                            ],
+                            [
+                                -118.375924282276401,
+                                34.032367067793722
+                            ],
+                            [
+                                -118.375654958971381,
+                                34.032472667759833
+                            ],
+                            [
+                                -118.376070183636386,
+                                34.032568385640538
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 94,
+                "id_2": "9f054bcf53787d8b76ac5360a90a52fe",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "197494300",
+                "Facility_Zip": "90043",
+                "Facility_City": "LOS ANGELES",
+                "Facility_Name": "CRYSTAL STAIRS HEAD START - LITTLE STARS",
+                "councildist": "",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "DAY CARE CENTER",
+                "Facility_Address": "2720 W SLAUSON AVE",
+                "isInLABounds": "FALSE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.366538779577013,
+                                33.989075986318525
+                            ],
+                            [
+                                -118.366539814481655,
+                                33.988957639264619
+                            ],
+                            [
+                                -118.366355163484769,
+                                33.98898600494222
+                            ],
+                            [
+                                -118.366366383162799,
+                                33.989066160365084
+                            ],
+                            [
+                                -118.366538779577013,
+                                33.989075986318525
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 108,
+                "id_2": "ae7f51060fa8f03b62f248328e7a6c2f",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "197419324",
+                "Facility_Zip": "90018",
+                "Facility_City": "LOS ANGELES",
+                "Facility_Name": "CHILDREN'S COLLECTIVE,INC/CONCORD CDC, THE",
+                "councildist": "10",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "DAY CARE CENTER",
+                "Facility_Address": "2828 WEST JEFFERSON BOULEVARD",
+                "isInLABounds": "TRUE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.327131894965305,
+                                34.025561247272726
+                            ],
+                            [
+                                -118.327138530552446,
+                                34.025172724624959
+                            ],
+                            [
+                                -118.326896768152949,
+                                34.025169010951991
+                            ],
+                            [
+                                -118.326897730771762,
+                                34.025564303463483
+                            ],
+                            [
+                                -118.327131894965305,
+                                34.025561247272726
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 7,
+                "id_2": "0dfe68b8a0d16e7b589e718ea7ae9699",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "198018196",
+                "Facility_Zip": "90011",
+                "Facility_City": "LOS ANGELES",
+                "Facility_Name": "CHILDREN'S COLLECTIVE INC - MAPLE STREET, THE",
+                "councildist": "9",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "DAY CARE CENTER",
+                "Facility_Address": "255 EAST 28TH STREET",
+                "isInLABounds": "TRUE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.266715067958202,
+                                34.022818624660736
+                            ],
+                            [
+                                -118.267097466854452,
+                                34.022175611408741
+                            ],
+                            [
+                                -118.266514051518598,
+                                34.021889757902208
+                            ],
+                            [
+                                -118.266029277473848,
+                                34.022579555922967
+                            ],
+                            [
+                                -118.266715067958202,
+                                34.022818624660736
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 27,
+                "id_2": "2fe2e6b51499a9c1f6d8ba52fb0edaad",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "198018036",
+                "Facility_Zip": "90011",
+                "Facility_City": "LOS ANGELES",
+                "Facility_Name": "MAOF HEAD START-YOUNG INNOVATORS",
+                "councildist": "",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "DAY CARE CENTER",
+                "Facility_Address": "4261 S. CENTRAL AVE.",
+                "isInLABounds": "FALSE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.24260923628313,
+                                33.969808239181027
+                            ],
+                            [
+                                -118.242598392481838,
+                                33.96968167334952
+                            ],
+                            [
+                                -118.242379233570432,
+                                33.969685753849028
+                            ],
+                            [
+                                -118.242404037525773,
+                                33.969808653918975
+                            ],
+                            [
+                                -118.24260923628313,
+                                33.969808239181027
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 100,
+                "id_2": "a219518e1b080dc3a494c326061bbf0b",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "198400302",
+                "Facility_Zip": "90059",
+                "Facility_City": "LOS ANGELES",
+                "Facility_Name": "CII/NICKERSON GARDENS HEAD START/EARLY HEAD START",
+                "councildist": "",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "INFANT CENTER",
+                "Facility_Address": "11253 S. COMPTON AVE",
+                "isInLABounds": "FALSE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.247559674399966,
+                                33.932403677156351
+                            ],
+                            [
+                                -118.247541753481215,
+                                33.931919885745508
+                            ],
+                            [
+                                -118.246972699467435,
+                                33.931938245134361
+                            ],
+                            [
+                                -118.246986500722926,
+                                33.932424623240117
+                            ],
+                            [
+                                -118.247559674399966,
+                                33.932403677156351
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 106,
+                "id_2": "ac963e9b622d2f6a407d5c652516463b",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "197494610",
+                "Facility_Zip": "90247",
+                "Facility_City": "GARDENA",
+                "Facility_Name": "BABY GENIUSES PRESCHOOL",
+                "councildist": "15",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "DAY CARE CENTER",
+                "Facility_Address": "15328 S. VERMONT AVENUE",
+                "isInLABounds": "TRUE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.291617831716266,
+                                33.891999128142452
+                            ],
+                            [
+                                -118.29160338783953,
+                                33.891697522254169
+                            ],
+                            [
+                                -118.291165492527838,
+                                33.891718342659331
+                            ],
+                            [
+                                -118.291196604690256,
+                                33.892072330355667
+                            ],
+                            [
+                                -118.291617831716266,
+                                33.891999128142452
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": null,
+                "fid": 162,
+                "id_2": "fdc9f1d23d74c69ff9116b3e6c14b317",
+                "County_Name": "LOS ANGELES",
+                "Facility_Number": "197493959",
+                "Facility_Zip": "90710",
+                "Facility_City": "HARBOR CITY",
+                "Facility_Name": "HAPPY TOTS MONTESSORI INFANT CENTER",
+                "councildist": "15",
+                "Facility_Status": "LICENSED",
+                "Facility_State": "CA",
+                "Facility_Type": "INFANT CENTER",
+                "Facility_Address": "25405 NORMANDIE AVE",
+                "isInLABounds": "TRUE"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -118.297552757878094,
+                                33.793750813315377
+                            ],
+                            [
+                                -118.297548237504273,
+                                33.793346062965725
+                            ],
+                            [
+                                -118.298451913739854,
+                                33.793332657169081
+                            ],
+                            [
+                                -118.298462684425488,
+                                33.793757157466509
+                            ],
+                            [
+                                -118.297552757878094,
+                                33.793750813315377
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}
