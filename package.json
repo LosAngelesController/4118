@@ -6,6 +6,8 @@
     "@craco/craco": "^6.3.0",
     "@datadog/browser-rum": "^4.1.0",
     "@headlessui/react": "^1.5.0",
+    "@mantine/core": "^4.2.12",
+    "@mantine/hooks": "^4.2.12",
     "@mapbox/mapbox-gl-geocoder": "^4.7.4",
     "@mapbox/mapbox-gl-language": "^1.0.0",
     "@testing-library/jest-dom": "^5.14.1",
@@ -33,7 +35,8 @@
     "start": "PORT=3006 craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fix": "export NODE_OPTIONS=--openssl-legacy-provider"
   },
   "eslintConfig": {
     "extends": [

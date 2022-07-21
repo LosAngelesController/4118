@@ -1,0 +1,1088 @@
+{
+    "type": "FeatureCollection",
+    "name": "joined-missing-public-school-dots-final",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::2229"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": null,
+                "OBJECTID": null,
+                "AIN": null,
+                "APN": null,
+                "SitusHouseNo": null,
+                "SitusFraction": null,
+                "SitusDirection": null,
+                "SitusUnit": null,
+                "SitusStreet": null,
+                "SitusAddress": null,
+                "SitusCity": null,
+                "SitusZIP": null,
+                "SitusFullAddress": null,
+                "TaxRateArea": null,
+                "TaxRateCity": null,
+                "AgencyClassNo": null,
+                "AgencyName": null,
+                "AgencyType": null,
+                "UseCode": null,
+                "UseCode_2": null,
+                "UseType": null,
+                "UseDescription": null,
+                "DesignType1": null,
+                "YearBuilt1": null,
+                "EffectiveYear1": null,
+                "Units1": null,
+                "Bedrooms1": null,
+                "Bathrooms1": null,
+                "SQFTmain1": null,
+                "DesignType2": null,
+                "YearBuilt2": null,
+                "EffectiveYear2": null,
+                "Units2": null,
+                "Bedrooms2": null,
+                "Bathrooms2": null,
+                "SQFTmain2": null,
+                "DesignType3": null,
+                "YearBuilt3": null,
+                "EffectiveYear3": null,
+                "Units3": null,
+                "Bedrooms3": null,
+                "Bathrooms3": null,
+                "SQFTmain3": null,
+                "DesignType4": null,
+                "YearBuilt4": null,
+                "EffectiveYear4": null,
+                "Units4": null,
+                "Bedrooms4": null,
+                "Bathrooms4": null,
+                "SQFTmain4": null,
+                "DesignType5": null,
+                "YearBuilt5": null,
+                "EffectiveYear5": null,
+                "Units5": null,
+                "Bedrooms5": null,
+                "Bathrooms5": null,
+                "SQFTmain5": null,
+                "Roll_Year": null,
+                "Roll_LandValue": null,
+                "Roll_ImpValue": null,
+                "Roll_PersPropValue": null,
+                "Roll_FixtureValue": null,
+                "Roll_HomeOwnersExemp": null,
+                "Roll_RealEstateExemp": null,
+                "Roll_PersPropExemp": null,
+                "Roll_FixtureExemp": null,
+                "Roll_LandBaseYear": null,
+                "Roll_ImpBaseYear": null,
+                "QualityClass1": null,
+                "QualityClass2": null,
+                "QualityClass3": null,
+                "QualityClass4": null,
+                "QualityClass5": null,
+                "LegalDescLine1": null,
+                "LegalDescLine2": null,
+                "LegalDescLine3": null,
+                "LegalDescLine4": null,
+                "LegalDescLine5": null,
+                "LegalDescLineLast": null,
+                "LegalDescription": null,
+                "SpatialChangeDate": null,
+                "ParcelCreateDate": null,
+                "ParcelTypeCode": null,
+                "Assr_Map": null,
+                "Assr_Index_Map": null,
+                "CENTER_LAT": null,
+                "CENTER_LON": null,
+                "CENTER_X": null,
+                "CENTER_Y": null,
+                "LAT_LON": null,
+                "Shape_Length": null,
+                "Shape_Area": null,
+                "fid_2": 2,
+                "id": "9a1ba9886d3619280b1a772f5a2d931f",
+                "SOCType": "Elementary Schools (Public)",
+                "Ext": "No Data",
+                "Zip": "90011-2619",
+                "Street": "3601 South Maple Avenue",
+                "FaxNumber": "(323) 238-0780",
+                "YearRoundYN": "N",
+                "SOC": "60",
+                "councildist": "9",
+                "NCESDist": "622710",
+                "County": "Los Angeles",
+                "Magnet": "N",
+                "Charter": "N",
+                "City": "Los Angeles",
+                "StatusType": "Active",
+                "Phone": "(323) 232-0984",
+                "District": "Los Angeles Unified",
+                "State": "CA",
+                "For Check": "3601 Maple Ave.",
+                "DOCType": "Unified School District",
+                "EILName": "Elementary",
+                "School": "Maple Primary Center",
+                "NCESSchool": "10855",
+                "FundingType": "No Data",
+                "OpenDate": "38239",
+                "isInLABounds": "TRUE",
+                "ClosedDate": "No Data",
+                "WebSite": "http://maplepc-lausd-ca.schoolloop.com/",
+                "CharterNum": "No Data",
+                "Email": "No Data",
+                "CDSCode": "1.96473E+13"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                6479691.005812086164951,
+                                1828175.067190157715231
+                            ],
+                            [
+                                6479556.071304460987449,
+                                1827920.263678184943274
+                            ],
+                            [
+                                6479275.066917221061885,
+                                1828089.914345539407805
+                            ],
+                            [
+                                6479410.001424846239388,
+                                1828352.578120092395693
+                            ],
+                            [
+                                6479651.049477303400636,
+                                1828209.783349886536598
+                            ],
+                            [
+                                6479693.625899612903595,
+                                1828186.857584027806297
+                            ],
+                            [
+                                6479691.005812086164951,
+                                1828175.067190157715231
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 1,
+                "OBJECTID": null,
+                "AIN": null,
+                "APN": null,
+                "SitusHouseNo": null,
+                "SitusFraction": null,
+                "SitusDirection": null,
+                "SitusUnit": null,
+                "SitusStreet": null,
+                "SitusAddress": null,
+                "SitusCity": null,
+                "SitusZIP": null,
+                "SitusFullAddress": null,
+                "TaxRateArea": null,
+                "TaxRateCity": null,
+                "AgencyClassNo": null,
+                "AgencyName": null,
+                "AgencyType": null,
+                "UseCode": null,
+                "UseCode_2": null,
+                "UseType": null,
+                "UseDescription": null,
+                "DesignType1": null,
+                "YearBuilt1": null,
+                "EffectiveYear1": null,
+                "Units1": null,
+                "Bedrooms1": null,
+                "Bathrooms1": null,
+                "SQFTmain1": null,
+                "DesignType2": null,
+                "YearBuilt2": null,
+                "EffectiveYear2": null,
+                "Units2": null,
+                "Bedrooms2": null,
+                "Bathrooms2": null,
+                "SQFTmain2": null,
+                "DesignType3": null,
+                "YearBuilt3": null,
+                "EffectiveYear3": null,
+                "Units3": null,
+                "Bedrooms3": null,
+                "Bathrooms3": null,
+                "SQFTmain3": null,
+                "DesignType4": null,
+                "YearBuilt4": null,
+                "EffectiveYear4": null,
+                "Units4": null,
+                "Bedrooms4": null,
+                "Bathrooms4": null,
+                "SQFTmain4": null,
+                "DesignType5": null,
+                "YearBuilt5": null,
+                "EffectiveYear5": null,
+                "Units5": null,
+                "Bedrooms5": null,
+                "Bathrooms5": null,
+                "SQFTmain5": null,
+                "Roll_Year": null,
+                "Roll_LandValue": null,
+                "Roll_ImpValue": null,
+                "Roll_PersPropValue": null,
+                "Roll_FixtureValue": null,
+                "Roll_HomeOwnersExemp": null,
+                "Roll_RealEstateExemp": null,
+                "Roll_PersPropExemp": null,
+                "Roll_FixtureExemp": null,
+                "Roll_LandBaseYear": null,
+                "Roll_ImpBaseYear": null,
+                "QualityClass1": null,
+                "QualityClass2": null,
+                "QualityClass3": null,
+                "QualityClass4": null,
+                "QualityClass5": null,
+                "LegalDescLine1": null,
+                "LegalDescLine2": null,
+                "LegalDescLine3": null,
+                "LegalDescLine4": null,
+                "LegalDescLine5": null,
+                "LegalDescLineLast": null,
+                "LegalDescription": null,
+                "SpatialChangeDate": null,
+                "ParcelCreateDate": null,
+                "ParcelTypeCode": null,
+                "Assr_Map": null,
+                "Assr_Index_Map": null,
+                "CENTER_LAT": null,
+                "CENTER_LON": null,
+                "CENTER_X": null,
+                "CENTER_Y": null,
+                "LAT_LON": null,
+                "Shape_Length": null,
+                "Shape_Area": null,
+                "fid_2": 5,
+                "id": "d68bbfe95e96270ecb4b15bff917e465",
+                "SOCType": "Intermediate/Middle Schools (Public)",
+                "Ext": "No Data",
+                "Zip": "90017-1633",
+                "Street": "650 South Union Avenue",
+                "FaxNumber": "(213) 484-2700",
+                "YearRoundYN": "N",
+                "SOC": "62",
+                "councildist": "1",
+                "NCESDist": "622710",
+                "County": "Los Angeles",
+                "Magnet": "N",
+                "Charter": "N",
+                "City": "Los Angeles",
+                "StatusType": "Active",
+                "Phone": "(213) 989-1200",
+                "District": "Los Angeles Unified",
+                "State": "CA",
+                "For Check": "650 Union Ave.",
+                "DOCType": "Unified School District",
+                "EILName": "Intermediate/Middle/Junior High",
+                "School": "John H. Liechty Middle",
+                "NCESSchool": "12144",
+                "FundingType": "No Data",
+                "OpenDate": "39330",
+                "isInLABounds": "TRUE",
+                "ClosedDate": "No Data",
+                "WebSite": "http://www.liechtyms-lausd-ca.schoolloop.com",
+                "CharterNum": "No Data",
+                "Email": "No Data",
+                "CDSCode": "1.96473E+13"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                6479838.521621996536851,
+                                1842607.339702997123823
+                            ],
+                            [
+                                6479681.957280193455517,
+                                1842357.420225709443912
+                            ],
+                            [
+                                6480243.060542431659997,
+                                1842058.392057359218597
+                            ],
+                            [
+                                6480380.662122339010239,
+                                1842330.191644526319578
+                            ],
+                            [
+                                6479838.521621996536851,
+                                1842607.339702997123823
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 1,
+                "OBJECTID": 1242533,
+                "AIN": "5301011029",
+                "APN": "5301-011-029",
+                "SitusHouseNo": "625",
+                "SitusFraction": " ",
+                "SitusDirection": " ",
+                "SitusUnit": " ",
+                "SitusStreet": "COLEMAN AVE",
+                "SitusAddress": "625 COLEMAN AVE",
+                "SitusCity": "LOS ANGELES CA",
+                "SitusZIP": "90042-4903",
+                "SitusFullAddress": "625 COLEMAN AVE LOS ANGELES CA 90042",
+                "TaxRateArea": "00027",
+                "TaxRateCity": "LOS ANGELES",
+                "AgencyClassNo": null,
+                "AgencyName": null,
+                "AgencyType": null,
+                "UseCode": "7300",
+                "UseCode_2": "73",
+                "UseType": "Institutional",
+                "UseDescription": "Colleges, Universities (Private)",
+                "DesignType1": "7300",
+                "YearBuilt1": "1959",
+                "EffectiveYear1": "1959",
+                "Units1": 0,
+                "Bedrooms1": 0,
+                "Bathrooms1": 0,
+                "SQFTmain1": 7035,
+                "DesignType2": "7200",
+                "YearBuilt2": "1956",
+                "EffectiveYear2": "1956",
+                "Units2": 0,
+                "Bedrooms2": 0,
+                "Bathrooms2": 0,
+                "SQFTmain2": 1278,
+                "DesignType3": "7000",
+                "YearBuilt3": "1944",
+                "EffectiveYear3": "1944",
+                "Units3": 0,
+                "Bedrooms3": 0,
+                "Bathrooms3": 0,
+                "SQFTmain3": 2596,
+                "DesignType4": null,
+                "YearBuilt4": null,
+                "EffectiveYear4": null,
+                "Units4": null,
+                "Bedrooms4": null,
+                "Bathrooms4": null,
+                "SQFTmain4": null,
+                "DesignType5": null,
+                "YearBuilt5": null,
+                "EffectiveYear5": null,
+                "Units5": null,
+                "Bedrooms5": null,
+                "Bathrooms5": null,
+                "SQFTmain5": null,
+                "Roll_Year": "2021",
+                "Roll_LandValue": 7853588,
+                "Roll_ImpValue": 334549,
+                "Roll_PersPropValue": 0,
+                "Roll_FixtureValue": 0,
+                "Roll_HomeOwnersExemp": 0,
+                "Roll_RealEstateExemp": 0,
+                "Roll_PersPropExemp": 0,
+                "Roll_FixtureExemp": 0,
+                "Roll_LandBaseYear": "2007",
+                "Roll_ImpBaseYear": "2007",
+                "QualityClass1": "DX   ",
+                "QualityClass2": "DX   ",
+                "QualityClass3": "DX   ",
+                "QualityClass4": null,
+                "QualityClass5": null,
+                "LegalDescLine1": "*LOT COM AT MOST E COR OF LOT 1 TR NO",
+                "LegalDescLine2": "2345 TH SW ON NW LINE OF LOMITAS DR",
+                "LegalDescLine3": "TO MOST N COR OF LOT 9 BLK 35 HIGH-",
+                "LegalDescLine4": "LAND PARK ADD TH SE ON NE LINE OF SD",
+                "LegalDescLine5": "SEE ASSESSOR MAPBOOK FOR MISSING PORTION",
+                "LegalDescLineLast": "TRACT NO 2345",
+                "LegalDescription": "*LOT COM AT MOST E COR OF LOT 1 TR NO 2345 TH SW ON NW LINE OF LOMITAS DR TO MOST N COR OF LOT 9 BLK 35 HIGH- LAND PARK ADD TH SE ON NE LINE OF SD LOT 9, 40 FT TH SW TO A PT IN SW LINE OF SD LOT 9 SE THEREON 40.03 FT FROM MOST W COR OF SD LOT TH NW ON SD SW LINE TO SD NW LINE TH SW THEREON AND NW ON NE LINE OF COLEMAN AVE AND NE ON SE LINE OF EBEY AVE TO MOST N COR ...SEE ASSESSOR MAPBOOK FOR MISSING PORTION... TRACT NO 2345",
+                "SpatialChangeDate": "2017-09-21T12:08:43",
+                "ParcelCreateDate": 0,
+                "ParcelTypeCode": 0,
+                "Assr_Map": "5301-011",
+                "Assr_Index_Map": "5301-NDX",
+                "CENTER_LAT": 34.10291214,
+                "CENTER_LON": -118.18252369,
+                "CENTER_X": 6506411.53300873,
+                "CENTER_Y": 1859884.0491601999,
+                "LAT_LON": null,
+                "Shape_Length": 2277.9549302197656,
+                "Shape_Area": 228092.39199470109,
+                "fid_2": 1,
+                "id": "3eb1c034e5a5572bae8538d4999032dd",
+                "SOCType": "High Schools In 1 School Dist. (Public)",
+                "Ext": "No Data",
+                "Zip": "90042-4903",
+                "Street": "625 Coleman Avenue",
+                "FaxNumber": "(323) 257-1497",
+                "YearRoundYN": "N",
+                "SOC": "67",
+                "councildist": "14",
+                "NCESDist": "No Data",
+                "County": "Los Angeles",
+                "Magnet": "N",
+                "Charter": "Y",
+                "City": "Los Angeles",
+                "StatusType": "Active",
+                "Phone": "(323) 257-1499",
+                "District": "SBE - Los Angeles College Prep Academy",
+                "State": "CA",
+                "For Check": "625 Coleman Ave.",
+                "DOCType": "State Board of Education",
+                "EILName": "High School",
+                "School": "Los Angeles College Prep Academy",
+                "NCESSchool": "10897",
+                "FundingType": "Directly funded",
+                "OpenDate": "38601",
+                "isInLABounds": "TRUE",
+                "ClosedDate": "No Data",
+                "WebSite": "http://www.lacpacademy.org",
+                "CharterNum": "741",
+                "Email": "info@lacpacademy.org",
+                "CDSCode": "1.97729E+13"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                6506238.140000000596046,
+                                1860192.579999998211861
+                            ],
+                            [
+                                6506699.046250000596046,
+                                1860058.413124993443489
+                            ],
+                            [
+                                6506698.918125003576279,
+                                1860057.970624998211861
+                            ],
+                            [
+                                6506643.244375005364418,
+                                1859865.991249993443489
+                            ],
+                            [
+                                6506644.543750002980232,
+                                1859865.611874997615814
+                            ],
+                            [
+                                6506681.643124997615814,
+                                1859854.786874994635582
+                            ],
+                            [
+                                6506664.775000005960464,
+                                1859793.799374997615814
+                            ],
+                            [
+                                6506662.983750000596046,
+                                1859787.321875005960464
+                            ],
+                            [
+                                6506642.346874997019768,
+                                1859712.704999998211861
+                            ],
+                            [
+                                6506640.613749995827675,
+                                1859713.318749994039536
+                            ],
+                            [
+                                6506604.620000004768372,
+                                1859726.069999992847443
+                            ],
+                            [
+                                6506559.219999998807907,
+                                1859598.930000007152557
+                            ],
+                            [
+                                6506103.049999997019768,
+                                1859732.069999992847443
+                            ],
+                            [
+                                6506181.053124994039536,
+                                1859997.899375006556511
+                            ],
+                            [
+                                6506204.390000000596046,
+                                1860077.430000007152557
+                            ],
+                            [
+                                6506215.620000004768372,
+                                1860115.819999992847443
+                            ],
+                            [
+                                6506350.0,
+                                1860076.560000002384186
+                            ],
+                            [
+                                6506366.890000000596046,
+                                1860134.129999995231628
+                            ],
+                            [
+                                6506232.5,
+                                1860173.390000000596046
+                            ],
+                            [
+                                6506238.140000000596046,
+                                1860192.579999998211861
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 1,
+                "OBJECTID": 2047728,
+                "AIN": "2726006900",
+                "APN": "2726-006-900",
+                "SitusHouseNo": "0",
+                "SitusFraction": " ",
+                "SitusDirection": " ",
+                "SitusUnit": " ",
+                "SitusStreet": " ",
+                "SitusAddress": "",
+                "SitusCity": " ",
+                "SitusZIP": " ",
+                "SitusFullAddress": "",
+                "TaxRateArea": "00016",
+                "TaxRateCity": "LOS ANGELES",
+                "AgencyClassNo": 374380,
+                "AgencyName": "L A Unified School Dist",
+                "AgencyType": "LAUSD",
+                "UseCode": "8800",
+                "UseCode_2": "88",
+                "UseType": "Government",
+                "UseDescription": "Government Parcel",
+                "DesignType1": null,
+                "YearBuilt1": null,
+                "EffectiveYear1": null,
+                "Units1": null,
+                "Bedrooms1": null,
+                "Bathrooms1": null,
+                "SQFTmain1": null,
+                "DesignType2": null,
+                "YearBuilt2": null,
+                "EffectiveYear2": null,
+                "Units2": null,
+                "Bedrooms2": null,
+                "Bathrooms2": null,
+                "SQFTmain2": null,
+                "DesignType3": null,
+                "YearBuilt3": null,
+                "EffectiveYear3": null,
+                "Units3": null,
+                "Bedrooms3": null,
+                "Bathrooms3": null,
+                "SQFTmain3": null,
+                "DesignType4": null,
+                "YearBuilt4": null,
+                "EffectiveYear4": null,
+                "Units4": null,
+                "Bedrooms4": null,
+                "Bathrooms4": null,
+                "SQFTmain4": null,
+                "DesignType5": null,
+                "YearBuilt5": null,
+                "EffectiveYear5": null,
+                "Units5": null,
+                "Bedrooms5": null,
+                "Bathrooms5": null,
+                "SQFTmain5": null,
+                "Roll_Year": null,
+                "Roll_LandValue": null,
+                "Roll_ImpValue": null,
+                "Roll_PersPropValue": null,
+                "Roll_FixtureValue": null,
+                "Roll_HomeOwnersExemp": null,
+                "Roll_RealEstateExemp": null,
+                "Roll_PersPropExemp": null,
+                "Roll_FixtureExemp": null,
+                "Roll_LandBaseYear": "0000",
+                "Roll_ImpBaseYear": "0000",
+                "QualityClass1": null,
+                "QualityClass2": null,
+                "QualityClass3": null,
+                "QualityClass4": null,
+                "QualityClass5": null,
+                "LegalDescLine1": "TRACT NO 26478 LOT    1",
+                "LegalDescLine2": null,
+                "LegalDescLine3": null,
+                "LegalDescLine4": null,
+                "LegalDescLine5": null,
+                "LegalDescLineLast": null,
+                "LegalDescription": "TRACT NO 26478 LOT    1",
+                "SpatialChangeDate": null,
+                "ParcelCreateDate": 0,
+                "ParcelTypeCode": 0,
+                "Assr_Map": "2726-006",
+                "Assr_Index_Map": "2726-NDX",
+                "CENTER_LAT": 34.25271805,
+                "CENTER_LON": -118.5642476,
+                "CENTER_X": 6391159.6305726003,
+                "CENTER_Y": 1914829.55500481,
+                "LAT_LON": "34.252718, -118.564248",
+                "Shape_Length": 2137.1064581846563,
+                "Shape_Area": 288489.3390014547,
+                "fid_2": 4,
+                "id": "cf202fb4f09fb8d7313003e92f677c0e",
+                "SOCType": "District Community Day Schools",
+                "Ext": "No Data",
+                "Zip": "91311",
+                "Street": "10001 Jumilla Avenue",
+                "FaxNumber": "(213) 241-6360",
+                "YearRoundYN": "N",
+                "SOC": "69",
+                "councildist": "12",
+                "NCESDist": "622710",
+                "County": "Los Angeles",
+                "Magnet": "N",
+                "Charter": "N",
+                "City": "Chatsworth",
+                "StatusType": "Active",
+                "Phone": "(213) 239-5656",
+                "District": "Los Angeles Unified",
+                "State": "CA",
+                "For Check": "10001 Jumilla Ave.",
+                "DOCType": "Unified School District",
+                "EILName": "Elementary",
+                "School": "CDS Elementary",
+                "NCESSchool": "10528",
+                "FundingType": "No Data",
+                "OpenDate": "36406",
+                "isInLABounds": "TRUE",
+                "ClosedDate": "No Data",
+                "WebSite": "No Data",
+                "CharterNum": "No Data",
+                "Email": "No Data",
+                "CDSCode": "1.96473E+13"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                6390972.730000004172325,
+                                1915131.219999998807907
+                            ],
+                            [
+                                6391386.109999999403954,
+                                1915129.170000001788139
+                            ],
+                            [
+                                6391387.133736132644117,
+                                1915129.13044512248598
+                            ],
+                            [
+                                6391388.152377842925489,
+                                1915129.02104029036127
+                            ],
+                            [
+                                6391389.161164759658277,
+                                1915128.842296957736835
+                            ],
+                            [
+                                6391390.155382632277906,
+                                1915128.595050275092945
+                            ],
+                            [
+                                6391391.130385397933424,
+                                1915128.280455648666248
+                            ],
+                            [
+                                6391392.08161663915962,
+                                1915127.899983346229419
+                            ],
+                            [
+                                6391393.004631041549146,
+                                1915127.455411314731464
+                            ],
+                            [
+                                6391393.895115613006055,
+                                1915126.948817133670673
+                            ],
+                            [
+                                6391394.748908280394971,
+                                1915126.382568180328235
+                            ],
+                            [
+                                6391395.562019824050367,
+                                1915125.759310662513599
+                            ],
+                            [
+                                6391396.330650090239942,
+                                1915125.081957161193714
+                            ],
+                            [
+                                6391397.051207064650953,
+                                1915124.353673040634021
+                            ],
+                            [
+                                6391397.720323561690748,
+                                1915123.577861666446552
+                            ],
+                            [
+                                6391398.334872483275831,
+                                1915122.758148610359058
+                            ],
+                            [
+                                6391398.891982554458082,
+                                1915121.89836448407732
+                            ],
+                            [
+                                6391399.389049529097974,
+                                1915121.002527236705646
+                            ],
+                            [
+                                6391399.823751210235059,
+                                1915120.074823260074481
+                            ],
+                            [
+                                6391400.194055556319654,
+                                1915119.119587838416919
+                            ],
+                            [
+                                6391400.498232602141798,
+                                1915118.141284942394122
+                            ],
+                            [
+                                6391400.734860419295728,
+                                1915117.144486427074298
+                            ],
+                            [
+                                6391400.902833699248731,
+                                1915116.133850365644321
+                            ],
+                            [
+                                6391401.001367091201246,
+                                1915115.11409980035387
+                            ],
+                            [
+                                6391401.030000001192093,
+                                1915114.090000003576279
+                            ],
+                            [
+                                6391398.189999997615814,
+                                1914542.640000000596046
+                            ],
+                            [
+                                6391398.150064705871046,
+                                1914541.616589307552204
+                            ],
+                            [
+                                6391398.040399550460279,
+                                1914540.598287731176242
+                            ],
+                            [
+                                6391397.861516236327589,
+                                1914539.58984088874422
+                            ],
+                            [
+                                6391397.614247797988355,
+                                1914538.595948159461841
+                            ],
+                            [
+                                6391397.299746750853956,
+                                1914537.621241271262988
+                            ],
+                            [
+                                6391396.919478892348707,
+                                1914536.670262455707416
+                            ],
+                            [
+                                6391396.47521638777107,
+                                1914535.747443377738819
+                            ],
+                            [
+                                6391395.969028948806226,
+                                1914534.857084512477741
+                            ],
+                            [
+                                6391395.403276204131544,
+                                1914534.003335058456287
+                            ],
+                            [
+                                6391394.780594109557569,
+                                1914533.190173625713214
+                            ],
+                            [
+                                6391394.103884934447706,
+                                1914532.421389639144763
+                            ],
+                            [
+                                6391393.376301764510572,
+                                1914531.700565695529804
+                            ],
+                            [
+                                6391392.60123538877815,
+                                1914531.031060993438587
+                            ],
+                            [
+                                6391391.782297848723829,
+                                1914530.415995478397235
+                            ],
+                            [
+                                6391390.923305272124708,
+                                1914529.858235418563709
+                            ],
+                            [
+                                6391390.028260945342481,
+                                1914529.360380053287372
+                            ],
+                            [
+                                6391389.101335762999952,
+                                1914528.924749493366107
+                            ],
+                            [
+                                6391388.146849154494703,
+                                1914528.55337381339632
+                            ],
+                            [
+                                6391387.169249295257032,
+                                1914528.247983634239063
+                            ],
+                            [
+                                6391386.173092125914991,
+                                1914528.010002195602283
+                            ],
+                            [
+                                6391385.163019656203687,
+                                1914527.840538412099704
+                            ],
+                            [
+                                6391384.143738984130323,
+                                1914527.740382134681568
+                            ],
+                            [
+                                6391383.120000004768372,
+                                1914527.709999993443489
+                            ],
+                            [
+                                6390970.700000002980232,
+                                1914529.760000005364418
+                            ],
+                            [
+                                6390933.150000005960464,
+                                1914529.950000002980232
+                            ],
+                            [
+                                6390932.126577614806592,
+                                1914529.989899396663532
+                            ],
+                            [
+                                6390931.108262061141431,
+                                1914530.099532454973087
+                            ],
+                            [
+                                6390930.0997996320948,
+                                1914530.278388321166858
+                            ],
+                            [
+                                6390929.105890511535108,
+                                1914530.52563339448534
+                            ],
+                            [
+                                6390928.13116645719856,
+                                1914530.840115368133411
+                            ],
+                            [
+                                6390927.180170535109937,
+                                1914531.220368563896045
+                            ],
+                            [
+                                6390926.257334946654737,
+                                1914531.66462081647478
+                            ],
+                            [
+                                6390925.366960524581373,
+                                1914532.170801639324054
+                            ],
+                            [
+                                6390924.513196705840528,
+                                1914532.736551940208301
+                            ],
+                            [
+                                6390923.700023173354566,
+                                1914533.359234988456592
+                            ],
+                            [
+                                6390922.931229113601148,
+                                1914534.035948753124103
+                            ],
+                            [
+                                6390922.210397719405591,
+                                1914534.763539314037189
+                            ],
+                            [
+                                6390921.540888785384595,
+                                1914535.538615703349933
+                            ],
+                            [
+                                6390920.925822257064283,
+                                1914536.357565641170368
+                            ],
+                            [
+                                6390920.368064879439771,
+                                1914537.216572284465656
+                            ],
+                            [
+                                6390919.870216130279005,
+                                1914538.111632227664813
+                            ],
+                            [
+                                6390919.43459606077522,
+                                1914539.03857398009859
+                            ],
+                            [
+                                6390919.063235281966627,
+                                1914539.993077456718311
+                            ],
+                            [
+                                6390918.757864235900342,
+                                1914540.970694064861163
+                            ],
+                            [
+                                6390918.519906281493604,
+                                1914541.966867625480518
+                            ],
+                            [
+                                6390918.350470303557813,
+                                1914542.976955324178562
+                            ],
+                            [
+                                6390918.250345944426954,
+                                1914543.996249615913257
+                            ],
+                            [
+                                6390918.219999998807907,
+                                1914545.019999995827675
+                            ],
+                            [
+                                6390921.079999998211861,
+                                1915116.469999998807907
+                            ],
+                            [
+                                6390921.119935511611402,
+                                1915117.493410765891895
+                            ],
+                            [
+                                6390921.229600667022169,
+                                1915118.511712223058566
+                            ],
+                            [
+                                6390921.408484219573438,
+                                1915119.520159125095233
+                            ],
+                            [
+                                6390921.655752419494092,
+                                1915120.514051854377612
+                            ],
+                            [
+                                6390921.970253466628492,
+                                1915121.488758742576465
+                            ],
+                            [
+                                6390922.350521325133741,
+                                1915122.439737558132038
+                            ],
+                            [
+                                6390922.794784068129957,
+                                1915123.362556636100635
+                            ],
+                            [
+                                6390923.300971268676221,
+                                1915124.252915501361713
+                            ],
+                            [
+                                6390923.866724251769483,
+                                1915125.106664895778522
+                            ],
+                            [
+                                6390924.489406107924879,
+                                1915125.919826328521594
+                            ],
+                            [
+                                6390925.166115521453321,
+                                1915126.688610315090045
+                            ],
+                            [
+                                6390925.893698691390455,
+                                1915127.409434258705005
+                            ],
+                            [
+                                6390926.668765067122877,
+                                1915128.078938960796222
+                            ],
+                            [
+                                6390927.487702607177198,
+                                1915128.694004535442218
+                            ],
+                            [
+                                6390928.34669494535774,
+                                1915129.251764595275745
+                            ],
+                            [
+                                6390929.241739510558546,
+                                1915129.749619900947437
+                            ],
+                            [
+                                6390930.168664692901075,
+                                1915130.185250520473346
+                            ],
+                            [
+                                6390931.123151062987745,
+                                1915130.556626200443134
+                            ],
+                            [
+                                6390932.100750922225416,
+                                1915130.862016379600391
+                            ],
+                            [
+                                6390933.096908091567457,
+                                1915131.099997818237171
+                            ],
+                            [
+                                6390934.10698056127876,
+                                1915131.269461542135105
+                            ],
+                            [
+                                6390935.126261233352125,
+                                1915131.369617879157886
+                            ],
+                            [
+                                6390936.150000005960464,
+                                1915131.400000005960464
+                            ],
+                            [
+                                6390972.730000004172325,
+                                1915131.219999998807907
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}
