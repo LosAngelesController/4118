@@ -5,7 +5,8 @@ const s4 = require('./inputs/s4-4118.json');
 const daycares = require('./inputs/daycares.json');
 const schools = require('./inputs/output4118-schools-v6.json')
 const missingschools = require('./inputs/joined-missing-public-school-dots-final-coorrected-coords.json');
-const missingprivateschools = require('./inputs/output4118-missing-private-schools-v1.json')
+const missingprivateschools = require('./inputs/output4118-missing-private-schools-v1.json');
+const missingdaycares = require('./inputs/output4118-missing-daycares-v1.json');
 const s5 = require('./inputs/220615-kyler.json');
 const sean2 = require('./inputs/sean-2-corrected.json');
 const feb16seanimport = require('./inputs/4118_02_19_2022-sean.json');
@@ -45,7 +46,7 @@ var locationsBatchCompilefeb16 =  {
   }
 
 
-var arrayOfFiles = [schools,daycares,  missingschools, missingprivateschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5]
+var arrayOfFiles = [schools,daycares,  missingschools, missingprivateschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5, missingdaycares]
 
 var locations =  {
     features: [],
