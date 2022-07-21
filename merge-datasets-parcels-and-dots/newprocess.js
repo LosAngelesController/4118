@@ -14,10 +14,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 exports.__esModule = true;
-var joined_fixed_crs_new_school_map_parcels_json_1 = __importDefault(require("./joined-fixed-crs-new-school-map-parcels.json"));
+//import areas from './joined-fixed-crs-new-school-map-parcels.json'
+var export_private_schools_joined_missing_07_20_json_1 = __importDefault(require("./export-private-schools-joined-missing-07-20.json"));
 //import areas from './v5-daycare-retained-commerical-export.json'
 if (false) {
-    var cleanedareafeatures = joined_fixed_crs_new_school_map_parcels_json_1["default"].features.map(function (eachFeature) {
+    var cleanedareafeatures = export_private_schools_joined_missing_07_20_json_1["default"].features.map(function (eachFeature) {
         if (eachFeature.geometry.coordinates.length > 1) {
             console.log('multi');
         }
@@ -37,7 +38,7 @@ if (false) {
     });
 }
 var cleanedareafeatures = [];
-joined_fixed_crs_new_school_map_parcels_json_1["default"].features.forEach(function (eachFeature) {
+export_private_schools_joined_missing_07_20_json_1["default"].features.forEach(function (eachFeature) {
     if (eachFeature.geometry.coordinates.length > 1) {
         console.log('multi');
     }
@@ -46,7 +47,7 @@ joined_fixed_crs_new_school_map_parcels_json_1["default"].features.forEach(funct
             cleanedareafeatures.push({
                 "type": "feature",
                 "properties": {
-                    "address": eachFeature.properties['StreetAbr'],
+                    "address": eachFeature.properties['Street_Address'],
                     "place_name": eachFeature.properties['School'],
                     "set": 10,
                     "section": 1,
@@ -80,7 +81,7 @@ joined_fixed_crs_new_school_map_parcels_json_1["default"].features.forEach(funct
         }
     });
 });
-var writeout = __assign(__assign({}, joined_fixed_crs_new_school_map_parcels_json_1["default"]), { features: cleanedareafeatures });
+var writeout = __assign(__assign({}, export_private_schools_joined_missing_07_20_json_1["default"]), { features: cleanedareafeatures });
 var fs = require('fs');
 // Or
-fs.writeFileSync('./output4118-schools-v6.json', JSON.stringify(writeout));
+fs.writeFileSync('./output4118-missing-private-schools-v1.json', JSON.stringify(writeout));

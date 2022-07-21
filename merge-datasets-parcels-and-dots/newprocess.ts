@@ -1,4 +1,5 @@
-import areas from './joined-fixed-crs-new-school-map-parcels.json'
+//import areas from './joined-fixed-crs-new-school-map-parcels.json'
+import areas from './export-private-schools-joined-missing-07-20.json'
 //import areas from './v5-daycare-retained-commerical-export.json'
 
 if (false ) {
@@ -42,7 +43,7 @@ var cleanedareafeatures = areas.features.map((eachFeature) => {
             cleanedareafeatures.push({
                 "type": "feature",
                 "properties": {
-                    "address": eachFeature.properties['StreetAbr'],
+                    "address": eachFeature.properties['Street_Address'],
                     "place_name": eachFeature.properties['School'],
                     "set": 10,
                     "section": 1,
@@ -85,4 +86,4 @@ var writeout = {...areas, features: cleanedareafeatures}
 const fs = require('fs');
 
 // Or
-fs.writeFileSync('./output4118-schools-v6.json', JSON.stringify(writeout));
+fs.writeFileSync('./output4118-missing-private-schools-v1.json', JSON.stringify(writeout));

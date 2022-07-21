@@ -35,7 +35,8 @@
     "start": "PORT=3006 craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fix": "export NODE_OPTIONS=--openssl-legacy-provider"
   },
   "eslintConfig": {
     "extends": [
