@@ -1073,7 +1073,19 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
 
               </div>
               {
-                featuresTotal.features.map((eachFeature: any, eachFeatureIndex: any) => (
+                featuresTotal.features
+                .filter((eachFeature:any) => {
+                  if (this.state.showpending) {
+                    return true;
+                  } else {
+                    if (parseInt(eachFeature.properties.set, 10) > this.state.currentSet) {
+                      return false;
+                    } else {
+                      return true;
+                    }
+                  }
+                })
+                .map((eachFeature: any, eachFeatureIndex: any) => (
                   <div className=' bg-truegray-800 my-2 px-2 py-1 rounded-sm ' key={eachFeatureIndex} onClick={(event) => {
                     this.toggleList();
                     checkStateOfSidebarAndUpdateOtherComponents();
