@@ -7,6 +7,7 @@ import { Switch, MantineProvider } from '@mantine/core';
 import MapboxLanguage from '@mapbox/mapbox-gl-language';
 
 
+
 import { DisclaimerPopup } from './Disclaimer'
 import * as turf from '@turf/turf'
 
@@ -43,7 +44,8 @@ mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worke
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29tcmFkZWt5bGVyIiwiYSI6ImNrdjBkOXNyeDdscnoycHE2cDk4aWJraTIifQ.77Gid9mgpEdLpFszO5n4oQ';
 
-var locationsImport = require('./features.json')
+var locationsImport = require('./features.json');
+const cds = require('./CouncilDistricts.json')
 
 var locationsRemoveSections = locationsImport.features.filter((location: any) => {
   if (location.properties.section) {
@@ -763,6 +765,23 @@ export default class App extends React.PureComponent {
             'fill-opacity': 0.01
           }
         })
+      }
+
+      if (urlParams.get('showcd') === 'true') {
+         map.addLayer({
+          id: 'cdbound',
+          type: 'line',
+          source: {
+            type: 'geojson',
+            data: cds
+          },
+          paint: {
+            "line-color": '#41ffca',
+            'line-opacity': 1,
+            'line-width': 2
+          }
+        })
+
       }
 
 
