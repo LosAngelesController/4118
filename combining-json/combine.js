@@ -13,6 +13,7 @@ const feb16seanimport = require('./inputs/4118_02_19_2022-sean.json');
 const feb16kylerimport = require('./inputs/4118-02-19-2022-kyler.json');
 const editJsonFile = require("edit-json-file");
 const hashsum = require('hash-sum')
+const notagaincries = require('./inputs/2022-10-18-4118.json');
 var fs = require('fs');
 // If the file doesn't exist, the content will be an empty object by default.
 let file = editJsonFile(`${__dirname}/features.json`);
@@ -46,7 +47,7 @@ var locationsBatchCompilefeb16 =  {
   }
 
 
-var arrayOfFiles = [schools,daycares,  missingschools, missingprivateschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5, missingdaycares]
+var arrayOfFiles = [schools,daycares, notagaincries, missingschools, missingprivateschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5, missingdaycares]
 
 var locations =  {
     features: [],
