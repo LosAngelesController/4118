@@ -14,7 +14,7 @@ const feb16kylerimport = require('./inputs/4118-02-19-2022-kyler.json');
 const editJsonFile = require("edit-json-file");
 const hashsum = require('hash-sum')
 const notagaincries = require('./inputs/2022-10-18-4118.json');
-const bruhfdsljdfjk = require('./221126-features.json');
+const bruhfdsljdfjk = require('./inputs/221126-features.json');
 var fs = require('fs');
 // If the file doesn't exist, the content will be an empty object by default.
 let file = editJsonFile(`${__dirname}/features.json`);
