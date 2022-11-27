@@ -71,7 +71,7 @@ const citybound = require('./citybounds.json')
 
 function isStringOneThousandFt(stringInput: string) {
   // console.log('stringinput', stringInput)
-  return (stringInput.match(/Design/gi) || stringInput.match(/Navigation/gi))
+  return (stringInput.match(/Design/gi) || stringInput.match(/Navigation/gi) || stringInput.match(/Supportive Housing Facility/gi))
 }
 
 var locationsBuffered = locations.features.map((eachFeature: any, eachFeatureIndex: any) => {

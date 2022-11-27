@@ -1,0 +1,225 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Reseda Blvd & Parthenia St",
+        "category": "Public Safety",
+        "date": "11/22/22"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.536349,
+              34.228436
+            ],
+            [
+              -118.536349,
+              34.228034
+            ],
+            [
+              -118.535839,
+              34.228038
+            ],
+            [
+              -118.535852,
+              34.228443
+            ],
+            [
+              -118.536349,
+              34.228436
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "3c03a22b7b6d039c01494a1020729552"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Parthenia St / Interstate 405",
+        "category": "Public Safety",
+        "date": "11/22/22"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.473489,
+              34.228517
+            ],
+            [
+              -118.473537,
+              34.228142
+            ],
+            [
+              -118.47278,
+              34.228132
+            ],
+            [
+              -118.472792,
+              34.2285
+            ],
+            [
+              -118.473489,
+              34.228517
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "7ab2a4b964dc37265a4bd73c62450b2e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Roscoe Blvd / Interstate 405",
+        "category": "Public Safety",
+        "date": "11/22/22"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.473918,
+              34.221589
+            ],
+            [
+              -118.473922,
+              34.221181
+            ],
+            [
+              -118.47257,
+              34.221198
+            ],
+            [
+              -118.472557,
+              34.221606
+            ],
+            [
+              -118.473918,
+              34.221589
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "836bf0247a86397eb25cf4e1c4a83648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "19325 Londelius St, Northridge, CA 91324",
+        "category": "Supportive Housing Facility",
+        "date": "11/22/22"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.554957,
+              34.230511
+            ],
+            [
+              -118.554957,
+              34.229948
+            ],
+            [
+              -118.553741,
+              34.229946
+            ],
+            [
+              -118.553742,
+              34.230515
+            ],
+            [
+              -118.554957,
+              34.230511
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "888e8afce219571a05912f1a1bcee3d2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Balboa Blvd & Devonshire St",
+        "category": "Public Safety",
+        "date": "11/22/22"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.502571,
+              34.257695
+            ],
+            [
+              -118.502575,
+              34.257348
+            ],
+            [
+              -118.502111,
+              34.257369
+            ],
+            [
+              -118.502098,
+              34.257696
+            ],
+            [
+              -118.502345,
+              34.257698
+            ],
+            [
+              -118.502571,
+              34.257695
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "9c7b03ec7483ce28061e224c45512acb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Petit Ave & Devonshire St",
+        "date": "11/22/22",
+        "category": "Public Safety"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.498191,
+              34.25766
+            ],
+            [
+              -118.498185,
+              34.257316
+            ],
+            [
+              -118.497857,
+              34.257299
+            ],
+            [
+              -118.497869,
+              34.25765
+            ],
+            [
+              -118.498191,
+              34.25766
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "b68412134cfdf857f0e6b7fc58532a18"
+    }
+  ],
+  "type": "FeatureCollection"
+}
