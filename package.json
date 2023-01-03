@@ -34,7 +34,7 @@
   },
   "scripts": {
     "serve": "serve -s build -l 57023",
-    "start": "PORT=3006 craco start",
+    "start": "PORT=3006 craco start  && postcss src/css/app.css -o public/app.css",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",

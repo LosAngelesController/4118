@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 .App {
   text-align: center;
 }
@@ -39,6 +45,14 @@
 
 .mapbox-logo{
   display: none !important;
+}
+
+.bg-mejito {
+  background-color: #41ffca;
+}
+
+.text-mejito {
+  color: #41ffca;
 }
 
 .mejiascrollbar::-webkit-scrollbar-thumb {

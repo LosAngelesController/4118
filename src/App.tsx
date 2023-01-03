@@ -1001,7 +1001,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             <div className='flex flex-col md:flex-row w-auto md:auto md:flex-nowrap '>
               {this.state.infoBoxShown && (
                 <div
-                  className='flex-none font-sans mt-3 md:mt-3 p-2 banned-box-text ml-2 md:ml-3 bg-truegray-900 bg-opacity-90 md:bg-opacity-70 rounded-xl text-xs' style={{
+                  className='flex-none font-sans mt-3 md:mt-3 p-2 banned-box-text ml-2 md:ml-3 bg-zinc-900 bg-opacity-90 md:bg-opacity-70 rounded-xl text-xs' style={{
 
                   }}> <div className='md:max-w-xs  mt-1'>Banned: sit, lie, sleep, or store, use, maintain, or place personal property within:</div>
                   <div
@@ -1078,7 +1078,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
 
 
 
-            <div className={`w-screen md:w-auto  scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 max-h-screen transform overflow-y-auto transition-all z-50 sidebar-4118-list md:ml-3 absolute md:static ${(this.state.initialWindowWidth >= 768) ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs text-xs font-sans bg-truegray-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl mejiascrollbar`}>
+            <div className={`w-screen md:w-auto  scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 max-h-screen transform overflow-y-auto transition-all z-50 sidebar-4118-list md:ml-3 absolute md:static ${(this.state.initialWindowWidth >= 768) ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs text-xs font-sans bg-zinc-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl mejiascrollbar`}>
 
               <div className='pl-1 pt-2 text-base flex flex-row flex-nowrap'>
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -1105,7 +1105,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
                   }
                 })
                 .map((eachFeature: any, eachFeatureIndex: any) => (
-                  <div className=' bg-truegray-800 my-2 px-2 py-1 rounded-sm ' key={eachFeatureIndex} onClick={(event) => {
+                  <div className=' bg-zinc-800 my-2 px-2 py-1 rounded-sm ' key={eachFeatureIndex} onClick={(event) => {
                     this.toggleList();
                     checkStateOfSidebarAndUpdateOtherComponents();
                     this.setState((state: any, props: any) => {
@@ -1194,7 +1194,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </div>
-              <div className='bg-truegray-900 border-2 px-2 py-2 md:font-base max-w-xxs md:w-max-sm md:w-auto'>
+              <div className='bg-zinc-900 border-2 px-2 py-2 md:font-base max-w-xxs md:w-max-sm md:w-auto'>
                 {this.state.featureSelected.properties.place_name && (
                   <p className='font-bold'>{this.state.featureSelected.properties.place_name}</p>
                 )}
