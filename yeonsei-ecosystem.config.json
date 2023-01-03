@@ -1,0 +1,7 @@
+{
+  apps : [{
+    name   : "4118",
+    script : "serve",
+    args   :"-s build -l 57023"
+  }]
+}
