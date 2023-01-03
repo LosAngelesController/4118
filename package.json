@@ -33,6 +33,7 @@
     "worker-loader": "^3.0.8"
   },
   "scripts": {
+    "serve": "serve -s build -l 57023",
     "start": "PORT=3006 craco start",
     "build": "craco build",
     "test": "craco test",

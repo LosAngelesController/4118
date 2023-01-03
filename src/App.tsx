@@ -497,7 +497,7 @@ export default class App extends React.PureComponent {
     var customobj: any = {
       container: this.mapContainer.current,
       //style: 'mapbox://styles/comradekyler/ckv0iinpk1tlj15o2y6v1cur9',
-      style: 'mapbox://styles/comradekyler/ckv1ai7fb27w614s0d4tfbsac',
+      style: 'mapbox://styles/comradekyler/clccuqfea00f014oxhz9knndr',
       center: [lng, lat],
       zoom: zoom,
       attributionControl: false,
