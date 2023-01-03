@@ -1031,7 +1031,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
                   <div className='md:max-w-xs mt-0'>Covers schools, daycares, and by-resolution locations voted on by City Council. See ordinance for more info.</div>
                   <div className='flex-row  mt-1'>
                     <a target="_blank" rel='external' className='underline text-mejito' href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'>41.18 Ordinance</a>
-                    <a target="_blank" rel='author' className='underline text-mejito ml-4' href='https://mejiaforcontroller.com'>Mejia For Controller</a>
+                    <a target="_blank" rel='author' className='underline text-mejito ml-4' href='https://lacontroller.io'>LA City Controller</a>
                   </div>
                 </div>
               )}
@@ -1170,10 +1170,10 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
           />
 
           <div className={`absolute md:mx-auto z-9 bottom-2 left-1 md:left-1/2 md:transform md:-translate-x-1/2`}>
-            <a href='https://mejiaforcontroller.com/' target="_blank">
+            <a href='https://lacontroller.io/' target="_blank">
 
 
-              <img src='/mejia-watermark-smol.png' className='h-9 md:h-10'></img>
+              <img src='https://lacontroller.io/images/KennethMejia-logo-white-elect.png' className='h-9 md:h-10'></img>
 
             </a>
 
