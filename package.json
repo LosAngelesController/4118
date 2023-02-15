@@ -27,14 +27,16 @@
     "react-map-gl": "^6.1.17",
     "react-map-gl-geocoder": "^1.8.1",
     "react-scripts": "^5.0.1",
+    "serve": "^14.2.0",
     "tokml": "^0.4.0",
     "typescript": "^4.4.4",
     "web-vitals": "^1.1.2",
     "worker-loader": "^3.0.8"
   },
   "scripts": {
+    "cloudrunstart": "serve -s build -l 8080",
     "serve": "serve -s build -l 57023",
-    "start": "PORT=3006 craco start  && postcss src/css/app.css -o public/app.css",
+    "start": "postcss src/css/app.css -o public/app.css && PORT=3006 craco start ",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
