@@ -12,7 +12,7 @@ env:
   # Moved to Oregon, Low CO2 usage :) and also supports cloud mapping
   CLOUD_RUN_REGION: us-west1
   # project-name but it can be anything you want
-  REPO_NAME: 4118
+  REPO_NAME: fourtyoneeighteen
 
 jobs:
   build-and-deploy:
