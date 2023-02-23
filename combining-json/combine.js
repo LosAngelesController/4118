@@ -8,6 +8,7 @@ const missingschools = require('./inputs/joined-missing-public-school-dots-final
 const missingprivateschools = require('./inputs/output4118-missing-private-schools-v1.json');
 const missingdaycares = require('./inputs/output4118-missing-daycares-v1.json');
 const s5 = require('./inputs/220615-kyler.json');
+const missingdecember2022 = require('./inputs/4118missingdecember2022.json')
 const sean2 = require('./inputs/sean-2-corrected.json');
 const feb16seanimport = require('./inputs/4118_02_19_2022-sean.json');
 const feb16kylerimport = require('./inputs/4118-02-19-2022-kyler.json');
@@ -51,7 +52,7 @@ var locationsBatchCompilefeb16 =  {
   }
 
 
-var arrayOfFiles = [cd11_230222, cd2_230222, bruhfdsljdfjk,schools,daycares, notagaincries, missingschools, missingprivateschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5, missingdaycares]
+var arrayOfFiles = [missingdecember2022 ,cd11_230222, cd2_230222, bruhfdsljdfjk,schools,daycares, notagaincries, missingschools, missingprivateschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5, missingdaycares]
 
 var locations =  {
     features: [],
