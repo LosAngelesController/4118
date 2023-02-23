@@ -497,7 +497,7 @@ export default class App extends React.PureComponent {
     var customobj: any = {
       container: this.mapContainer.current,
       //style: 'mapbox://styles/comradekyler/ckv0iinpk1tlj15o2y6v1cur9',
-      style: 'mapbox://styles/comradekyler/ckv1ai7fb27w614s0d4tfbsac',
+      style: 'mapbox://styles/comradekyler/clccuqfea00f014oxhz9knndr',
       center: [lng, lat],
       zoom: zoom,
       attributionControl: false,
@@ -1001,7 +1001,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             <div className='flex flex-col md:flex-row w-auto md:auto md:flex-nowrap '>
               {this.state.infoBoxShown && (
                 <div
-                  className='flex-none font-sans mt-3 md:mt-3 p-2 banned-box-text ml-2 md:ml-3 bg-truegray-900 bg-opacity-90 md:bg-opacity-70 rounded-xl text-xs' style={{
+                  className='flex-none font-sans mt-3 md:mt-3 p-2 banned-box-text ml-2 md:ml-3 bg-zinc-900 bg-opacity-90 md:bg-opacity-70 rounded-xl text-xs' style={{
 
                   }}> <div className='md:max-w-xs  mt-1'>Banned: sit, lie, sleep, or store, use, maintain, or place personal property within:</div>
                   <div
@@ -1031,7 +1031,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
                   <div className='md:max-w-xs mt-0'>Covers schools, daycares, and by-resolution locations voted on by City Council. See ordinance for more info.</div>
                   <div className='flex-row  mt-1'>
                     <a target="_blank" rel='external' className='underline text-mejito' href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'>41.18 Ordinance</a>
-                    <a target="_blank" rel='author' className='underline text-mejito ml-4' href='https://mejiaforcontroller.com'>Mejia For Controller</a>
+                    <a target="_blank" rel='author' className='underline text-mejito ml-4' href='https://lacontroller.io'>LA City Controller</a>
                   </div>
                 </div>
               )}
@@ -1078,7 +1078,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
 
 
 
-            <div className={`w-screen md:w-auto  scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 max-h-screen transform overflow-y-auto transition-all z-50 sidebar-4118-list md:ml-3 absolute md:static ${(this.state.initialWindowWidth >= 768) ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs text-xs font-sans bg-truegray-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl mejiascrollbar`}>
+            <div className={`w-screen md:w-auto  scrollbar-thumb-gray-400 scrollbar-rounded scrollbar scrollbar-thin scrollbar-trackgray-900 max-h-screen transform overflow-y-auto transition-all z-50 sidebar-4118-list md:ml-3 absolute md:static ${(this.state.initialWindowWidth >= 768) ? "" : "-translate-x-full"} md:block md:flex-initial md:mt-1 md:flex-col md:max-w-xs text-xs font-sans bg-zinc-900 md:bg-opacity-90 px-2 py-1 md:rounded-xl mejiascrollbar`}>
 
               <div className='pl-1 pt-2 text-base flex flex-row flex-nowrap'>
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -1105,7 +1105,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
                   }
                 })
                 .map((eachFeature: any, eachFeatureIndex: any) => (
-                  <div className=' bg-truegray-800 my-2 px-2 py-1 rounded-sm ' key={eachFeatureIndex} onClick={(event) => {
+                  <div className=' bg-zinc-800 my-2 px-2 py-1 rounded-sm ' key={eachFeatureIndex} onClick={(event) => {
                     this.toggleList();
                     checkStateOfSidebarAndUpdateOtherComponents();
                     this.setState((state: any, props: any) => {
@@ -1163,17 +1163,12 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
           }} className="map-container" />
 
 
-          <DisclaimerPopup
-            open={this.state.disclaimerOpen}
-            openModal={this.openModal}
-            closeModal={this.closeModal}
-          />
 
           <div className={`absolute md:mx-auto z-9 bottom-2 left-1 md:left-1/2 md:transform md:-translate-x-1/2`}>
-            <a href='https://mejiaforcontroller.com/' target="_blank">
+            <a href='https://lacontroller.io/' target="_blank">
 
 
-              <img src='/mejia-watermark-smol.png' className='h-9 md:h-10'></img>
+              <img src='https://lacontroller.io/images/KennethMejia-logo-white-elect.png' className='h-9 md:h-10'></img>
 
             </a>
 
@@ -1194,7 +1189,7 @@ Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </div>
-              <div className='bg-truegray-900 border-2 px-2 py-2 md:font-base max-w-xxs md:w-max-sm md:w-auto'>
+              <div className='bg-zinc-900 border-2 px-2 py-2 md:font-base max-w-xxs md:w-max-sm md:w-auto'>
                 {this.state.featureSelected.properties.place_name && (
                   <p className='font-bold'>{this.state.featureSelected.properties.place_name}</p>
                 )}

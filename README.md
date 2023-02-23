@@ -1,6 +1,6 @@
 # License
 
-This map was made by [Kenneth Mejia For LA City Controller](https://mejiaforcontroller.com/meet-kenneth/).
+This map was made by Kenneth Mejia, LA City Controller.
 
 Software Development and Map Design: **[Kyler Chin](https://github.com/kylerchin)**
 
@@ -12,8 +12,8 @@ Additional Dataset Processing and Parsing: **Nik**
 
 You're mostly free to use this for whatever you want! However, There are a few exceptions and things to note:
 
-- If you plan on using the map publicly, please attribute "Kenneth Mejia For LA City Controller" in a clearly stated manner on the map.
-- If you would like an exception on a case-by-case basis to this, please contact kyler@mejiaforcontroller.com
+- If you plan on using the map publicly, please attribute "Kenneth Mejia, LA City Controller" in a clearly stated manner on the map.
+- If you would like an exception on a case-by-case basis to this, please contact kyler.chin@lacity.org
 - If your additions to this map are public, you must maintain the same Tethics on your project and ensure your code is Open-Source.
 
 Tech Ethics (Tethics):
@@ -82,10 +82,15 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## If you get an openssl error:
+DO NOT revert back to an older nodejs version or use legacy openssl version!
+That can cause a major security hole. Instead: 
+```bash
+npm audit fix --force
+```
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Abolish 41.18

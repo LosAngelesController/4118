@@ -1,0 +1,7 @@
+{
+  apps : [{
+    name   : "4118",
+    script : "npm",
+    args   :"run serve"
+  }]
+}
