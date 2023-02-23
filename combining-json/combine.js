@@ -15,6 +15,9 @@ const editJsonFile = require("edit-json-file");
 const hashsum = require('hash-sum')
 const notagaincries = require('./inputs/2022-10-18-4118.json');
 const bruhfdsljdfjk = require('./inputs/221126-features.json');
+
+const cd2_230222 = require('./inputs/230222cd2.json');
+const cd11_230222 = require('./inputs/230222cd11.json');
 var fs = require('fs');
 // If the file doesn't exist, the content will be an empty object by default.
 let file = editJsonFile(`${__dirname}/features.json`);
@@ -48,7 +51,7 @@ var locationsBatchCompilefeb16 =  {
   }
 
 
-var arrayOfFiles = [bruhfdsljdfjk,schools,daycares, notagaincries, missingschools, missingprivateschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5, missingdaycares]
+var arrayOfFiles = [cd11_230222, cd2_230222, bruhfdsljdfjk,schools,daycares, notagaincries, missingschools, missingprivateschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5, missingdaycares]
 
 var locations =  {
     features: [],
