@@ -8,6 +8,7 @@ const missingschools = require('./inputs/joined-missing-public-school-dots-final
 const missingprivateschools = require('./inputs/output4118-missing-private-schools-v1.json');
 const missingdaycares = require('./inputs/output4118-missing-daycares-v1.json');
 const s5 = require('./inputs/220615-kyler.json');
+const missingdecember2022 = require('./inputs/4118missingdecember2022.json')
 const sean2 = require('./inputs/sean-2-corrected.json');
 const feb16seanimport = require('./inputs/4118_02_19_2022-sean.json');
 const feb16kylerimport = require('./inputs/4118-02-19-2022-kyler.json');
@@ -15,6 +16,9 @@ const editJsonFile = require("edit-json-file");
 const hashsum = require('hash-sum')
 const notagaincries = require('./inputs/2022-10-18-4118.json');
 const bruhfdsljdfjk = require('./inputs/221126-features.json');
+
+const cd2_230222 = require('./inputs/230222cd2.json');
+const cd11_230222 = require('./inputs/230222cd11.json');
 var fs = require('fs');
 // If the file doesn't exist, the content will be an empty object by default.
 let file = editJsonFile(`${__dirname}/features.json`);
@@ -48,7 +52,7 @@ var locationsBatchCompilefeb16 =  {
   }
 
 
-var arrayOfFiles = [bruhfdsljdfjk,schools,daycares, notagaincries, missingschools, missingprivateschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5, missingdaycares]
+var arrayOfFiles = [missingdecember2022 ,cd11_230222, cd2_230222, bruhfdsljdfjk,schools,daycares, notagaincries, missingschools, missingprivateschools, locationsBatchCompilefeb16, sean1,kyler1,kyleroriginal,sean2, s4,s5, missingdaycares]
 
 var locations =  {
     features: [],

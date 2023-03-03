@@ -1,0 +1,506 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "11339 Iowa Avenue",
+        "category": "Designated Facility",
+        "date": "02/17/23",
+        "place_name": "Iowa Safe Parking"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.449562,
+              34.044622
+            ],
+            [
+              -118.449317,
+              34.044322
+            ],
+            [
+              -118.448512,
+              34.044795
+            ],
+            [
+              -118.448768,
+              34.045102
+            ],
+            [
+              -118.449562,
+              34.044622
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "130d13e3f6a47d908e743c753076886d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Washington Blvd / Ocean Front Walk",
+        "category": "Public Park",
+        "date": "02/17/23"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.466951,
+              33.979193
+            ],
+            [
+              -118.467011,
+              33.979146
+            ],
+            [
+              -118.466788,
+              33.97883
+            ],
+            [
+              -118.466703,
+              33.978865
+            ],
+            [
+              -118.466951,
+              33.979193
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "1f8c34bfe3e5bc390e0fff366a9ea132"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "7000 W Manchester Ave",
+        "category": "Public Park",
+        "date": "02/17/23",
+        "place_name": "Westchester Park"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.418798,
+              33.959571
+            ],
+            [
+              -118.418446,
+              33.959201
+            ],
+            [
+              -118.414253,
+              33.955067
+            ],
+            [
+              -118.413672,
+              33.954704
+            ],
+            [
+              -118.41359,
+              33.959683
+            ],
+            [
+              -118.415428,
+              33.959689
+            ],
+            [
+              -118.418669,
+              33.959671
+            ],
+            [
+              -118.418798,
+              33.959571
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "3263ebbe750dbfe85c299dc22de9d7b5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "9250 Airport Blvd",
+        "category": "Designated Facility",
+        "date": "02/17/23",
+        "place_name": "Super 8 Homekey"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.385718,
+              33.952181
+            ],
+            [
+              -118.385711,
+              33.951801
+            ],
+            [
+              -118.384948,
+              33.951803
+            ],
+            [
+              -118.38496,
+              33.952172
+            ],
+            [
+              -118.385718,
+              33.952181
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "39894e30545bbd3c655bd7d188fae7df"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "100 Sunset Ave",
+        "category": "Designated Facility",
+        "date": "02/17/23",
+        "place_name": "Venice A Bridge Home"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.476372,
+              33.994363
+            ],
+            [
+              -118.477136,
+              33.99396
+            ],
+            [
+              -118.476316,
+              33.992937
+            ],
+            [
+              -118.475462,
+              33.993395
+            ],
+            [
+              -118.475377,
+              33.993483
+            ],
+            [
+              -118.476118,
+              33.994192
+            ],
+            [
+              -118.476372,
+              33.994363
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "632f0b124f925579756554a86977087a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "200 Linnie Canal",
+        "place_name": "Linnie Canal Park",
+        "category": "Public Park",
+        "date": "02/17/23"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.466794,
+              33.984885
+            ],
+            [
+              -118.466613,
+              33.984649
+            ],
+            [
+              -118.46643,
+              33.984756
+            ],
+            [
+              -118.466634,
+              33.984998
+            ],
+            [
+              -118.466794,
+              33.984885
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "82be73fdab07180694fd48674a7df070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "6531 S Sepulveda Blvd",
+        "category": "Designated Facility",
+        "date": "02/17/23",
+        "place_name": "Extended Stay Homekey"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.395829,
+              33.980108
+            ],
+            [
+              -118.395824,
+              33.979624
+            ],
+            [
+              -118.395764,
+              33.979515
+            ],
+            [
+              -118.394582,
+              33.979528
+            ],
+            [
+              -118.394736,
+              33.980124
+            ],
+            [
+              -118.395829,
+              33.980108
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "877d2a2d60b783cfbc2379150fdb1470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "11430 Woodbine St",
+        "place_name": "Mar Vista Recreation Center",
+        "category": "Public Park",
+        "date": "02/17/23"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.431177,
+              34.01704
+            ],
+            [
+              -118.426282,
+              34.019436
+            ],
+            [
+              -118.425328,
+              34.018379
+            ],
+            [
+              -118.427693,
+              34.017175
+            ],
+            [
+              -118.428763,
+              34.01663
+            ],
+            [
+              -118.429691,
+              34.016235
+            ],
+            [
+              -118.430271,
+              34.016088
+            ],
+            [
+              -118.431177,
+              34.01704
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "92a803e56cc114f2bf17b670f9008082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Windward Ave/Ocean Front Walk",
+        "category": "Public Park",
+        "date": "02/17/23"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.473652,
+              33.987033
+            ],
+            [
+              -118.473791,
+              33.986932
+            ],
+            [
+              -118.47363,
+              33.986726
+            ],
+            [
+              -118.47346,
+              33.986837
+            ],
+            [
+              -118.473652,
+              33.987033
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "aa9bc4540978127ad00bff57c3132706"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Ozone Ave/Ocean Front Walk",
+        "category": "Public Park",
+        "date": "02/17/23"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.481044,
+              33.995342
+            ],
+            [
+              -118.481142,
+              33.995253
+            ],
+            [
+              -118.481037,
+              33.995144
+            ],
+            [
+              -118.480934,
+              33.995242
+            ],
+            [
+              -118.481044,
+              33.995342
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "ae64f5772e7aa13130085a792f4c9b1c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "501 S. Venice Boulevard",
+        "place_name": "Abbot Kinney Memorial Branch Library",
+        "category": "Library",
+        "date": "02/17/23"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.465714,
+              33.987562
+            ],
+            [
+              -118.46549,
+              33.987474
+            ],
+            [
+              -118.465259,
+              33.987357
+            ],
+            [
+              -118.464369,
+              33.987924
+            ],
+            [
+              -118.464504,
+              33.988053
+            ],
+            [
+              -118.464547,
+              33.988108
+            ],
+            [
+              -118.464601,
+              33.988182
+            ],
+            [
+              -118.464638,
+              33.988183
+            ],
+            [
+              -118.465103,
+              33.987929
+            ],
+            [
+              -118.465698,
+              33.9876
+            ],
+            [
+              -118.465714,
+              33.987562
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "ce39a7099ebe7acb1ffd69d6424c83bc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "2601 Alla Road",
+        "place_name": "Glen Alla Park",
+        "category": "Public Park",
+        "date": "02/17/23"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -118.432625,
+              33.984267
+            ],
+            [
+              -118.431838,
+              33.983188
+            ],
+            [
+              -118.430524,
+              33.983826
+            ],
+            [
+              -118.431268,
+              33.984912
+            ],
+            [
+              -118.432625,
+              33.984267
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "df2d30daf6ffc2324b0ae0acde6cd6fe"
+    }
+  ],
+  "type": "FeatureCollection"
+}
