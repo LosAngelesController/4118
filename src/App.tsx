@@ -78,16 +78,7 @@ var locationsBuffered = locations.features.map((eachFeature: any, eachFeatureInd
   var polygon = turf.polygon(eachFeature.geometry.coordinates);
   //console.log(polygon)
 
-  var buffered: any;
-
-  // console.log(eachFeatureIndex)
-  // console.log(locations.features[eachFeatureIndex].properties.category)
-  if (isStringOneThousandFt(eachFeature.properties.category)) {
-    buffered = turf.buffer(polygon, 1000, { units: 'feet' });
-    //  console.log('1000ft', locations.features[eachFeatureIndex].properties.address)
-  } else {
-    buffered = turf.buffer(polygon, 500, { units: 'feet' });
-  }
+  const buffered = turf.buffer(polygon, isStringOneThousandFt(eachFeature.properties.category) ? 1000 : 500, { units: 'feet' });
 
   buffered.properties = eachFeature.properties;
   return buffered;
